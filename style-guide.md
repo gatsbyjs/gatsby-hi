@@ -92,6 +92,9 @@ Use this section to list how common technical terminology should be translated.
 | Apps | ऍप्स |
 | Javascript | जावास्क्रिप्ट |
 | Repository | रिपॉजिटरी |
+| Resolve | रीसोलव |
+| Reviewer | रीवीउअर |
+| Review | रीव्यु |
 | Tutorial | ट्यूटोरियल |
 | Text | टेक्स्ट |
 | Value | वैल्यू  |
