@@ -91,6 +91,7 @@ Use this section to list how common technical terminology should be translated.
 | App | एप्प |
 | Apps | ऍप्स |
 | Javascript | जावास्क्रिप्ट |
+| Repository | रिपॉजिटरी |
 | Tutorial | ट्यूटोरियल |
 | Text | टेक्स्ट |
 | Value | वैल्यू  |
@@ -106,6 +107,8 @@ Content that does not need to be translated:
 | constructor |
 | context |
 | CDN |
+| fork |
+| Github |
 | HTML |
 | props |
 | React |
