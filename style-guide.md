@@ -85,18 +85,25 @@ Use this section to list how common technical terminology should be translated.
 
 | Term   | Translation |
 | :---: | :---: |
-| Plugin | प्लगइन |
-| Theme  | थीम |
-| Query  | क्वेरी |
+| Abstract | एबसट्रैक्ट |
+| Additional | एडिशनल |
 | App | एप्प |
 | Apps | ऍप्स |
+| Deploy | डेप्लॉय |
+| Functionality | फ़ंक्शनैलिटी |
 | Javascript | जावास्क्रिप्ट |
+| Plugin | प्लगइन |
+| Projects | प्रोजेक्टस |
+| Pull | पुल्ल |
+| Query | क्वेरी |
 | Repository | रिपॉजिटरी |
 | Resolve | रीसोलव |
 | Reviewer | रीवीउअर |
 | Review | रीव्यु |
-| Tutorial | ट्यूटोरियल |
+| Source | सोर्स |
 | Text | टेक्स्ट |
+| Theme  | थीम |
+| Tutorial | ट्यूटोरियल |
 | Value | वैल्यू  |
 | View | व्यू |
 
