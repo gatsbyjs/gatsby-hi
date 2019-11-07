@@ -7,6 +7,7 @@ Please refer to the [Translation Progress Issue](https://github.com/gatsbyjs/gat
 
 Useful Links:
 
+* [Contributing Guide](/contibuting.md)
 * [Style Guide](/style-guide.md)
 * [Gatsby Translation Guide](https://www.gatsbyjs.org/contributing/gatsby-docs-translation-guide/)
 * [Gatsby Discord](https://gatsby.dev/discord)
