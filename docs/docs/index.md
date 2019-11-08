@@ -1,15 +1,15 @@
 ---
-title: Gatsby.js Documentation
+शीर्षक: Gatsby.js ट्यूटोरियल
 disableTableOfContents: true
 ---
 
-import EmailCaptureForm from "../../www/src/components/email-capture-form"
+आयात EmailCaptureForm from "../../www/src/components/email-capture-form"
 
-Gatsby is a blazing fast modern site generator for React.
+Gatsby React के लिए एक प्रज्वलन तेज़ आधुनिक साइट जनरेटर है।
 
-## Get Started
+## शुरू करना 
 
-There are two main ways to get started with Gatsby:
+Gatsby के साथ शुरुआत करने के दो मुख्य तरीके हैं:
 
 1. [Tutorial](/tutorial/): Step-by-step instructions on how to install Gatsby and start a project: written for people without Gatsby or web development experience, though these learning resources have helped developers of all skill levels.
 2. [Quick start](/docs/quick-start): One page summary of how to install Gatsby and start a new project.
