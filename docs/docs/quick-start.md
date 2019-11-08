@@ -1,66 +1,66 @@
 ---
-title: Quick Start
+शीर्षक: क्विक स्टार्ट
 ---
 
-This quick start is intended for intermediate to advanced developers. For a gentler intro to Gatsby, [head to our tutorial](/tutorial/)!
+यह क्विक स्टार्ट इंटरमीडिएट से एडवांस्ड डेवलपर्स के लिये है। Gatsby के एक विनम्र परिचय के लिए, [हमारे ट्यूटोरियल देखें](/tutorial/)!
 
-## Use the Gatsby CLI
+## Gatsby सीएलआई का उपयोग करें
 
 <EggheadEmbed
   lessonLink="https://egghead.io/lessons/gatsby-quick-start-with-gatsby-create-develop-and-build-gatsby-sites-from-the-command-line"
-  lessonTitle="Quick Start with Gatsby: Create, Develop, and Build Gatsby Sites From the Command Line"
+  lessonTitle="Gatsby के साथ तुरंत शुरुआत करें: कमांड लाइन से Gatsby साइट बनाएँ, विकसित करें और निर्माण करें"
 />
 
-**Note**: this video uses `npx`, which is a tool to execute an npm package without first installing it. Running the command `npx gatsby new` is the same as running `gatsby new` after installing the gatsby-cli on your computer.
+**नोट**: इस वीडियो में `npx` का उपयोग किया गया है, जो पहले इनस्टॉल किए बिना npm पैकेज को एग्ज़ीक्यूट करने के लिए एक टूल है। अपने कंप्यूटर पर Gatsby-सीएलआई को इनस्टॉल करने के बाद कमांड `npx gatsby new` को चलाना `gatsby new` चलाने के समान है।
 
-### Install the Gatsby CLI.
+### Gatsby सीएलआई इनस्टॉल करें।
 
 ```shell
 npm install -g gatsby-cli
 ```
 
-### Create a new site.
+### एक नई साइट बनाएँ।
 
 ```shell
 gatsby new gatsby-site
 ```
 
-### Change directories into site folder.
+### डायरेक्ट्रीज को साइट फ़ोल्डर में बदलें।
 
 ```shell
 cd gatsby-site
 ```
 
-### Start development server.
+### डेवलपमेंट सर्वर शुरू करें।
 
 ```shell
 gatsby develop
 ```
 
-Gatsby will start a hot-reloading development environment accessible by default at `localhost:8000`.
+Gatsby एक हॉट-रीलोडिंग डेवलपमेंट एनवायरनमेंट सुरु करेगा जो की डिफ़ॉल्ट रूप से `localhost:8000` पर एक्सेसिबल रहेगा।
 
-Try editing the JavaScript pages in `src/pages`. Saved changes will live reload in the browser.
+`src/pages` में जावास्क्रिप्ट पेज को एडिट करने का प्रयास करें। सेव किये गए बदलाव ब्राउज़र में लाइव पुनः लोड होंगे।
 
-### Create a production build.
+### एक प्रोडक्शन बिल्ड बनाएँ।
 
 ```shell
 gatsby build
 ```
 
-Gatsby will perform an optimized production build for your site, generating static HTML and per-route JavaScript code bundles.
+Gatsby इसटैटिक HTML और प्रति मार्ग जावास्क्रिप्ट कोड बंडलों का निर्माण करते हुए, आपकी साइट के लिए एक ऑप्टीमाइज़्ड प्रोडक्शन बिल्ड का निर्माण करेगा।
 
-### Serve the production build locally.
+### प्रोडक्शन बिल्ड को लोकल पर सर्व करें।
 
 ```shell
 gatsby serve
 ```
 
-Gatsby starts a local HTML server for testing your built site. Remember to build your site using `gatsby build` before using this command.
+Gatsby आपकी बनी हुई साइट के परीक्षण के लिए एक लोकल HTML सर्वर शुरू करता है। इस कमांड का उपयोग करने से पहले `gatsby build` का उपयोग करके अपनी साइट बनाना याद रखें।
 
-### Access documentation for CLI commands
+### सीएलआई कमांड के लिए एक्सेस डॉक्यूमेंटेशन
 
-To see detailed documentation for the CLI commands, run `gatsby --help` in the terminal.
+सीएलआई कमांड के विस्तृत डॉक्यूमेंटेशन देखने के लिए, टर्मिनल में `gatsby --help` चलाएं।
 
-For specific commands, run `gatsby COMMAND_NAME --help` e.g. `gatsby new --help`.
+विशिष्ट कमांड्स के लिए, `gatsby COMMAND_NAME --help` चलाएं, उदाहरण: `gatsby new --help`।
 
-For more information on the Gatsby CLI, visit the [CLI reference](/docs/gatsby-cli/) section of the docs.
+Gatsby सीएलआई के बारे में अधिक जानकारी के लिए, [सीएलआई संदर्भ](/docs/gatsby-cli/) देखें।
