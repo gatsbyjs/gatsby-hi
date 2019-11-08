@@ -11,25 +11,25 @@ Gatsby React के लिए एक प्रज्वलन तेज़ आ�
 
 Gatsby के साथ शुरुआत करने के दो मुख्य तरीके हैं:
 
-1. [Tutorial](/tutorial/): Step-by-step instructions on how to install Gatsby and start a project: written for people without Gatsby or web development experience, though these learning resources have helped developers of all skill levels.
-2. [Quick start](/docs/quick-start): One page summary of how to install Gatsby and start a new project.
+1. [ट्यूटोरियल](/tutorial/): कैसे Gatsby को स्थापित करने और एक परियोजना शुरू करने के लिए चरण-दर-चरण निर्देश: बिना Gatsby या वेब विकास अनुभव के लोगों के लिए लिखा गया है, हालांकि इन सीखने के संसाधनों ने सभी कौशल स्तरों के डेवलपर्स की मदद की है।
+2. [त्वरित प्रारंभ](/docs/quick-start): Gatsby को स्थापित करने और एक नई परियोजना शुरू करने का एक पृष्ठ सारांश।
 
-## Go further
+## आगे बढ़ो
 
-1. [Recipes](/docs/recipes/): Find some quick answers for how to accomplish some specific, common tasks with Gatsby.
-2. Choose your own adventure and peruse the various sections of the Gatsby docs:
+1. [Recipes](/docs/recipes/): Gatsby गैट्सबी के साथ कुछ विशिष्ट, सामान्य कार्यों को पूरा करने के लिए कुछ त्वरित उत्तर खोजें.
+2. अपना खुद का साहसिक चुनें और Gatsby डॉक्स के विभिन्न अनुभागों का उपयोग करें.
 
-   - [Reference Guides](/docs/guides/): Learn about the many different topics around building with Gatsby, like sourcing data, deployment, and more.
-   - [Gatsby API Reference](/docs/api-reference/): Learn more about Gatsby APIs and configuration.
-   - [Releases & Migration](/docs/releases-and-migration/): Find release notes and guides for migration between major versions.
-   - [Conceptual Guide](/docs/conceptual-guide/): Read high-level overviews of the Gatsby approach.
-   - [Gatsby Internals](/docs/gatsby-internals/): Dig into how Gatsby works behind the scenes.
-   - [Using Gatsby Professionally](/docs/using-gatsby-professionally/): Learn tips and tricks for how to explain Gatsby to others at work, so that you have more opportunities to work with Gatsby professionally.
+   - [संदर्भ मार्गदर्शिकाएँ](/docs/guides/): Gatsby के साथ निर्माण सामग्री के आसपास कई अलग-अलग विषयों के बारे में जानें, जैसे सोर्सिंग डेटा, परिनियोजन, और बहुत कुछ.
+   - [Gatsby एपीआई संदर्भ](/docs/api-reference/): Gatsby API और कॉन्फ़िगरेशन के बारे में अधिक जानें।
+   - [विमोचन और माइग्रेशन](/docs/releases-and-migration/): प्रमुख संस्करणों के बीच प्रवास के लिए रिलीज़ नोट और गाइड खोजें।
+   - [वैचारिक मार्गदर्शक](/docs/conceptual-guide/): Gatsby दृष्टिकोण के उच्च-स्तरीय साक्षात्कार पढ़ें।
+   - [Gatsby आंतरिक](/docs/gatsby-internals/): पता लगाएं कैसे Gatsby पर्दे के पीछे काम करता है
+   - [Gatsby व्यावसायिक रूप से उपयोग करना](/docs/using-gatsby-professionally/):काम पर दूसरों को Gatsby को कैसे समझा जाए, इसके लिए टिप्स और ट्रिक्स सीखें, ताकि आपके पास Gatsby के साथ पेशेवर रूप से काम करने के अधिक अवसर हों।
 
-3. Check out the [Ecosystem](/ecosystem/) libraries for Gatsby starters and plugins, as well as external community resources.
+3. Gatsby शुरुआत और प्लगइन्स, साथ ही बाहरी सामुदायिक संसाधनों के लिए [पारिस्थितिकी तंत्र](/ecosystem) पुस्तकालयों की जाँच करें।
 
-## Start contributing
+## योगदान देना शुरू करें
 
-Visit the [Contributing](/contributing/) section to find guides on the Gatsby community, code of conduct, and how to get started contributing to Gatsby.
+Gatsby समुदाय पर मार्गदर्शिकाएँ, आचार संहिता, और कैसे Gatsby के लिए [योगदान](/contributing) शुरू करने के लिए योगदान करने के लिए योगदान अनुभाग पर जाएँ।
 
 <EmailCaptureForm signupMessage="Want to keep up with the latest tips &amp; tricks? Subscribe to our newsletter!" />
