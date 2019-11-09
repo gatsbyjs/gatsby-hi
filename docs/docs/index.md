@@ -1,35 +1,35 @@
 ---
-title: Gatsby.js Documentation
+शीर्षक: Gatsby.js ट्यूटोरियल
 disableTableOfContents: true
 ---
 
 import EmailCaptureForm from "../../www/src/components/email-capture-form"
 
-Gatsby is a blazing fast modern site generator for React.
+Gatsby, React के लिए एक प्रज्वलन तेज़ आधुनिक साइट जनरेटर है।
 
-## Get Started
+## शुरू करना
 
-There are two main ways to get started with Gatsby:
+Gatsby के साथ शुरुआत करने के दो मुख्य तरीके हैं:
 
-1. [Tutorial](/tutorial/): Step-by-step instructions on how to install Gatsby and start a project: written for people without Gatsby or web development experience, though these learning resources have helped developers of all skill levels.
-2. [Quick start](/docs/quick-start): One page summary of how to install Gatsby and start a new project.
+1. [ट्यूटोरियल](/tutorial/): Gatsby, को इनस्टॉल करने और एक प्रोजेक्ट सुरु करने के लिए स्टेप-बाई-स्टेप निर्देश: ये उन लोगो के लिए बनाया गया है जिनको Gatsby या वेब विकास का कोई अनुभव नहीं है, हालाँकि इन रिसोर्सेज ने सभी लेवल के डेवेलपर्स की मदद की है।
+2. [क्विक स्टार्ट](/docs/quick-start): Gatsby को इनस्टॉल करने और एक नए प्रोजेक्ट शुरू करने का एक पेज सारांश।
 
-## Go further
+## आगे बढ़ो
 
-1. [Recipes](/docs/recipes/): Find some quick answers for how to accomplish some specific, common tasks with Gatsby.
-2. Choose your own adventure and peruse the various sections of the Gatsby docs:
+1. [Recipes](/docs/recipes/): Gatsby के साथ कुछ विशिष्ट, सामान्य कार्यों को पूरा करने के लिए कुछ क्विक उत्तर खोजें।
+2. अपना खुद का एडवेंचर चुनें और Gatsby डॉक्स के विभिन्न अनुभागों का उपयोग करें।
 
-   - [Reference Guides](/docs/guides/): Learn about the many different topics around building with Gatsby, like sourcing data, deployment, and more.
-   - [Gatsby API Reference](/docs/api-reference/): Learn more about Gatsby APIs and configuration.
-   - [Releases & Migration](/docs/releases-and-migration/): Find release notes and guides for migration between major versions.
-   - [Conceptual Guide](/docs/conceptual-guide/): Read high-level overviews of the Gatsby approach.
-   - [Gatsby Internals](/docs/gatsby-internals/): Dig into how Gatsby works behind the scenes.
-   - [Using Gatsby Professionally](/docs/using-gatsby-professionally/): Learn tips and tricks for how to explain Gatsby to others at work, so that you have more opportunities to work with Gatsby professionally.
+   - [रिफरेन्स गाइड्स](/docs/guides/): Gatsby के साथ निर्माण सामग्री के आसपास कई अलग-अलग विषयों के बारे में जानें, जैसे सोर्सिंग डेटा, डिप्लॉयमेंट, और बहुत कुछ।
+   - [Gatsby एपीआई रिफरेन्स](/docs/api-reference/): Gatsby API और कॉन्फ़िगरेशन के बारे में अधिक जानें।
+   - [रीलीज़ेज़ और माइग्रेशन](/docs/releases-and-migration/): प्रमुख वर्शनस के बीच माइग्रेशन्स के लिए रिलीज़ नोट और गाइड खोजें।
+   - [वैचारिक गाइड](/docs/conceptual-guide/): Gatsby दृष्टिकोण के उच्च-स्तरीय ओवरव्यूज पढ़ें।
+   - [Gatsby इंटरनल्स](/docs/gatsby-internals/): पता लगाएं Gatsby पर्दे के पीछे कैसे काम करता है।
+   - [Gatsby प्रोफेश्नल्ली रूप से उपयोग करना](/docs/using-gatsby-professionally/): टिप्स और ट्रिक्स सीखें जिससे आप काम पर दूसरों को Gatsby कैसे समझाया जाए, ताकि आपके पास Gatsby के साथ प्रोफेशनल रूप से काम करने के अधिक अवसर हों।
 
-3. Check out the [Ecosystem](/ecosystem/) libraries for Gatsby starters and plugins, as well as external community resources.
+3. Gatsby शुरुआत और प्लगइन्स, साथ ही बाहरी सामुदायिक संसाधनों के लिए [इकोसिस्टम](/ecosystem) लाइब्रेरीज को देखें।
 
-## Start contributing
+## योगदान देना शुरू करें
 
-Visit the [Contributing](/contributing/) section to find guides on the Gatsby community, code of conduct, and how to get started contributing to Gatsby.
+Gatsby कम्युनिटी, अचार सहिंता, और Gatsby में योगदान कैसे सुरु करें इसके लिए [कंट्रिब्यूटिंग](/contributing/) अनुभाग देखें।
 
-<EmailCaptureForm signupMessage="Want to keep up with the latest tips &amp; tricks? Subscribe to our newsletter!" />
+<EmailCaptureForm signupMessage="क्या आप अपने आप को लेटेस्ट टिप्स और ट्रिक्स के साथ अपडेट रखना चाहते हैं? तो हमारे न्यूज़लेटर सब्सक्राइब करें!" />
