@@ -1,38 +1,36 @@
 ---
-title: Set Up Your Development Environment
+title: अपना विकास पर्यावरण तैयार करें
 typora-copy-images-to: ./
 disableTableOfContents: true
 ---
 
-Before you start building your first Gatsby site, you’ll need to familiarize yourself with some core web technologies and make sure that you have installed all required software tools.
+इससे पहले कि आप अपनी पहली गैट्सबी साइट का निर्माण शुरू करें, आपको कुछ मुख्य वेब तकनीकों से खुद को परिचित करना होगा और यह सुनिश्चित करना होगा कि आपने सभी आवश्यक सॉफ़्टवेयर टूल स्थापित कर लिए हैं|
 
-## Familiarize yourself with the command line
+## कमांड लाइन से खुद को परिचित करें
 
-The command line is a text-based interface used to run commands on your computer. You’ll also often see it referred to as the terminal. In this tutorial, we’ll use both interchangeably. It’s a lot like using the Finder on a Mac or Explorer on Windows. Finder and Explorer are examples of graphical user interfaces (GUI). The command line is a powerful, text-based way to interact with your computer.
+कमांड लाइन एक टेक्स्ट-आधारित इंटरफ़ेस है जिसका उपयोग आपके कंप्यूटर पर कमांड चलाने के लिए किया जाता है। आप अक्सर इसे टर्मिनल के रूप में भी देखेंगे| इस ट्यूटोरियल में, हम दोनों का परस्पर उपयोग करते हैं। विंडोज पर मैक या एक्सप्लोरर पर फाइंडर का उपयोग करना बहुत पसंद है। खोजक और एक्सप्लोरर ग्राफिकल यूजर इंटरफेस (जीयूआई) के उदाहरण हैं। कमांड लाइन आपके कंप्यूटर के साथ बातचीत करने का एक शक्तिशाली पाठ-आधारित तरीका है।
 
-Take a moment to locate and open up the command line interface (CLI) for your computer. Depending on which operating system you are using, see [**instructions for Mac**](http://www.macworld.co.uk/feature/mac-software/how-use-terminal-on-mac-3608274/), [**instructions for Windows**](https://www.quora.com/How-do-I-open-terminal-in-windows) or [**instructions for Linux**](https://www.howtogeek.com/140679/beginner-geek-how-to-start-using-the-linux-terminal/).
+अपने कंप्यूटर के लिए कमांड लाइन इंटरफ़ेस (CLI) का पता लगाने और खोलने के लिए कुछ समय लें। निर्भर करता है कि आप किस ऑपरेटिंग सिस्टम का उपयोग कर रहे हैं, देखें [**Mac के लिए निर्देश**](http://www.macworld.co.uk/feature/mac-software/how-use-terminal-on-mac-3608274/), [**Windows के लिए निर्देश**](https://www.quora.com/How-do-I-open-terminal-in-windows) or [**Linux के लिए निर्देश**](https://www.howtogeek.com/140679/beginner-geek-how-to-start-using-the-linux-terminal/).
 
-## Install Homebrew for Node.js
+## Node.js के लिए Homebrew स्थापित करें
 
-To install Gatsby and Node.js, it is recommended to use [Homebrew](https://brew.sh/). A little set-up in the beginning can save you from some headaches later on!
+Gatsby और Node.js को स्थापित करने के लिए, इसका उपयोग करने की अनुशंसा की जाती है [Homebrew](https://brew.sh/). शुरुआत में थोड़ा सेट अप आपको बाद में कुछ सिरदर्द से बचा सकता है! अपने कंप्यूटर पर Homebrew को कैसे स्थापित या सत्यापित करें:
 
-How to install or verify Homebrew on your computer:
+1. अपना टर्मिनल खोलें।
+1. देखें कि क्या Homebrew `brew -v` चलाकर स्थापित किया गया है। आपको "Homebrew" और एक संस्करण संख्या देखनी चाहिए।
+1. यदि नहीं, तो निर्देशों के साथ [Homebrew](https://docs.brew.sh/Installation) डाउनलोड और इंस्टॉल करें आपके ऑपरेटिंग सिस्टम के लिए (Mac, Linux or Windows).
+1. Homebrew स्थापित करने के बाद, सत्यापित करने के लिए चरण 2 को दोहराएं।
 
-1. Open your Terminal.
-1. See if Homebrew is installed by running `brew -v`. You should see "Homebrew" and a version number.
-1. If not, download and install [Homebrew with the instructions](https://docs.brew.sh/Installation) for your operating system (Mac, Linux or Windows).
-1. Once you've installed Homebrew, repeat step 2 to verify.
+### Mac उपयोगकर्ता: Xcode कमांड लाइन उपकरण स्थापित करें
 
-### Mac Users: install Xcode Command Line Tools
+1. अपना टर्मिनल खोलें।
+1. Mac पर, Xcode कमांड लाइन टूल को रन करके इंस्टॉल करें `xcode-select --install`.
+   1. यदि वह विफल रहता है, तो उसे डाउनलोड करें [सीधे Apple साइट से](https://developer.apple.com/download/more/), Apple डेवलपर अकाउंट से साइन-इन करने के बाद
+1. इंस्टॉलेशन शुरू करने के लिए प्रेरित होने के बाद, आपको टूल डाउनलोड करने के लिए सॉफ़्टवेयर लाइसेंस स्वीकार करने के लिए फिर से संकेत दिया जाएगा।
 
-1. Open your Terminal.
-1. On a Mac, install Xcode Command line tools by running `xcode-select --install`.
-   1. If that fails, download it [directly from the Apple site](https://developer.apple.com/download/more/), after signing-in with Apple developer account
-1. After being prompted to start the installation, you'll be prompted again to accept a software license for the tools to download.
+## ⌚ Node.js और npm स्थापित करें
 
-## ⌚ Install Node.js and npm
-
-Node.js is an environment that can run JavaScript code outside of a web browser. Gatsby is built with Node.js. To get up and running with Gatsby, you’ll need to have a recent version installed on your computer.
+Node.js एक ऐसा वातावरण है जो वेब ब्राउज़र के बाहर जावास्क्रिप्ट कोड चला सकता है। Gatsby Node.js. के साथ बनाया गया है गैट्सबी के साथ उठने और चलने के लिए, आपको अपने कंप्यूटर पर हाल ही में संस्करण स्थापित करने की आवश्यकता होगी।
 
 _Note: Gatsby's minimum supported Node.js version is Node 8, but feel free to use a more recent version._
 
@@ -54,19 +52,19 @@ The output of each of those commands should be a version number. Your versions m
 
 ## Install Git
 
-Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency. When you install a Gatsby "starter" site, Gatsby uses Git behind the scenes to download and install the required files for your starter. You will need to have Git installed to set up your first Gatsby site.
+Git एक स्वतंत्र और खुला स्रोत वितरित संस्करण नियंत्रण प्रणाली है जिसे गति और दक्षता के साथ छोटे से बहुत बड़े परियोजनाओं तक सब कुछ संभालने के लिए डिज़ाइन किया गया है। जब आप एक Gatsby "स्टार्टर" साइट स्थापित करते हैं, तो Gatsby अपने स्टार्टर के लिए आवश्यक फ़ाइलों को डाउनलोड और इंस्टॉल करने के लिए पर्दे के पीछे Git का उपयोग करता है। आपको अपना पहला Gatsby साइट सेट करने के लिए Git इंस्टॉल करना होगा।
 
-The steps to download and install Git depend on your operating system. Follow the guide for your system:
+Git को डाउनलोड और इंस्टॉल करने के चरण आपके ऑपरेटिंग सिस्टम पर निर्भर करते हैं। अपने सिस्टम के लिए गाइड का पालन करें:
 
 - [Install Git on macOS](https://www.atlassian.com/git/tutorials/install-git#mac-os-x)
 - [Install Git on Windows](https://www.atlassian.com/git/tutorials/install-git#windows)
 - [Install Git on Linux](https://www.atlassian.com/git/tutorials/install-git#linux)
 
 ## Using the Gatsby CLI
+ 
+Gatsby सीएलआई उपकरण आपको नए Gatsby-संचालित साइट बनाने और Gatsby साइटों को विकसित करने के लिए कमांड चलाने की सुविधा देता है। यह एक प्रकाशित npm पैकेज है।
 
-The Gatsby CLI tool lets you quickly create new Gatsby-powered sites and run commands for developing Gatsby sites. It is a published npm package.
-
-The Gatsby CLI is available via npm and should be installed globally by running `npm install -g gatsby-cli`.
+Gatsby CLI npm के माध्यम से उपलब्ध है और इसे विश्व स्तर पर चलाकर स्थापित किया जाना चाहिए `npm install -g gatsby-cli`.
 
 _**Note**: when you install Gatsby and run it for the first time, you'll see a short message notifying you about anonymous usage data that is being collected for Gatsby commands, you can read more about how that data is pulled out and used in the [telemetry doc](/docs/telemetry)._
 
