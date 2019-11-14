@@ -95,7 +95,7 @@ Use this section to list how common technical terminology should be translated.
 | Functionality | फ़ंक्शनैलिटी |
 | Javascript | जावास्क्रिप्ट |
 | Plugin | प्लगइन |
-| Professionally | प्रोफेश्नल्ली |
+| Professionally | प्रोफेशनली |
 | Projects | प्रोजेक्टस |
 | Pull | पुल्ल |
 | Query | क्वेरी |
