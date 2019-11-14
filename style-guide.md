@@ -84,7 +84,50 @@ For links that have no equivalent (Stack Overflow, YouTube videos, etc.), just u
 Use this section to list how common technical terminology should be translated.
 
 | Term   | Translation |
-| ------ | ----------- |
-| Plugin | ??          |
-| Theme  | ??          |
-| Query  | ??          |
+| :---: | :---: |
+| Abstract | एबसट्रैक्ट |
+| Additional | एडिशनल |
+| App | एप्प |
+| Apps | ऍप्स |
+| Deploy | डेप्लॉय |
+| Directories | डायरेक्ट्रीज |
+| Execute | एग्ज़ीक्यूट |
+| Functionality | फ़ंक्शनैलिटी |
+| Javascript | जावास्क्रिप्ट |
+| Plugin | प्लगइन |
+| Professionally | प्रोफेशनली |
+| Projects | प्रोजेक्टस |
+| Pull | पुल्ल |
+| Query | क्वेरी |
+| Repository | रिपॉज़िटरी |
+| Resolve | रीसोलव |
+| Reviewer | रीवीउअर |
+| Review | रीव्यु |
+| Static | इसटैटिक |
+| Source | सोर्स |
+| Text | टेक्स्ट |
+| Tool | टूल |
+| Theme  | थीम |
+| Tutorial | ट्यूटोरियल |
+| Value | वैल्यू  |
+| View | व्यू |
+
+Content that does not need to be translated:
+
+| No translation required |
+| :-----: |
+| API |
+| array |
+| class |
+| constructor |
+| context |
+| CDN |
+| fork |
+| Gatsby |
+| Github |
+| HTML |
+| props |
+| React |
+| strings |
+| UI |
+| key |
