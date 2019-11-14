@@ -99,7 +99,7 @@ Use this section to list how common technical terminology should be translated.
 | Projects | प्रोजेक्टस |
 | Pull | पुल्ल |
 | Query | क्वेरी |
-| Repository | रिपॉजिटरी |
+| Repository | रिपॉज़िटरी |
 | Resolve | रीसोलव |
 | Reviewer | रीवीउअर |
 | Review | रीव्यु |
