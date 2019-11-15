@@ -94,6 +94,8 @@ Use this section to list how common technical terminology should be translated.
 | Execute | एग्ज़ीक्यूट |
 | Functionality | फ़ंक्शनैलिटी |
 | Javascript | जावास्क्रिप्ट |
+| Options | ओप्शंस |
+| Optional | ऑप्शनल |
 | Plugin | प्लगइन |
 | Professionally | प्रोफेशनली |
 | Projects | प्रोजेक्टस |
