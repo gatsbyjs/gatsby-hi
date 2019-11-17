@@ -93,10 +93,13 @@ Use this section to list how common technical terminology should be translated.
 | Deploy | डेप्लॉय |
 | Directories | डायरेक्ट्रीज |
 | Execute | एग्ज़ीक्यूट |
+| Footer | फुटर |
 | Functionality | फ़ंक्शनैलिटी |
 | Javascript | जावास्क्रिप्ट |
+| Menu | मेनू |
 | Options | ओप्शंस |
 | Optional | ऑप्शनल |
+| Pages | पेजेज़ |
 | Plugin | प्लगइन |
 | Professionally | प्रोफेशनली |
 | Projects | प्रोजेक्टस |
@@ -106,6 +109,7 @@ Use this section to list how common technical terminology should be translated.
 | Resolve | रीसोलव |
 | Reviewer | रीवीउअर |
 | Review | रीव्यु |
+| Shared | शेयर्ड |
 | Static | इसटैटिक |
 | Source | सोर्स |
 | Text | टेक्स्ट |
