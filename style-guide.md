@@ -96,6 +96,7 @@ Use this section to list how common technical terminology should be translated.
 | Footer | फुटर |
 | Functionality | फ़ंक्शनैलिटी |
 | Javascript | जावास्क्रिप्ट |
+| Locally | लोकल्ली |
 | Menu | मेनू |
 | Options | ओप्शंस |
 | Optional | ऑप्शनल |
