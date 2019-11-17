@@ -89,6 +89,7 @@ Use this section to list how common technical terminology should be translated.
 | Additional | एडिशनल |
 | App | एप्प |
 | Apps | ऍप्स |
+| Components | कौम्पोनॅन्टस |
 | Deploy | डेप्लॉय |
 | Directories | डायरेक्ट्रीज |
 | Execute | एग्ज़ीक्यूट |
