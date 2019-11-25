@@ -14,32 +14,32 @@ disableTableOfContents: true
 
 -->
 
-Welcome to part two of the Gatsby tutorial!
+Gatsby ट्यूटोरियल के भाग दो में आपका स्वागत है!
 
-## What's in this tutorial?
+## इस ट्यूटोरियल में क्या है?
 
-In this part, you're going to explore options for styling Gatsby websites and dive deeper into using React components for building sites.
+इस भाग में आप Gatsby वेबसाइट की स्टाइलिंग के ओप्शंस के बारे में जानेंगे और साइट बनाने में React कौम्पोनॅन्ट के इस्तेमाल के बारे में और गहराई से जानेंगे।
 
-## Using global styles
+## ग्लोबल स्टाइल्स का उपयोग करना
 
-Every site has some sort of global style. This includes things like the site's typography and background colors. These styles set the overall feel of the site — much like the color and texture of a wall sets the overall feel of a room.
+प्रत्येक साइट में किसी न किसी प्रकार की ग्लोबल स्टाइल्स होती है। इसमें साइट की टीपोग्राफी और बॅकग्राउंड कलर जैसी चीजें शामिल हैं। ये स्टाइल्स साइट के समग्र अनुभव को निर्धारित करती हैं - जैसे दीवार का रंग और बनावट कमरे के समग्र अनुभव को निर्धारित करता है।
 
-### Creating global styles with standard CSS files
+### स्टॅंडर्ड स्टाइल्स फाइलों के साथ ग्लोबल सीएसएस का निर्माण
 
-One of the most straightforward ways to add global styles to a site is using a global `.css` stylesheet.
+किसी साइट पर ग्लोबल स्टाइल्स को जोड़ने के सबसे सरल तरीकों में से एक ग्लोबल `.css` स्टाइलशीट का उपयोग करना है।
 
-#### ✋ Create a new Gatsby site
+#### ✋ एक नई Gatsby साइट बनाएँ
 
-Start by creating a new Gatsby site. It may be best (especially if you're new to the command line) to close the terminal windows you used for [part one](/tutorial/part-one/) and start a new terminal session for part two.
+एक नई Gatsby साइट बनाना शुरू करें। यह सबसे अच्छा हो सकता है (विशेषकर यदि आप कमांड लाइन में नए हैं) की आप टर्मिनल विंडो को बंद कर दे जिसे आपने [भाग एक] (/tutorial/part-one/) मे उपयोग किया था और भाग दो के लिए एक नया टर्मिनल सेशन शुरू करे।
 
-Open a new terminal window, create a new "hello world" gatsby site, and start the development server:
+एक नई टर्मिनल विंडो खोलें, एक नया "हैलो वर्ल्ड" Gatsby साइट बनाएं, और डेवेलपमेंट सर्वर शुरू करें:
 
 ```shell
 gatsby new tutorial-part-two https://github.com/gatsbyjs/gatsby-starter-hello-world
 cd tutorial-part-two
 ```
 
-You now have a new Gatsby site (based on the Gatsby "hello world" starter) with the following structure:
+अब आपके पास एक नई Gatsby साइट (Gatsby "हैलो वर्ल्ड" स्टार्टर के आधार पर) निम्नलिखित स्ट्रक्चर के साथ है:
 
 ```text
 ├── package.json
@@ -48,9 +48,9 @@ You now have a new Gatsby site (based on the Gatsby "hello world" starter) with 
 │       └── index.js
 ```
 
-#### ✋ Add styles to a css file
+#### ✋ सीएसएस फाइल मे स्टाइल्स डालना
 
-1. Create a `.css` file in your new project:
+1. अपने नए प्रोजेक्ट में एक .css फ़ाइल बनाएँ:
 
 ```shell
 cd src
@@ -59,9 +59,9 @@ cd styles
 touch global.css
 ```
 
-> Note: Feel free to create these directories and files using your code editor, if you'd prefer.
+> नोट: आप चाहें तो आप अपने मनपसंद कोड एडिटर का उपयोग करके इन फ़ोल्डर और फ़ाइलों को बना सकते है।
 
-You should now have a structure like this:
+अब आपके पास इस तरह का स्ट्रक्चर होना चाहिए:
 
 ```text
 ├── package.json
@@ -72,7 +72,7 @@ You should now have a structure like this:
 │       └── global.css
 ```
 
-2. Define some styles in the `global.css` file:
+2. `global.css` फ़ाइल में कुछ सीएसएस स्टाइल्स को डिफाइन करें:
 
 ```css:title=src/styles/global.css
 html {
@@ -80,18 +80,18 @@ html {
 }
 ```
 
-> Note: The placement of the example css file in a `/src/styles/` folder is arbitrary.
+> नोट: उदाहरण लिए सीएसएस फ़ाइल का प्लेसमेंट `/src/styles/` फ़ोल्डर में मनमाना है।
 
-#### ✋ Include the stylesheet in `gatsby-browser.js`
+#### ✋ `gatsby-browser.js` में स्टाइलशीट को शामिल करें
 
-1. Create the `gatsby-browser.js`
+1. एक नयी फाइल `gatsby-browser.js` बनाएँ
 
 ```shell
 cd ../..
 touch gatsby-browser.js
 ```
 
-Your project's file structure should now look like this:
+आपके प्रोजेक्ट का फ़ाइल स्ट्रक्चर अब इस तरह दिखना चाहिए:
 
 ```text
 ├── package.json
@@ -103,9 +103,9 @@ Your project's file structure should now look like this:
 ├── gatsby-browser.js
 ```
 
-> 💡 What is `gatsby-browser.js`? Don't worry about this too much and for now, just know that `gatsby-browser.js` is one of a handful of special files that Gatsby looks for and uses (if they exist). Here, the naming of the file **is** important. If you do want to explore more now, check out [the docs](/docs/browser-apis/).
+> 💡 `gatsby-browser.js` क्या है? इस बारे में बहुत अधिक और अभी के लिए चिंता न करें, बस यह जान लें कि `gatsby-browser.js` उन मुट्ठी भर विशेष फ़ाइलों में से एक है, जो Gatsby सर्च करता है और उपयोग करता है (यदि वे मौजूद हैं)। यहां, फ़ाइल का नामकरण महत्वपूर्ण **है**। यदि आप अभी और ज्यादा एक्सप्लोर करना चाहते हैं, तो [डॉक्स](/docs/browser-apis/) देखें।
 
-2. Import your recently-created stylesheet in the `gatsby-browser.js` file:
+2. `gatsby-browser.js` फ़ाइल में अपनी हाल ही में बनाई गई स्टाइलशीट इम्पोर्ट करें:
 
 ```javascript:title=gatsby-browser.js
 import "./src/styles/global.css"
@@ -114,43 +114,41 @@ import "./src/styles/global.css"
 // require('./src/styles/global.css')
 ```
 
-> Note: Both CommonJS (`require`) and ES Module (`import`) syntax work here. If you’re not sure which to choose, `import` is usually a good default. When working with files that are only run in a Node.js environment however (like `gatsby-node.js`), `require` will need to be used.
+> नोट: दोनों CommonJS (`require`) और ES मॉड्यूल (`import`) सिंटैक्स यहाँ काम करते हैं। यदि आप निश्चित नहीं हैं कि किसे चुनना है, तो `import` आमतौर पर एक अच्छा डिफ़ॉल्ट ओप्शंस है। केवल Node.js एन्वाइरन्मेंट में चलाई जाने वाली फ़ाइलों के साथ काम करने के लिए (जैसे `gatsby-node.js`), `require` का उपयोग करने की आवश्यकता होगी।
 
-3. Start the development server:
+3. डेवेलपमेंट सर्वर शुरू करें:
 
 ```shell
 gatsby develop
 ```
 
-If you take a look at your project in the browser, you should see a lavender background applied to the "hello world" starter:
+यदि आप ब्राउज़र में अपने प्रॉजेक्ट पर एक नज़र डालते हैं, तो आपको "हैलो वर्ल्ड" स्टार्टर पर लागू लैवेंडर बॅकग्राउंड दिखना चाहिए:
 
 ![Lavender Hello World!](global-css.png)
 
-> Tip: This part of the tutorial has focused on the quickest and most straightforward way to get started styling a Gatsby site — importing standard CSS files directly, using `gatsby-browser.js`. In most cases, the best way to add global styles is with a shared layout component. [Check out the docs](/docs/global-css/) for more on that approach.
+> नोट: ट्यूटोरियल के इस भाग मे सबसे तेज़ और सबसे सरल तरीके से Gatsby साइट को स्टाइलिंग करने पर ध्यान केंद्रित किया गया है — `gatsby-browser.js` को इस्तेमाल करके स्टैण्डर्ड सीएसएस फाइल को सीधा इम्पोर्ट कर सकते हैं।  ग्लोबल स्टाइल्स डालने का सबसे सही तरीका एक शेयर्ड लेआउट कौम्पोनॅन्ट इस्तेमाल करना है। [अधिक जानकारी के लिए डॉक्स](/docs/global-css/) देखें।
 
-## Using component-scoped CSS
+## कौम्पोनॅन्ट-स्कोप वाला सीएसएस का उपयोग करना
 
-So far, we've talked about the more traditional approach of using standard css stylesheets. Now, we'll talk about various methods of modularizing CSS to tackle styling in a component-oriented way.
+अब तक, हमने स्टॅंडर्ड सीएसएस स्टाइलशीट का उपयोग करने के अधिक पारंपरिक दृष्टिकोण के बारे में बात की है। अब, हम कौम्पोनॅन्ट-ओरियेनटेड तरीके से सीएसएस को संशोधित करने के विभिन्न तरीकों के बारे में बात करेंगे।
 
-### CSS Modules
+### सीएसएस मॉड्यूलस
 
-Let's explore **CSS Modules**. Quoting from
-[the CSS Module homepage](https://github.com/css-modules/css-modules):
+आइए **सीएसएस मॉड्यूल** को एक्सप्लोर करें। [सीएसएस मॉड्यूल होमपेज](https://github.com/css-modules/css-modules) से:
 
-> A **CSS Module** is a CSS file in which all class names and animation names
-> are scoped locally by default.
+> एक **सीएसएस मॉड्यूल** एक सीएसएस फ़ाइल है जिसमें सभी क्लास नेम्स और एनीमेशन नेम्स डिफ़ॉल्ट रूप से लोकल्ली स्कोप किए जाते हैं।
 
-CSS Modules are very popular because they let you write CSS normally but with a lot more safety. The tool automatically generates unique class and animation names, so you don't have to worry about selector name collisions.
+सीएसएस मॉड्यूल्स बहुत लोकप्रिय हैं क्योंकि वे आपको सीएसएस को सामान्य रूप से लिखने देते हैं लेकिन बहुत अधिक सुरक्षा के साथ। टूल्स ऑटोमेटिकली यूनीक क्लास नेम और एनीमेशन नेम जेनरेट करते हैं, इसलिए आपको सेलेक्टर नेम टकराव के बारे में चिंता करने की आवश्यकता नहीं है।
 
-Gatsby works out of the box with CSS Modules. This approach is highly recommended for those new to building with Gatsby (and React in general).
+Gatsby सीएसएस मॉड्यूल के साथ बिना कुछ और सेटअप किये अपने आप काम करता है। यह दृष्टिकोण उन नए लोगों के लिए रेकमेंडेड है जो Gatsby (और सामान्य रूप से React) के साथ निर्माण करने में नये है।
 
-#### ✋ Build a new page using CSS Modules
+#### ✋ सीएसएस मॉड्यूल का उपयोग करके एक नया पेज बनाएँ
 
-In this section, you'll create a new page component and style that page component using a CSS Module.
+इस अनुभाग में, आप एक नया पेज कौम्पोनॅन्ट बनाएंगे और उस पेज कौम्पोनॅन्ट को सीएसएस मॉड्यूल का उपयोग करके स्टाइल करेंगे।
 
-First, create a new `Container` component.
+सबसे पहले, एक नया 'Container' कौम्पोनॅन्ट बनाएं।
 
-1. Create a new directory at `src/components` and then, in this new directory, create a file named `container.js` and paste the following:
+1. एक नया फोल्डर `src/components` बनाएँ और फिर, इस नये फोल्डर में, 'container.js` नाम की फ़ाइल बनाएँ और निम्नलिखित को पेस्ट करें:
 
 ```javascript:title=src/components/container.js
 import React from "react"
@@ -161,9 +159,9 @@ export default ({ children }) => (
 )
 ```
 
-You'll notice you imported a css module file named `container.module.css`. Let's create that file now.
+आप नोटिस करेंगे कि आपने एक कंटेनर मॉड्यूल फ़ाइल को इम्पोर्ट किया है, जिसका नाम `container.module.css` है। अब उस फाइल को बनाते हैं।
 
-2. In the same directory (`src/components`), create a `container.module.css` file and copy/paste the following:
+2. उसी फोल्डर (`src/components`) में, एक `container.module.css` फ़ाइल बनाएं और निम्नलिखित को कॉपी/पेस्ट करें:
 
 ```css:title=src/components/container.module.css
 .container {
@@ -172,10 +170,9 @@ You'll notice you imported a css module file named `container.module.css`. Let's
 }
 ```
 
-You'll notice that the file name ends with `.module.css` instead of the usual `.css`. This is how you tell Gatsby that this CSS file should be processed as a CSS module rather than plain CSS.
+आप देखेंगे कि फ़ाइल का नाम सामान्य के बजाय `.module.css` के साथ समाप्त होता है। इस तरह से आप Gatsby को बताते हैं कि इस सीएसएस फ़ाइल को सादे सीएसएस के बजाय सीएसएस मॉड्यूल के रूप में प्रोसेस्ड किया जाना चाहिए।
 
-3. Create a new page component by creating a file at
-   `src/pages/about-css-modules.js`:
+3. `src/pages/about-css-modules.js` पर एक फ़ाइल बनाकर एक नया पेज कौम्पोनॅन्ट बनाएँ
 
 ```javascript:title=src/pages/about-css-modules.js
 import React from "react"
@@ -190,17 +187,17 @@ export default () => (
 )
 ```
 
-Now, if you visit `http://localhost:8000/about-css-modules/`, your page should look something like this:
+अब, यदि आप `http://localhost:8000/about-css-modules/` पर जाते हैं, तो आपके पेज को कुछ इस तरह दिखना चाहिए:
 
-![Page with CSS module styles](css-modules-basic.png)
+![सीएसएस मॉड्यूल स्टाइल्स के साथ पेज](css-modules-basic.png)
 
-#### ✋ Style a component using CSS Modules
+#### ✋ सीएसएस मॉड्यूल का उपयोग करके कौम्पोनॅन्ट को स्टाइल करना
 
-In this section, you'll create a list of people with names, avatars, and short Latin biographies. You'll create a `<User />` component and style that component using a CSS module.
+इस अनुभाग में, आप नाम, अवतार और छोटे लैटिन आत्मकथाओं वाले लोगों की एक सूची बनाएंगे। अब आप सीएसएस मॉड्यूल का उपयोग करके `<User />` कौम्पोनॅन्ट बनाएँ और उस कौम्पोनॅन्ट को स्टाइल करें।
 
-1. Create the file for the CSS at `src/pages/about-css-modules.module.css`.
+1. सीएसएस के लिए एक नयी `src/pages/about-css-modules.module.css` फाइल बनाएँ।
 
-2. Paste the following into the new file:
+2. नई फ़ाइल में निम्न पेस्ट करें:
 
 ```css:title=src/pages/about-css-modules.module.css
 .user {
@@ -236,7 +233,7 @@ In this section, you'll create a list of people with names, avatars, and short L
 }
 ```
 
-3. Import the new `src/pages/about-css-modules.module.css` file into the `about-css-modules.js` page you created earlier by editing the first few lines of the file like so:
+3. आपकी पहली बनाई हुई फाइल `about-css-modules.js` की शुरू की कुछ लाइन्स को एडिट करके नयी बनायीं फाइल `src/pages/about-css-modules.module.css` को इम्पोर्ट करें::
 
 ```javascript:title=src/pages/about-css-modules.js
 import React from "react"
@@ -248,14 +245,13 @@ import Container from "../components/container"
 console.log(styles)
 ```
 
-The `console.log(styles)` code will log the resulting import so you can see the result of your processed `./about-css-modules.module.css` file. If you open the developer console (using e.g. Firefox or Chrome's developer tools) in your browser, you'll see:
+`console.log(styles)` कोड परिणामी इम्पोर्ट को लॉग करेगा ताकि आप अपने प्रोसेस्ड `about-css-modules.module.css` का परिणाम देख सके। यदि आप अपने ब्राउज़र में डेवलपर कंसोल (उदाहरण के लिए Firefox या Chrome के डेवलपर टूल का उपयोग करके) खोलते हैं, तो आप देखेंगे:
 
-![Import result of CSS module in console](css-modules-console.png)
+![कंसोल में CSS मॉड्यूल का इम्पोर्ट रिज़ल्ट](css-modules-console.png)
 
-If you compare that to your CSS file, you'll see that each class is now a key in the imported object pointing to a long string e.g. `avatar` points to `src-pages----about-css-modules-module---avatar---2lRF7`. These are the class names CSS Modules generates. They're guaranteed to be unique across your site. And because you have to import them to use the classes, there's never any question about where some CSS is being used.
+यदि आप अपनी सीएसएस फ़ाइल से तुलना करते हैं, आप देखेंगे की अब हर क्लास इम्पोर्टेड ऑब्जेक्ट में एक key है जो लॉन्ग स्ट्रिंग की तरफ इशारा कर रही है। उदाहरण के लिए `avatar` `src-pages----about-css-modules-module---avatar---2lRF7` की तरफ इशारा कर रहा है। सीएसएस मॉडल्स ये क्लास के नाम जनरेट करता है। वे आपकी साइट पर यूनीक होने की गारंटी देते हैं। और क्योंकि आपको क्लासस का उपयोग करने के लिए उन्हें इम्पोर्ट करना पड़ता है, इसलिए यहाँ कभी कोई सवाल नहीं है कि कुछ सीएसएस का उपयोग कहां किया जा रहा है।
 
-4. Create a new `<User />` component inline in the `about-css-modules.js` page
-   component. Modify `about-css-modules.js` so it looks like the following:
+4. एक नये `<User />` कौम्पोनॅन्ट  को `about-css-modules.js` पेज में इनलाइन बनाएँ। `about-css-modules.js` फाइल को एडिट करें ताकि यह निम्न की तरह दिखे:
 
 ```jsx:title=src/pages/about-css-modules.js
 import React from "react"
@@ -296,27 +292,27 @@ export default () => (
 )
 ```
 
-> Tip: Generally, if you use a component in multiple places on a site, it should be in its own module file in the `components` directory. But, if it's used only in one file, create it inline.
+> टिप: आम तौर पर, यदि आप किसी साइट पर कई स्थानों पर एक कौम्पोनॅन्ट का उपयोग करते हैं, तो यह `components` फोल्डर में अपनी मॉड्यूल फ़ाइल में होना चाहिए। लेकिन, अगर यह केवल एक फ़ाइल में उपयोग किया जाता है, तो इसे इनलाइन बनाएं।
 
-The finished page should now look like:
+समाप्त पेज अब ऐसा दिखना चाहिए:
 
-![User list page with CSS modules](css-modules-userlist.png)
+![सीएसएस मॉड्यूल के साथ उपयोगकर्ता सूची पेज](css-modules-userlist.png)
 
 ### CSS-in-JS
 
-CSS-in-JS is a component-oriented styling approach. Most generally, it is a pattern where [CSS is composed inline using JavaScript](https://reactjs.org/docs/faq-styling.html#what-is-css-in-js).
+CSS-in-JS एक कौम्पोनॅन्ट-ओरियेनटेड स्टाइलिंग दृष्टिकोण है। ज्यादातर आम तौर पर, यह एक पैटर्न है जहां [सीएसएस जावास्क्रिप्ट का उपयोग करके इनलाइन बनाया जाता है](https://reactjs.org/docs/faq-styling.html#what-is-css-in-js)।
 
-#### Using CSS-in-JS with Gatsby
+#### Gatsby के साथ CSS-in-JS का उपयोग करना
 
-There are many different CSS-in-JS libraries and many of them have Gatsby plugins already. We won't cover an example of CSS-in-JS in this initial tutorial, but we encourage you to [explore](/docs/styling/) what the ecosystem has to offer. There are mini-tutorials for two libraries, in particular, [Emotion](/docs/emotion/) and [Styled Components](/docs/styled-components/).
+कई अलग-अलग CSS-in-JS लाइब्रेरीज़ हैं और उनमें से कई में पहले से ही Gatsby प्लगइन्स मौजूद हैं। हम इस प्रारंभिक ट्यूटोरियल में CSS-in-JS के एक उदाहरण को शामिल नहीं करेंगे, लेकिन हम आपको इस बात का [पता लगाने](/docs/styling/) के लिए प्रोत्साहित करते हैं कि ईकोसिस्टम के पास देने के लिए क्या है। दो लाइब्रेरीज़ के लिए मिनी-ट्यूटोरियल हैं, विशेष रूप से, [Emotion](/docs/emotion/) और [Styled Components](/docs/styled-components/)।
 
-#### Suggested reading on CSS-in-JS
+#### CSS-in-JS के बारे में पढ़ने के लिए सुझाव
 
-If you're interested in further reading, check out [Christopher "vjeux" Chedeau's 2014 presentation that sparked this movement](https://speakerdeck.com/vjeux/react-css-in-js) as well as [Mark Dalgleish's more recent post "A Unified Styling Language"](https://medium.com/seek-blog/a-unified-styling-language-d0c208de2660).
+यदि आप आगे पढ़ने में रुचि रखते हैं, तो [Christopher "vjeux" Chedeau की 2014 की प्रस्तुति देखें, जिसने इस आंदोलन को उकसाया](https://speakerdeck.com/vjeux/react-css-in-js) और साथ ही साथ [Mark Dalgleish का हाल ही का पोस्ट "A Unified Styling Language"](https://medium.com/seek-blog/a-unified-styling-language-d0c208de2660)।
 
-### Other CSS options
+### अन्य सीएसएस ऑप्शन
 
-Gatsby supports almost every possible styling option (if there isn't a plugin yet for your favorite CSS option, [please contribute one!](/contributing/how-to-contribute/))
+Gatsby लगभग हर संभव स्टाइलिंग ऑप्शन का समर्थन करता है (अगर आपके पसंदीदा सीएसएस विकल्प के लिए अभी तक कोई प्लगइन नहीं है, तो [कृपया योगदान दें!](/contributing/how-to-contribute/))
 
 - [Typography.js](/packages/gatsby-plugin-typography/)
 - [Sass](/packages/gatsby-plugin-sass/)
@@ -324,8 +320,8 @@ Gatsby supports almost every possible styling option (if there isn't a plugin ye
 - [Stylus](/packages/gatsby-plugin-stylus/)
 - [PostCSS](/packages/gatsby-plugin-postcss/)
 
-and more!
+और काफी सारे!
 
-## What's coming next?
+## आगे क्या आ रहा है?
 
-Now continue on to [part three of the tutorial](/tutorial/part-three/), where you'll learn about Gatsby plugins and layout components.
+अब जारी रखें [ट्यूटोरियल के भाग तीन](/tutorial/part-three/), जहां आप Gatsby प्लगइन्स और लेआउट कौम्पोनॅन्ट के बारे में जानेंगे।
