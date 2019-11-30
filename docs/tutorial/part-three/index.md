@@ -1,57 +1,57 @@
 ---
-title: Creating Nested Layout Components
+शीर्षक: नेस्टेड लेआउट कौम्पोनॅन्टस बनाना
 typora-copy-images-to: ./
 disableTableOfContents: true
 ---
 
-Welcome to part three!
+भाग तीन में आपका स्वागत है!
 
-## What's in this tutorial?
+## इस ट्यूटोरियल में क्या है?
 
-In this part, you'll learn about Gatsby plugins and creating "layout" components.
+इस भाग में, आप Gatsby प्लगइन्स और "लेआउट" कौम्पोनॅन्टस बनाने के बारे में जानेंगे।
 
-Gatsby plugins are JavaScript packages that help add functionality to a Gatsby site. Gatsby is designed to be extensible, which means plugins are able to extend and modify just about everything Gatsby does.
+Gatsby प्लगइन्स जावास्क्रिप्ट पैकेज हैं जो एक Gatsby साइट में फ़ंक्शनैलिटी डालने में मदद करते हैं। Gatsby को एक्स्टेंसिबल रहने के लिए डिज़ाइन किया गया है, जिसका अर्थ है प्लगिन्स सब कुछ जो Gatsby करता है उसको एक्सटेंड और मॉडिफाई कर सकते है।
 
-Layout components are for sections of your site that you want to share across multiple pages. For example, sites will commonly have a layout component with a shared header and footer. Other common things to add to layouts are a sidebar and/or navigation menu. On this page for example, the header at the top is part of gatsbyjs.org's layout component.
+लेआउट कौम्पोनॅन्टस आपकी साइट के उन हिस्सों के लिए हैं जिन्हें आप कई पेजेज़ में शेयर करना चाहते हैं। उदाहरण के लिए, साइटों में आमतौर पर एक शेयर्ड हेडर और फुटर के साथ एक लेआउट कौम्पोनॅन्टस होगा। लेआउट में जोड़ने के लिए अन्य सामान्य चीजें एक साइडबार और / या नेविगेशन मेनू हैं। उदाहरण के लिए इस पेज पर, सबसे ऊपर का हेडर gatsbyjs.org के लेआउट कौम्पोनॅन्ट का हिस्सा है।
 
-Let's dive into part three.
+चलिए भाग तीन शुरू करते हैं।
 
-## Using plugins
+## प्लगइन्स का उपयोग करना
 
-You’re probably familiar with the idea of plugins. Many software systems support adding custom plugins to add new functionality or even modify the core workings of the software. Gatsby plugins work the same way.
+आप शायद प्लगइन्स के विचार से परिचित हैं। कई सॉफ्टवेयर सिस्टम नई कार्यक्षमता ऐड करने या सॉफ़्टवेयर के मुख्य कामकाज को संशोधित करने के लिए कस्टम प्लगइन्स को ऐड करने का समर्थन करते हैं। Gatsby प्लगइन्स उसी तरह काम करते हैं।
 
-Community members (like you!) can contribute plugins (small amounts of JavaScript code) that others can then use when building Gatsby sites.
+समुदाय के सदस्य (आप की तरह!) प्लगइन्स (थोड़े से जावास्क्रिप्ट कोड) का योगदान कर सकते हैं जो अन्य लोग तब उपयोग कर सकते हैं जब Gatsby साइटों का निर्माण करते हैं।
 
-> There are already hundreds of plugins! Explore the Gatsby [Plugin Library](/plugins/).
+> पहले से ही सैकड़ों प्लगइन्स हैं! गैट्सबी [प्लगइन लाइब्रेरी](/plugins/) को एक्स्प्लोर करें।
 
-Our goal with plugins is to make them straightforward to install and use. You will likely be using plugins in almost every Gatsby site you build. While working through the rest of the tutorial you’ll have many opportunities to practice installing and using plugins.
+प्लगइन्स के साथ हमारा लक्ष्य उन्हें आसानी से इनस्टॉल और इस्तेमाल करने का है। आप संभवतः आपके द्वारा बनाए गए लगभग हर Gatsby साइट में प्लगइन्स का उपयोग कर रहे होंगे। बाकी ट्यूटोरियल के माध्यम से काम करते समय आपके पास प्लगइन्स को इनस्टॉल करने और उपयोग करने के कई अवसर हैं।
 
-For an initial introduction to using plugins, we'll install and implement the Gatsby plugin for Typography.js.
+प्लगइन्स का उपयोग करने के लिए प्रारंभिक परिचय के लिए, हम टाइपोग्राफी के लिए Gatsby प्लगइन को इनस्टॉल और इम्प्लीमेंट करेंगे।
 
-[Typography.js](https://kyleamathews.github.io/typography.js/) is a JavaScript library which generates global base styles for your site's typography. The library has a [corresponding Gatsby plugin](/packages/gatsby-plugin-typography/) to streamline using it in a Gatsby site.
+[Typography.js](https://kyleamathews.github.io/typography.js/) एक जावास्क्रिप्ट लाइब्रेरी है जो आपकी साइट की टाइपोग्राफी के लिए वैश्विक बेस स्टाइल्स उत्पन्न करती है। लाइब्रेरी में एक Gatsby साइट का उपयोग करके इसे स्ट्रीमलाइन करने के लिए [संबंधित Gatsby प्लगइन](/packages/gatsby-plugin-typography/) है।
 
-### ✋ Create a new Gatsby site
+### ✋ एक नई गैट्सबी साइट बनाएँ
 
-As we mentioned in [part two](/tutorial/part-two/), at this point it's probably a good idea to close the terminal window(s) and project files from previous parts of the tutorial, to keep things clean on your desktop. Then open a new terminal window and run the following commands to create a new Gatsby site in a directory called `tutorial-part-three` and then move to this new directory:
+जैसा कि हमने उल्लेख किया है [भाग दो](/tutorial/part-two/) में, इस बिंदु पर टर्मिनल विंडो (एस) को बंद करना और ट्यूटोरियल के पिछले हिस्सों से परियोजना फाइलों को अपने काम पर रखने के लिए शायद एक अच्छा विचार है। इससे आप अपना डेस्कटॉप साफ़ रख सकते हैं। फिर एक नई टर्मिनल विंडो खोलें और `ट्यूटोरियल-पार्ट-थ्री` नामक एक निर्देशिका में एक नई गैट्सबी साइट बनाने के लिए निम्न कमांड चलाएं और फिर इस नई निर्देशिका में जाएं:
 
 ```shell
 gatsby new tutorial-part-three https://github.com/gatsbyjs/gatsby-starter-hello-world
 cd tutorial-part-three
 ```
 
-### ✋ Install and configure `gatsby-plugin-typography`
+### ✋ `gatsby-plugin-typography` इनस्टॉल और कॉन्फ़िगर करें`
 
-There are two main steps to using a plugin: Installing and configuring.
+प्लगइन का उपयोग करने के दो मुख्य चरण हैं: इंस्टॉल करना और कॉन्फ़िगर करना।
 
-1. Install the `gatsby-plugin-typography` NPM package.
+1. `gatsby-plugin-typography` NPM पैकेज इंस्टॉल करें।
 
 ```shell
 npm install --save gatsby-plugin-typography react-typography typography typography-theme-fairy-gates
 ```
 
-> Note: Typography.js requires a few additional packages, so those are included in the instructions. Additional requirements like this will be listed in the "install" instructions of each plugin.
+> नोट: Typography.js को कुछ अतिरिक्त पैकेजों की आवश्यकता होती है, इसलिए उन्हें निर्देशों में शामिल किया जाता है। इस तरह की अतिरिक्त आवश्यकताएं प्रत्येक प्लगइन के "इंस्टॉल" निर्देशों में सूचीबद्ध होंगी।
 
-2. Edit the file `gatsby-config.js` at the root of your project to the following:
+2. निम्नलिखित के लिए अपनी परियोजना के रुट में फ़ाइल `gatsby-config.js` एडिट करें:
 
 ```javascript:title=gatsby-config.js
 module.exports = {
@@ -66,11 +66,11 @@ module.exports = {
 }
 ```
 
-The `gatsby-config.js` is another special file that Gatsby will automatically recognize. This is where you add plugins and other site configuration.
+`gatsby-config.js` एक और विशेष फ़ाइल है जिसे Gatsby अपने आप पहचान लेगा। यह वह जगह है जहां आप प्लगइन्स और अन्य साइट कॉन्फ़िगरेशन ऐड हैं।
 
-> Check out the [doc on gatsby-config.js](/docs/gatsby-config/) to read more, if you wish.
+> यदि आप चाहें, तो और पड़ने के लिए [doc on gatsby-config.js](/docs/gatsby-config/)  को देखें।
 
-3. Typography.js needs a configuration file. Create a new directory called `utils` in the `src` directory. Then add a new file called `typography.js` to `utils` and copy the following into the file:
+3. Typography.js को कॉन्फ़िगरेशन फ़ाइल की आवश्यकता होती है। `src` डायरेक्टरी में `utils` नामक एक नई डायरेक्टरी बनाएँ। फिर `typography.js` नामक एक नई फ़ाइल को `utils` में ऐड करें और फ़ाइल में निम्नलिखित को कॉपी करें:
 
 ```javascript:title=src/utils/typography.js
 import Typography from "typography"
@@ -82,20 +82,20 @@ export const { scale, rhythm, options } = typography
 export default typography
 ```
 
-4. Start the development server.
+4. डेवलपमेंट सर्वर शुरू करें।
 
 ```shell
 gatsby develop
 ```
 
-Once you load the site, if you inspect the generated HTML using the Chrome developer tools, you’ll see that the typography plugin added a `<style>` element to the `<head>` element with its generated CSS:
+एक बार साइट लोड करने के बाद, यदि आप Chrome डेवलपर टूल का उपयोग करके जेनरेट किए गए HTML का निरीक्षण करते हैं, तो आप देखेंगे कि टाइपोग्राफी प्लगइन ने `<style>` एलिमेंट को `<head>` एलिमेंट के साथ अपने जनरेटेड CSS में जोड़ा:
 
 ![typography-styles](typography-styles.png)
 
-### ✋ Make some content and style changes
+### ✋ कुछ कंटेंट और स्टाइल में बदलाव करें
 
-Copy the following into your `src/pages/index.js` so you can see the
-effect of the CSS generated by Typography.js better.
+निम्नलिखित को अपने `src/pages/index.js` में कॉपी करें ताकि आप देख सकें की
+Typography.js द्वारा जनरेटेड CSS का प्रभाव बेहतर है।
 
 ```jsx:title=src/pages/index.js
 import React from "react"
@@ -111,12 +111,12 @@ export default () => (
 )
 ```
 
-Your site should now look like this:
+आपकी साइट को अब इस तरह दिखना चाहिए:
 
 ![no-layout](no-layout.png)
 
-Let's make a quick improvement. Many sites have a single column of text centered in the middle of the page. To create this, add the following styles to the
-`<div>` in `src/pages/index.js`.
+चलिए कुछ छोटे सुधार करते हैं। कई साइटों के पेज के मध्य में केंद्रित पाठ का एक अकेला कॉलम होता है। इसे बनाने के लिए, निम्न शैलियों को ऐड करें
+`src/pages/index.js` में `<div>`।
 
 ```jsx:title=src/pages/index.js
 import React from "react"
@@ -135,11 +135,11 @@ export default () => (
 
 ![with-layout2](with-layout2.png)
 
-Sweet. You've installed and configured your very first Gatsby plugin!
+बहुत बढ़िया। आपने अपना पहला Gatsby प्लगइन इनस्टॉल और कॉन्फ़िगर किया है!
 
-## Creating layout components
+## लेआउट कौम्पोनॅन्टस बनाना
 
-Now let's move on to learning about layout components. To get ready for this part, add a couple new pages to your project: an about page and a contact page.
+अब लेआउट कौम्पोनॅन्टस के बारे में जानने के लिए आगे बढ़ते हैं। इस भाग के लिए तैयार होने के लिए, अपनी परियोजना में कुछ नए पेज जोड़ें: एक अबाउट पेज और संपर्क पेज।
 
 ```jsx:title=src/pages/about.js
 import React from "react"
@@ -165,19 +165,19 @@ export default () => (
 )
 ```
 
-Let's see what the new about page looks like:
+आइए देखें कि अबाउट पेज में नया क्या दिखता है:
 
 ![about-uncentered](about-uncentered.png)
 
-Hmm. It would be nice if the content of the two new pages were centered like the index page. And it would be nice to have some sort of global navigation so it's easy for visitors to find and visit each of the sub-pages.
+हम्। यह अच्छा होगा यदि दो नए पेजेज की कंटेंट index पेज की तरह केंद्रित हो। और किसी प्रकार का ग्लोबल नेविगेशन करना अच्छा होगा, ताकि वीजीटर्स को प्रत्येक उप-पेजेज को खोजने और देखने में आसानी हो।
 
-You'll tackle these changes by creating your first layout component.
+आप अपना पहला लेआउट कौम्पोनॅन्टस बनाकर इन परिवर्तनों से निपटेंगे।
 
-### ✋ Create your first layout component
+### ✋ अपना पहला लेआउट कौम्पोनॅन्टस बनाएँ
 
-1. Create a new directory at `src/components`.
+1. `src/components` पर एक नई डायरेक्टरी बनाएँ।
 
-2. Create a very basic layout component at `src/components/layout.js`:
+2. `src/components/layout.js` पर एक बहुत ही बेसिक लेआउट कौम्पोनॅन्ट बनाएँ:
 
 ```jsx:title=src/components/layout.js
 import React from "react"
@@ -189,7 +189,7 @@ export default ({ children }) => (
 )
 ```
 
-3. Import this new layout component into your `src/pages/index.js` page component:
+3. इस नए लेआउट कौम्पोनॅन्टस को अपने `src/pages/index.js` पेज कौम्पोनॅन्ट में import करें:
 
 ```jsx:title=src/pages/index.js
 import React from "react"
@@ -208,17 +208,17 @@ export default () => (
 
 ![with-layout2](with-layout2.png)
 
-Sweet, the layout is working! The content of your index page is still centered.
+बहुत बढ़िया, लेआउट काम कर रहा है! आपके index पेज का कंटेंट अभी भी केंद्रित है।
 
-But try navigating to `/about/`, or `/contact/`. The content on those pages still won't be centered.
+लेकिन `/about/`, या `/contact/` के लिए नेविगेट करने का प्रयास करें। उन पेजेज का कंटेंट अभी भी केंद्रित नहीं होगी।
 
-4. Import the layout component in `about.js` and `contact.js` (as you did for `index.js` in the previous step).
+4. लेआउट कौम्पोनॅन्टस को `about.js` और `contact.js` में import करें (जैसा कि आपने पिछले चरण में `index.js` के लिए किया था)।
 
-The content of all three of your pages is centered thanks to this single shared layout component!
+एक अकेले शेयर्ड लेआउट कौम्पोनॅन्ट से तीनो पेजेज के कंटेंट सेण्टर में हो गए हैं!
 
-### ✋ Add a site title
+### ✋ एक साइट शीर्षक जोड़ें
 
-1. Add the following line to your new layout component:
+1. अपने नए लेआउट कौम्पोनॅन्टस में निम्न पंक्ति ऐड करें:
 
 ```jsx:title=src/components/layout.js
 import React from "react"
@@ -231,13 +231,13 @@ export default ({ children }) => (
 )
 ```
 
-If you go to any of your three pages, you'll see the same title added, e.g. the `/about/` page:
+यदि आप अपने तीन पेजेज में से किसी पर जाते हैं, तो आप वही टाइटल उस पेज में ऐड देखेंगे उदाहरण, `/about/` पेज:
 
 ![with-title](with-title.png)
 
-### ✋ Add navigation links between pages
+### ✋ पृष्ठों के बीच नेविगेशन लिंक ऐड करें
 
-1. Copy the following into your layout component file:
+1. अपने लेआउट कौम्पोनॅन्टस फ़ाइल में निम्नलिखित को कॉपी करें:
 
 ```jsx:title=src/components/layout.js
 import React from "react"
@@ -272,10 +272,10 @@ export default ({ children }) => (
 
 ![with-navigation2](with-navigation2.png)
 
-And there you have it! A three page site with basic global navigation.
+आखिर आपने इसे हासिल कर ही लिया है! बुनियादी ग्लोबल नेविगेशन के साथ एक तीन पेज की साइट।
 
-_Challenge:_ With your new "layout component" powers, trying adding headers, footers, global navigation, sidebars, etc. to your Gatsby sites!
+_चुनौती:_ अपनी नई "लेआउट कौम्पोनॅन्टस" शक्तियों के साथ, अपने Gatsby साइटों पर हेडर, फुटर, ग्लोबल नेविगेशन, साइडबार आदि ऐड करने की कोशिश करें!
 
-## What's coming next?
+## आगे क्या आ रहा है?
 
-Continue on to [part four of the tutorial](/tutorial/part-four/) where you'll start learning about Gatsby's data layer and programmatically creating pages!
+[ट्यूटोरियल के भाग चार](/tutorial/part-four/) पर जारी रखें जहाँ आप Gatsby के डेटा लेयर और प्रोग्राम बनाने के बारे में सीखना शुरू करेंगे।
