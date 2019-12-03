@@ -202,7 +202,7 @@ export default () => (
 
 ![Adding Header component](06-header-component.png)
 
-ब्राउज़र में, “About Gatsby” हेडर टेक्स्ट अब “This is  header.” के साथ बदल जाना चाहिए। लेकिन आप यह नहीं चाहते हैं कि “About" पेज पर “This is a header” दिखे, आप चाहेंगे की इस पर “About Gatsby” दिखे।
+ब्राउज़र में, “About Gatsby” हेडर टेक्स्ट अब “This is  header.” के साथ बदल जाना चाहिए। लेकिन आप यह नहीं चाहते हैं कि “About” पेज पर “This is a header” दिखे, आप चाहेंगे की इस पर “About Gatsby” दिखे।
 
 4. वापस `src/components/header.js` मे जाए और निम्नलिखित परिवर्तन करें:
 
@@ -240,7 +240,7 @@ export default () => (
 <Header headerText="About Gatsby" />
 ```
 
-`header.js` में, हेडर कौम्पोनॅन्ट `headerText` प्रॉप को प्राप्त करने की उम्मीद करता है (क्योंकि आपने यह उम्मीद करने के लिए इसे लिखा है)। तो आप इसे इस तरह एक्सेस कर सकते हैं:
+`header.js` में, हेडर कौम्पोनॅन्ट `headerText` prop को प्राप्त करने की उम्मीद करता है (क्योंकि आपने यह उम्मीद करने के लिए इसे लिखा है)। तो आप इसे इस तरह एक्सेस कर सकते हैं:
 
 ```jsx:title=src/components/header.js
 <h1>{props.headerText}</h1>
