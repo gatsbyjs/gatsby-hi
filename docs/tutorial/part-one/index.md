@@ -256,7 +256,7 @@ export default () => (
 
 ...आप `arbitraryPhrase` prop को एक्सेस कर सकते थे: `{props.arbitraryPhrase}`।
 
-6. इस बात पर जोर देने के लिए कि कैसे आप कौम्पोनॅन्ट को फिर से उपयोग कर सकते है, एक अतिरिक्त `<Header />` कौम्पोनॅन्ट को about page मे जोड़ें, निम्न कोड को `src/pages/about.js` फ़ाइल में ऐड करें, और सेव करें।
+6. इस बात पर जोर देने के लिए कि कैसे आप कौम्पोनॅन्ट को फिर से उपयोग कर सकते है, एक अतिरिक्त `<Header />` कौम्पोनॅन्ट को about page मे ऐड करें, निम्न कोड को `src/pages/about.js` फ़ाइल में ऐड करें, और सेव करें।
 
 ```jsx:title=src/pages/about.js
 import React from "react"
