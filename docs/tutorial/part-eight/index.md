@@ -16,7 +16,7 @@ disableTableOfContents: true
 
 इस आखरी भाग में, आप साइट को तैयार करने के लिए कुछ सामान्य चरणों से गुजरने जा रहे हैं ,आपको एक शक्तिशाली साइट डायग्नोस्टिक टूल से इंट्रोड्यूस करवाया जायेगा जिसका नाम [Lighthouse](https://developers.google.com/web/tools/lighthouse/) है| रास्ते में हम आपको कुछ और प्लगिन्स के साथ परिचित करवाएंगे जिनका आप अपने Gatsby साइट में कई बार इस्तेमाल करना चाहेंगे|
 
-## Audit with Lighthouse
+## Lighthouse के साथ ऑडिट करना
 
 [Lighthouse वेबसाइट](https://developers.google.com/web/tools/lighthouse/) से उद्धृत करते हुए:
 
