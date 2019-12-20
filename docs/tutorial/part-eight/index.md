@@ -1,5 +1,5 @@
 ---
-title: साइट को लाइव लेजाने की तैयारी 
+title: Preparing a Site to Go Live 
 typora-copy-images-to: ./
 disableTableOfContents: true
 ---
