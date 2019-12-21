@@ -1,23 +1,23 @@
 ---
-title: Community Contributions
+title: कम्युनिटी कंट्रिब्यूशंस
 ---
 
-A big part of what makes Gatsby great is each and every one of you in the community. Your contributions enrich the Gatsby experience and make it better every day.
+इस समुदाय के प्रत्येक जन Gatsby को महान बनाने में एक बड़ा भाग रखते हैं। आपका योगदान Gatsby अनुभव को समृद्ध करता है और इसे हर दिन बेहतर बनाता है।
 
-We welcome all contributions from you in the community, and would be thrilled to amplify your voice. Contributions are not limited to code, and can take all shapes and forms:
+हम समुदाय में आप सभी के योगदान का स्वागत करते हैं, और हम आपकी आवाज़ को बढ़ने में रूचि रखते हैं। योगदान देना सिर्फ कोड तक ही सीमित नहीं है, और यह सब तरह के आकार और रूप ले सकता है जैसे:
 
-- Your wonderful Gatsby.js website!
-- Gatsby starters
-- Gatsby plugins
-- Blog posts and case studies
-- Talk and lecture videos
-- Workshop materials
-- GitHub issues and pull requests
+- आपकी अद्भुत Gatsby.js वेबसाइट!
+- Gatsby स्टार्टर्स
+- Gatsby प्लगिन्स
+- ब्लॉग पोस्ट्स और केस स्टडीज़
+- टॉक और लेक्टर्स वीडियोस
+- कार्यशाला सामग्री
+- GitHub इश्यूज और पुल्ल रिक्वेस्ट्स
 
-...and anything else you can think of. Our showcase and library contribution docs are a great place to start:
+...और कुछ भी जिसके बारे आप सोच सकते हैं। हमारे शोकेस और लाइब्रेरी कॉन्ट्रिब्यूशन डॉक्स शुरुआत करने के लिए एक शानदार जगह है:
 
-- [Submit to Site Showcase](/contributing/site-showcase-submissions)
-- [Submit to Starter Library](/contributing/submit-to-starter-library/)
-- [Submit to Plugin Library](/contributing/submit-to-plugin-library/)
+- [साइट शोकेस में सबमिट करें](/contributing/site-showcase-submissions)
+- [स्टार्टर लाइब्रेरी में सबमिट करें](/contributing/submit-to-starter-library/)
+- [प्लगइन लाइब्रेरी में सबमिट करें](/contributing/submit-to-plugin-library/)
 
-Peruse the rest of our contributor docs and reach out to us on [Twitter](https://twitter.com/gatsbyjs), [Discord](https://gatsby.dev/discord), or in a [GitHub issue](/contributing/how-to-file-an-issue/) if you have any questions about contributing!
+हमारे बाकी के कंट्रीब्यूटर डॉक्स का उपयोग करें और हम तक पहुंचे [ट्विटर](https://twitter.com/gatsbyjs) पर, [डिस्कॉर्ड](https://gatsby.dev/discord) पर, या एक [GitHub इशू](/contributing/how-to-file-an-issue/) पे अगर आपके पास सहयोग देना पर कोई भी प्रश्न है!
