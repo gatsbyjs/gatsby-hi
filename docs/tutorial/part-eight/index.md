@@ -76,7 +76,7 @@ gatsby serve
 
 > वेब अप्प मैनिफेस्ट एक सरल JSON फाइल है जो ब्राउज़र को आपके वेब एप्लीकेशन के बारे में बताता है और यह भी बताता है की उसका व्यवहार कैसा होना चाहिए जब वह यूजर के मोबाइल डिवाइस या डेस्कटॉप पर इन्सटाल्ड हो।
 
-[Gatsby की मैनिफेस्ट प्लगइन](/packages/gatsby-plugin-manifest/) हर साइट बिल्ड में Gatsby को कॉन्फ़िगर करके एक `manifest.webmanifest` फाइल बनाती है। 
+[Gatsby की मैनिफेस्ट प्लगइन](/packages/gatsby-plugin-manifest/) हर साइट बिल्ड में Gatsby को कॉन्फ़िगर करके एक `manifest.webmanifest` फाइल बनाती है।
 
 ### ✋ `gatsby-plugin-manifest` का इस्तेमाल
 
