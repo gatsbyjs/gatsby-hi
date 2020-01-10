@@ -1,20 +1,20 @@
 ---
-title: Source Plugins
+शीर्षक: सोर्स प्लगइन्स
 typora-copy-images-to: ./
 disableTableOfContents: true
 ---
 
-> This tutorial is part of a series about Gatsby’s data layer. Make sure you’ve gone through [part 4](/tutorial/part-four/) before continuing here.
+> यह ट्यूटोरियल Gatsby के डेटा लेयर के बारे में एक श्रंखला का हिस्सा है। यहां जारी रखने से पहले सुनिश्चित करें कि आप [भाग 4] (/tutorial/part-four/) से गुजर चुके हैं।
 
-## What's in this tutorial?
+## इस ट्यूटोरियल में क्या है?
 
-In this tutorial, you'll be learning about how to pull data into your Gatsby site using GraphQL and source plugins. Before you learn about these plugins, however, you'll want to know how to use something called GraphiQL, a tool that helps you structure your queries correctly.
+इस ट्यूटोरियल में, आप GraphQL और सोर्स प्लगइन्स का उपयोग करके अपने Gatsby साइट में डेटा को कैसे पुल करना सीख सकते हैं। इससे पहले कि आप इन प्लगइन्स के बारे में जानें, आप यह जानना चाहेंगे कि GraphQL नामक एक चीज़ का उपयोग कैसे किया जाए, जो कि आपके क्वेरीज़ को सही ढंग से बनाने में मदद करता है।
 
-## Introducing GraphiQL
+## GraphiQL से परिचय
 
-GraphiQL is the GraphQL integrated development environment (IDE). It's a powerful (and all-around awesome) tool you'll use often while building Gatsby websites.
+GraphiQL, GraphQL एकीकृत डेवलपमेंट एनवीरोनमेंट (आईडीई) है। यह एक शक्तिशाली (और हर तरह से बहुत बढ़िया) टूल है जिसका उपयोग आप अक्सर Gatsby वेबसाइटों के निर्माण के दौरान करेंगे।
 
-You can access it when your site's development server is running—normally at
+जब आपकी साइट का डेवलपमेंट सर्वर सामान्य रूप से चल रहा हो तो आप इसे एक्सेस कर सकते हैं
 <http://localhost:8000/___graphql>.
 
 <video controls="controls" autoplay="true" loop="true">
@@ -22,32 +22,32 @@ You can access it when your site's development server is running—normally at
   <p>Your browser does not support the video element.</p>
 </video>
 
-Poke around the built-in `Site` "type" and see what fields are available on it -- including the `siteMetadata` object you queried earlier. Try opening GraphiQL and play with your data! Press <kbd>Ctrl + Space</kbd> (or use <kbd>Shift + Space</kbd> as an alternate keyboard shortcut) to bring up the autocomplete window and <kbd>Ctrl + Enter</kbd> to run the GraphQL query. You'll be using GraphiQL a lot more through the remainder of the tutorial.
+`Site` के बिल्ट-इन "type" को खोजें और देखें कि उस पर कौन से फ़ील्ड उपलब्ध हैं - `siteMetadata` ऑब्जेक्ट के साथ जो आपने पहले क्वेरी किये थे। GraphiQL को खोल के और अपने डेटा के साथ खेल के देखें। ऑटोकम्पलीट विंडो लाने के लिए  <kbd>Ctrl + Space</kbd> को दबाएं (या <kbd>Shift + Space</kbd> का इस्तेमाल करें अल्टेरनाते कीबोर्ड शॉर्टकट के रूप में) और  <kbd>Ctrl + Enter</kbd> GraphQL क्वेरी रन  करने के लिए। बाकि के बचे हुए ट्यूटोरियल से बहुत अधिक GraphiQL का उपयोग करेंगे।
 
-## Using the GraphiQL Explorer
+## GraphiQL एक्सप्लोरर का उपयोग करना
 
-The GraphiQL Explorer enables you to interactively construct full queries by clicking through available fields and inputs without the repetitive process of typing these queries out by hand.
+GraphiQL एक्सप्लोरर आपको इन क्वेरीज़ को हाथ से टाइप करने की दोहराव प्रक्रिया के बिना उपलब्ध फ़ील्ड और इनपुट के माध्यम से क्लिक करके इंटरएक्टिव तरीके से पूर्ण क्वेरी बनाने में सक्षम बनाता है।
 
 <EggheadEmbed
   lessonLink="https://egghead.io/lessons/gatsby-build-a-graphql-query-using-gatsby-s-graphiql-explorer"
   lessonTitle="Build a GraphQL Query using Gatsby’s GraphiQL Explorer"
 />
 
-## Source plugins
+## सोर्स प्लगइन्स
 
-Data in Gatsby sites can come from anywhere: APIs, databases, CMSs, local files, etc.
+Gatsby साइटों में डेटा कहीं से भी आ सकता है: APIs, डेटाबेस, CMSs, लोकल फाइलें, आदि।
 
-Source plugins fetch data from their source. E.g. the filesystem source plugin knows how to fetch data from the file system. The WordPress plugin knows how to fetch data from the WordPress API.
+सोर्स प्लगइन्स अपने सोर्स से डेटा प्राप्त करते हैं। जैसे फाइल सिस्टम सोर्स प्लगइन फाइल सिस्टम से डेटा प्राप्त करना जानता है। Wordpess प्लगइन Wordpress API से डेटा प्राप्त करना जानता है।
 
-Add [`gatsby-source-filesystem`](/packages/gatsby-source-filesystem/) and explore how it works.
+[`Gatsby-source-filesystem`](/packages/gatsby-source-filesystem/) ऐड करें और जानें कि यह कैसे काम करता है।
 
-First, install the plugin at the root of the project:
+सबसे पहले, प्रोजेक्ट की रुट में प्लगइन इंस्टॉल करें:
 
 ```shell
 npm install --save gatsby-source-filesystem
 ```
 
-Then add it to your `gatsby-config.js`:
+फिर इसे अपने `gatsby-config.js` में ऐड करें:
 
 ```javascript:title=gatsby-config.js
 module.exports = {
@@ -75,42 +75,42 @@ module.exports = {
 }
 ```
 
-Save that and restart the gatsby development server. Then open up GraphiQL again.
+सेव करें और gatsby डेवलपमेंट सर्वर को पुनरारंभ करें। इसके बाद फिर से GraphiQL को खोलें।
 
-In the explorer pane, you'll see `allFile` and `file` available as selections:
+एक्सप्लोरर पैन में, आप `allFile` और` file` सलेक्शनस के रूप में उपलब्ध देखेंगे:
 
 ![graphiql-filesystem](graphiql-filesystem.png)
 
-Click the `allFile` dropdown. Position your cursor after `allFile` in the query area, and then type <kbd>Ctrl + Enter</kbd>. This will pre-fill a query for the `id` of each file. Press "Play" to run the query:
+`AllFile` ड्रॉपडाउन पर क्लिक करें। क्वेरी क्षेत्र में `allFile` के बाद अपना कर्सर रखें, और फिर टाइप करें <kbd>Ctrl + Enter</kbd>। यह प्रत्येक फ़ाइल के `आईडी` के लिए एक क्वेरी भर देगा। क्वेरी चलाने के लिए "Play" दबाएं:
 
 ![filesystem-query](filesystem-query.png)
 
-In the Explorer pane, the `id` field has automatically been selected. Make selections for more fields by checking the field's corresponding checkbox. Press "Play" to run the query again, with the new fields:
+एक्सप्लोरर पैन में, `id` फ़ील्ड को ऑटोमेटिकली चुना गया है। फ़ील्ड के संबंधित चेकबॉक्स की जाँच करके अधिक फ़ील्ड के लिए चयन करें। नए फ़ील्ड के साथ क्वेरी चलाने के लिए "Play" दबाएं:
 
 ![filesystem-explorer-options](filesystem-explorer-options.png)
 
-Alternatively, you can add fields by using the autocomplete shortcut (<kbd>Ctrl + Space</kbd>). This will show queryable fields on the `File` nodes.
+वैकल्पिक रूप से, आप ऑटोकम्पलीट शॉर्टकट (<kbd>Ctrl + Space</kbd>) का उपयोग करके फ़ील्ड जोड़ सकते हैं। यह `File` नोड्स पर क्वेरी करने योग्य फ़ील्ड दिखाएगा।
 
 ![filesystem-autocomplete](filesystem-autocomplete.png)
 
-Try adding a number of fields to your query, pressing <kbd>Ctrl + Enter</kbd>
-each time to re-run the query. You'll see the updated query results:
+अपनी क्वेरी में कई फ़ील्ड जोड़ने का प्रयास करें, <kbd>Ctrl + Enter</kbd> दबाएं
+हर बार क्वेरी को फिर से चलाने के लिए। आपको अपडेट किए गए क्वेरी परिणाम दिखाई देंगे:
 
 ![allfile-query](allfile-query.png)
 
-The result is an array of `File` "nodes" (node is a fancy name for an object in a
-"graph"). Each `File` node object has the fields you queried for.
+इसका रिजल्ट 'File` "nodes" का एक ऐरे है (नोड एक "graph" में एक ऑब्जेक्ट के लिए एक फैंसी नाम है)। 
+प्रत्येक 'File' नोड ऑब्जेक्ट में आपके द्वारा क्वेरीड किए गए फ़ील्ड हैं।
 
-## Build a page with a GraphQL query
+## एक GraphQL क्वेरी के साथ एक पेज बनाएँ
 
-Building new pages with Gatsby often starts in GraphiQL. You first sketch out
-the data query by playing in GraphiQL then copy this to a React page component
-to start building the UI.
+Gatsby के साथ नए पेजेज़ का निर्माण अक्सर GraphiQL में शुरू होता है। पहले अाप डेटा क्वेरी
+की रूपरेखा Graphiql को इस्तेमाल करके के बना लें उसके बाद UI का निर्माण शुरू करने के लिए इसको
+कॉपी करके React पेज के कौम्पोनॅन्ट में डालें।
 
-Let's try this.
+चलो इसे टराइ करके देखते हैं।
 
-Create a new file at `src/pages/my-files.js` with the `allFile` GraphQL query you just
-created:
+`src/pages/my-files.js` पर एक नयी फाइल बनाएं `allFile` GraphQL क्वेरी के साथ जो आपने अभी
+बनाई थी:
 
 ```jsx:title=src/pages/my-files.js
 import React from "react"
@@ -142,18 +142,19 @@ export const query = graphql`
 `
 ```
 
-The `console.log(data)` line is highlighted above. It's often helpful when
-creating a new component to console out the data you're getting from the GraphQL query
-so you can explore the data in your browser console while building the UI.
+`console.log(data)` लाइन ऊपर हाइलाइटेड है। एक नया कौम्पोनॅन्ट बनाने में
+GraphQL क्वेरी से मिला हुआ डाटा कंसोल में आउटपुट करने में मददगार होता है
+इससे अाप UI बनाते समय अपने ब्राउज़र कंसोल में डेटा को देख और समझ सकते हैं।
 
-If you visit the new page at `/my-files/` and open up your browser console
-you will see something like:
+यदि आप `/my-files/` पर नए पेज पर जाते हैं और अपने ब्राउज़र कंसोल को खोलते हैं
+तो अापको उसमें कुछ ऐसा दिखेगा:
 
 ![data-in-console](data-in-console.png)
 
-The shape of the data matches the shape of the GraphQL query.
+डेटा का आकार GraphQL क्वेरी के आकार से मेल खाता है।
 
-Add some code to your component to print out the File data.
+फ़ाइल डेटा को प्रिंट करने के लिए अपने कौम्पोनॅन्ट में कुछ कोड लिखें।
+
 
 ```jsx:title=src/pages/my-files.js
 import React from "react"
@@ -209,10 +210,10 @@ export const query = graphql`
 `
 ```
 
-And now visit [http://localhost:8000/my-files](http://localhost:8000/my-files)… 😲
+और अब [http://localhost:8000/my-files](http://localhost:8000/my-files)… पर जाएँ। 😲
 
 ![my-files-page](my-files-page.png)
 
-## What's coming next?
+## आगे क्या आ रहा है?
 
-Now you've learned how source plugins bring data _into_ Gatsby’s data system. In the next tutorial, you'll learn how transformer plugins _transform_ the raw content brought by source plugins. The combination of source plugins and transformer plugins can handle all data sourcing and data transformation you might need when building a Gatsby site. Learn about transformer plugins in [part six of the tutorial](/tutorial/part-six/).
+अब आप जान गए हैं कि सोर्स प्लगइन से डेटा _into_ Gatsby डेटा सिस्टम में कैसे लाते हैं। अगले ट्यूटोरियल में, आप सीखेंगे कि ट्रांसफॉर्मर प्लगइन्स सोर्स प्लगइन्स द्वारा लाया गया रौ डेटा कैसे _transform_ करता है। सोर्स प्लगइन्स और ट्रांसफ़ॉर्मर प्लगइन्स का संयोजन सभी डेटा सोर्सिंग और डेटा ट्रांसफ़ॉर्मेशन को हैंडल कर सकता है जो आपको एक Gatsby साइट के निर्माण के समय की आवश्यकता हो सकती है। [ट्यूटोरियल के छठे भाग](/tutorial/part-six/) में ट्रांसफॉर्मर प्लगइन्स के बारे में और जानें।
