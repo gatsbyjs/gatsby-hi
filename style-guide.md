@@ -54,7 +54,7 @@ export default () => (
 ```js
 importar Reaccionar desde "reaccionar"
 exportar defecto () => (
-   <div estilo = {{color: `morado`, fontSize:` 72px`}}> ¡Hola Gatsby! </div>
+   <div estilo = {{color: `morado`, fontSize:` 72px`}}> ¡Hola Gatsby! </div>
 )
 ```
 
@@ -89,11 +89,18 @@ Use this section to list how common technical terminology should be translated.
 | Additional | एडिशनल |
 | App | एप्प |
 | Apps | ऍप्स |
+| Components | कौम्पोनॅन्टस |
 | Deploy | डेप्लॉय |
 | Directories | डायरेक्ट्रीज |
 | Execute | एग्ज़ीक्यूट |
+| Footer | फुटर |
 | Functionality | फ़ंक्शनैलिटी |
 | Javascript | जावास्क्रिप्ट |
+| Locally | लोकल्ली |
+| Menu | मेनू |
+| Options | ओप्शंस |
+| Optional | ऑप्शनल |
+| Pages | पेजेज़ |
 | Plugin | प्लगइन |
 | Professionally | प्रोफेशनली |
 | Projects | प्रोजेक्टस |
@@ -103,6 +110,7 @@ Use this section to list how common technical terminology should be translated.
 | Resolve | रीसोलव |
 | Reviewer | रीवीउअर |
 | Review | रीव्यु |
+| Shared | शेयर्ड |
 | Static | इसटैटिक |
 | Source | सोर्स |
 | Text | टेक्स्ट |
