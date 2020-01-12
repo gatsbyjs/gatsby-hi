@@ -1,31 +1,25 @@
 ---
-title: Transformer plugins
+शीर्षक: ट्रांसफॉर्मर प्लगइन्स
 typora-copy-images-to: ./
 disableTableOfContents: true
 ---
 
-> This tutorial is part of a series about Gatsby’s data layer. Make sure you’ve gone through [part 4](/tutorial/part-four/) and [part 5](/tutorial/part-five/) before continuing here.
+> यह ट्यूटोरियल Gatsby के डेटा लेयर के बारे में एक श्रंखला का हिस्सा है। यहां जारी रखने से पहले सुनिश्चित करें कि आप [भाग 4](/tutorial/part-four/) और [भाग 5](/tutorial/part-five/) से गुजर चुके हैं।
 
-## What's in this tutorial?
+## इस ट्यूटोरियल में क्या है?
 
-The previous tutorial showed how source plugins bring data _into_ Gatsby’s data system. In this tutorial, you'll learn how transformer plugins _transform_ the raw content brought by source plugins. The combination of source plugins and transformer plugins can handle all data sourcing and data transformation you might need when building a Gatsby site.
+पिछले ट्यूटोरियल मे आपने सीखा कि कैसे सोर्स प्लगइन डेटा को Gatsby के डेटा सिस्टम _मे_ लाता हैं। इस ट्यूटोरियल में, आप सीखेंगे कि कैसे ट्रांसफॉर्मर प्लगइन्स रॉ कॉंटेंट को सोर्स प्लगइन्स द्वारा _बदलता_ है। सोर्स प्लगइन्स और ट्रांसफ़ॉर्मर प्लगइन्स का संयोजन सभी डेटा सोर्सिंग और डेटा ट्रांसफ़ॉर्मेशन को हैंडल कर सकता है, जो आपको Gatsby साइट बनाते समय चाहिए।
 
-## Transformer plugins
+## ट्रांसफॉर्मर प्लगइन्स
 
-Often, the format of the data you get from source plugins isn't what you want to
-use to build your website. The filesystem source plugin lets you query data
-_about_ files but what if you want to query data _inside_ files?
+अक्सर, सोर्स प्लगइन्स से प्राप्त डेटा का फार्मेट वह नहीं होता है जो आप अपनी वेबसाइट बनाने के लिए चाहते हैं। फ़ाइल सिस्टम सोर्स प्लगइन आपके फाइल्स _के बारे में_ डेटा को query करने देता है लेकिन क्या होगा यदि आप फ़ाइलों के _अंदर_ query करना चाहते हैं?
 
-To make this possible, Gatsby supports transformer plugins which take raw
-content from source plugins and _transform_ it into something more usable.
+इसे संभव बनाने के लिए Gatsby ट्रांसफार्मर प्लगइन्स का समर्थन करता है जो सोर्स प्लगइन्स से रॉ कॉंटेंट को अधिक उपयोगी _बना_ देता है।
 
-For example, markdown files. Markdown is nice to write in but when you build a
-page with it, you need the markdown to be HTML.
+उदाहरण के लिए मार्कडाउन फाइलें। मार्कडाउन लिखना अच्छा है, लेकिन जब आप पेज का निर्माण करते हैं, आप चाहेंगे की मार्कडाउन HTML मे परिवर्तित हो जाए।
 
-Add a markdown file to your site at
-`src/pages/sweet-pandas-eating-sweets.md` (This will become your first markdown
-blog post) and learn how to _transform_ it to HTML using transformer plugins and
-GraphQL.
+अपनी साइट पर एक मार्कडाउन फ़ाइल 
+`src/pages/sweet-pandas-eating-sweets.md` ऐड करें (यह आपका पहला मार्कडाउन ब्लॉग पोस्ट बन जाएगा) और जानें कि कैसे ट्रांसफॉर्मर प्लगइन्स और GraphQL का उपयोग करके HTML को _परिवर्तित_ किया जाता है।
 
 ```markdown:title=src/pages/sweet-pandas-eating-sweets.md
 ---
@@ -40,19 +34,17 @@ Here's a video of a panda eating sweets.
 <iframe width="560" height="315" src="https://www.youtube.com/embed/4n0xNbfJLR8" frameborder="0" allowfullscreen></iframe>
 ```
 
-Once you save the file, look at `/my-files/` again—the new markdown file is in
-the table. This is a very powerful feature of Gatsby. Like the earlier
-`siteMetadata` example, source plugins can live-reload data.
-`gatsby-source-filesystem` is always scanning for new files to be added and when
-they are, re-runs your queries.
+फ़ाइल को सेव करने के बाद `/my-files/` को फिर से देखें - नई मार्कडाउन फ़ाइल टेबल के अंदर है। यह Gatsby की एक बहुत शक्तिशाली विशेषता है। पहले की तरह
+`siteMetadata` उदाहरण, सोर्स प्लगइन्स डेटा को पुनः लोड कर सकते हैं।
+`gatsby-source-filesystem` हमेशा नई फ़ाइलों को स्कैन करता रहता है और जब नयी फाइल्स ऐड हो जाती है, वे आपके queries को फिर से रन करता हैं।
 
-Add a transformer plugin that can transform markdown files:
+एक ट्रांसफॉर्मर प्लगइन ऐड करें जो मार्कडाउन फ़ाइलों को बदल सकता है:
 
 ```shell
 npm install --save gatsby-transformer-remark
 ```
 
-Then add it to the `gatsby-config.js` like normal:
+फिर इसे सामान्य की तरह `gatsby-config.js` में ऐड करें:
 
 ```javascript:title=gatsby-config.js
 module.exports = {
@@ -79,31 +71,23 @@ module.exports = {
 }
 ```
 
-Restart the development server then refresh (or open again) GraphiQL and look
-at the autocomplete:
+डेवेलपमेंट सर्वर को रीस्टार्ट करें, फिर GraphiQL को रिफ्रेश (या फिर से खोलें) करें और ऑटो-कंप्लीट को देखे:
 
 ![markdown-autocomplete](markdown-autocomplete.png)
 
-Select `allMarkdownRemark` again and run it as you did for `allFile`. You'll
-see there the markdown file you recently added. Explore the fields that are
-available on the `MarkdownRemark` node.
+`allMarkdownRemark` को फिर से सेलेक्ट करे और इसे रन करे जैसा आपने `allFile` के लिए रन किया था। आप हाल ही में आपके द्वारा ऐड किए गए मार्कडाउन फ़ाइल को देखेंगे। अब फीलड्स की छान-बीन करें जो `MarkdownRemark` नोड पर उपलब्ध है।
 
 ![markdown-query](markdown-query.png)
 
-Ok! Hopefully, some basics are starting to fall into place. Source plugins bring
-data _into_ Gatsby's data system and _transformer_ plugins transform raw content
-brought by source plugins. This pattern can handle all data sourcing and
-data transformation you might need when building a Gatsby site.
+ठीक है! उम्मीद है, कुछ बेसिक बातें अब समझ मे आने लगी होंगी। सोर्स प्लगइन्स डेटा को Gatsby डेटा सिस्टम मे लाते हैं और _ट्रांसफॉर्मर_ प्लगइन्स रॉ कॉंटेंट को स्रोत प्लगइन्स द्वारा _परिवर्तित_ करते हैं। यह पैटर्न सभी डेटा सोर्सिंग और डेटा परिवर्तन को संभाल सकता है, एक Gatsby साइट का निर्माण करते समय आपको आवश्यकता हो सकती है।
 
-## Create a list of your site's markdown files in `src/pages/index.js`
+## `src/pages/index.js` में अपनी साइट की मार्कडाउन फ़ाइलों की सूची बनाएँ
 
-Now you'll have to create a list of your markdown files on the front page. Like many
-blogs, you want to end up with a list of links on the front page pointing to each
-blog post. With GraphQL you can _query_ for the current list of markdown blog
-posts so you won't need to maintain the list manually.
+अब आपको फ्रंट पेज पर अपनी मार्कडाउन फाइलों की एक सूची बनानी होगी। अन्य के जैसे
+ब्लॉग, आप प्रत्येक ब्लॉग पोस्ट की तरफ पॉइंट करने वाले फ्रंट पेज पर लिंक की एक सूची के साथ समाप्त करना चाहते हैं। GraphQL से आप मार्कडाउन ब्लॉग पोस्ट की वर्तमान सूची के लिए _query_ कर सकते हैं इसलिए आपको मैन्युअल रूप से सूची बनाए रखने की आवश्यकता नहीं होगी।
 
-Like with the `src/pages/my-files.js` page, replace `src/pages/index.js` with
-the following to add a GraphQL query with some initial HTML and styling.
+जैसे `src/pages/my-files.js` पेज के साथ, `src/pages/index.js` को 
+कुछ प्रारंभिक HTML और स्टाइलिंग के साथ GraphQL query ऐड करने के लिए निम्नलिखित मे बदलें।
 
 ```jsx:title=src/pages/index.js
 import React from "react"
@@ -169,12 +153,12 @@ export const query = graphql`
 `
 ```
 
-Now the frontpage should look like:
+अब फ्रंट पेज कुछ इस तरह दिखना चाहिए:
 
 ![frontpage](frontpage.png)
 
-But your one blog post looks a bit lonely. So let's add another one at
-`src/pages/pandas-and-bananas.md`
+लेकिन आपका ब्लॉग पोस्ट थोड़ा अकेला लग रहा है। तो चलिए एक और 
+`src/pages/pandas-and-bananas.md` ऐड करते हैं
 
 ```markdown:title=src/pages/pandas-and-bananas.md
 ---
@@ -190,35 +174,22 @@ seem to really enjoy bananas!
 
 ![two-posts](two-posts.png)
 
-Which looks great! Except… the order of the posts is wrong.
+अब बहुत अच्छा लग रहा है! सिवाय... पोस्ट का क्रम गलत है।
 
-But this is easy to fix. When querying a connection of some type, you can pass a
-variety of arguments to the GraphQL query. You can `sort` and `filter` nodes, set how
-many nodes to `skip`, and choose the `limit` of how many nodes to retrieve. With
-this powerful set of operators, you can select any data you want—in the format you
-need.
+लेकिन इसे ठीक करना बहुत ही आसान है। किसी प्रकार के कनेक्शन की query करते समय, आप GraphQL query को विभिन्न प्रकार के arguments पास कर सकते हैं। आप नोड को `sort` और `filter` कर सकते हैं, सेट करें कितने नोड्स को `skip` करना है, और कितने नोड्स को पुनः प्राप्त करने की `limit` भी सेलेक्ट कर सकते है। साथ में ऑपरेटरों का यह शक्तिशाली सेट, आप अपने इच्छित किसी भी डेटा का चयन कर सकते हैं जिस भी फॉर्मॅट मे आपको चाहिए।
 
-In your index page's GraphQL query, change `allMarkdownRemark` to
-`allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC })`. _Note: There are 3 underscores between `frontmatter` and `date`._ Save
-this and the sort order should be fixed.
+अपने इंडेक्स पेज की GraphQL query में, `allMarkdownRemark` को `allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC })` मे बदलें। _Note: `frontmatter` और `date` के बीच 3 अंडरस्कोर हैं।_ इसे सेव करे और sort का क्रम ठीक हो जाना चाहिए।
 
-Try opening GraphiQL and playing with different sort options. You can sort the
-`allFile` connection along with other connections.
+GraphiQL को खोले और विभिन्न प्रकार के विकल्पों के साथ खेलने का प्रयास करें। आप अन्य कनेक्शन के साथ `allFile` कनेक्शन को sort कर सकते हैं।
 
-For more documentation on our query operators, explore our [GraphQL reference guide.](/docs/graphql-reference/)
+हमारे query ऑपरेटरों पर और अधिक डॉक्युमेंटेशन के लिए, हमारे [GraphQL संदर्भ गाइड](/docs/graphql-reference/) को देखे
 
-## Challenge
+## चुनौती
 
-Try creating a new page containing a blog post and see what happens to the list of blog posts on the homepage!
+एक नया पोस्ट बनाने का प्रयास करें जिसमें ब्लॉग पोस्ट हो और देखें कि होमपेज पर ब्लॉग पोस्ट की सूची में क्या होता है!
 
-## What's coming next?
+## आगे क्या आ रहा है?
 
-This is great! You've just created a nice index page where you're querying your markdown
-files and producing a list of blog post titles and excerpts. But you don't want to just see excerpts, you want actual pages for your markdown files.
+यह भी खूब रही! आपने अभी एक अच्छा इंडेक्स पेज बनाया है जहाँ आप अपने मार्कडाउन फाइल्स को query कर रहे हैं और ब्लॉग पोस्ट शीर्षक और अंश की एक सूची का निर्माण कर रहे है। लेकिन आप केवल अंश नहीं देखना चाहते हैं, आप अपनी मार्कडाउन फ़ाइलों के लिए वास्तविक पेज बनाना चाहते हैं।
 
-You could continue to create pages by placing React components in `src/pages`. However, you'll
-next learn how to _programmatically_ create pages from _data_. Gatsby is _not_
-limited to making pages from files like many static site generators. Gatsby lets
-you use GraphQL to query your _data_ and _map_ the query results to _pages_—all at build
-time. This is a really powerful idea. You'll be exploring its implications and
-ways to use it in the next tutorial, where you'll learn how to [programmatically create pages from data](/tutorial/part-seven/).
+आप `src/pages` में React कौम्पोनॅन्टस को रखकर पेज बनाना जारी रख सकते हैं। हालाँकि, आगे आप सीखेंगे कि _programmatically_ _डेटा_ से पेजेज कैसे बनाएं। Gatsby सिर्फ़ static साइट जनरेटर, जैसे फ़ाइलों से पेज बनाने तक सीमित नही है। Gatsby GraphQL का उपयोग करके डेटा को query करने देता है और बिल्ड टाइम मे query रिज़ल्ट्स को पेजेज मे परिवर्तित कर देता है। यह वास्तव में शक्तिशाली विचार है। अगले [डेटा से programmatically पेजेज बनाना](/tutorial/part-seven/) ट्यूटोरियल में इसका उपयोग करने के तरीके को सीखेंगे।
