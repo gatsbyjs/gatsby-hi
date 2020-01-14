@@ -338,7 +338,7 @@ export const query = graphql`
 
 ## इसको बेहतर बनाते जाइये
 
-इस भाग मे, हमने आपको कुछ Gatsby-स्पेसिफिक टूल्स दिखाए जो आपकी साइट की प्रदर्शन को बढ़ाता है और आपके साइट को लाइव लेजाने मे आपकी मदद करता है। 
+इस भाग मे, हमने आपको कुछ Gatsby-स्पेसिफिक टूल्स दिखाए जो आपकी साइट की प्रदर्शन को बढ़ाता है और आपकी साइट को लाइव लेजाने मे आपकी मदद करता है। 
 
 साइट मे सुधार लाने के लिए और सीखने के लिए Lighthouse एक बहुत उपयोगी साधन है -- इसमें बताये गए विस्तृत प्रतिक्रिया को देखना जारी रखिये और अपने साइट को बेहतर बनाते जाइये!
 
@@ -355,7 +355,7 @@ export const query = graphql`
 ### आधिकारिक स्टार्टर्स
 
 1.  [Gatsby का डिफ़ॉल्ट स्टार्टर](https://github.com/gatsbyjs/gatsby-starter-default): इस बॉयलरप्लेट के साथ अपने प्रोजेक्ट की शुरुआत कीजिये।
-यह बारबोनेस स्टार्टर, Gatsby के मुख्य कॉन्फ़िगरेशन फाइल्स के साथ शिप किया जाता है जिसकी आपको ज़रूरत पड़ सकती है। _[काम करता हुआ उदाहरण](http://gatsbyjs.github.io/gatsby-starter-default/)_
+यह बैरबोनस स्टार्टर, Gatsby के मुख्य कॉन्फ़िगरेशन फाइल्स के साथ शिप किया जाता है जिसकी आपको ज़रूरत पड़ सकती है। _[काम करता हुआ उदाहरण](http://gatsbyjs.github.io/gatsby-starter-default/)_
 2.  [Gatsby का ब्लॉग स्टार्टर](https://github.com/gatsbyjs/gatsby-starter-blog): मस्त और अधिक तेज़ ब्लॉग बनाने के लिए Gatsby का स्टार्टर। _[चलता हुआ उदाहरण](http://gatsbyjs.github.io/gatsby-starter-blog/)_
 3.  [Gatsby का हेलो वर्ल्ड स्टार्टर](https://github.com/gatsbyjs/gatsby-starter-hello-world): Gatsby साइट बनाने के लिए अधिकतम काम ज़रूरतों वाला Gatsby का स्टार्टर।_[चलता हुआ उदाहरण](https://gatsby-starter-hello-world-demo.netlify.com/)_
 
