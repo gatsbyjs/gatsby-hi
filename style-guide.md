@@ -97,12 +97,14 @@ Use this section to list how common technical terminology should be translated.
 | Functionality | फ़ंक्शनैलिटी |
 | Javascript | जावास्क्रिप्ट |
 | Locally | लोकल्ली |
+| Markdown | मार्कडाउन |
 | Menu | मेनू |
 | Options | ओप्शंस |
 | Optional | ऑप्शनल |
 | Pages | पेजेज़ |
 | Plugin | प्लगइन |
 | Professionally | प्रोफेशनली |
+| Programmatically | प्रोग्रमैटिकली |
 | Projects | प्रोजेक्टस |
 | Pull | पुल्ल |
 | Query | क्वेरी |
