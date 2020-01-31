@@ -637,15 +637,15 @@ export default () => (
 
 1. इसे चलाओ `npm install --save typeface-your-chosen-font`, जगह `your-chosen-font` wउस फ़ॉन्ट के नाम के साथ जिसे आप इंस्टॉल करना चाहते हैं [the typefaces project](https://github.com/KyleAMathews/typefaces).
 
-An example to load the popular 'Source Sans Pro' font would be: `npm install --save typeface-source-sans-pro`.
+लोकप्रिय 'सोर्स सेन्स प्रो' फ़ॉन्ट को लोड करने के लिए एक उदाहरण होगा: `npm install --save typeface-source-sans-pro`.
 
-2. Add `import "typeface-your-chosen-font"` to a layout template, page component, or `gatsby-browser.js`.
+2. जोड़ना `import "typeface-your-chosen-font"`एक लेआउट टेम्पलेट, पेज घटक, या`gatsby-browser.js`.
 
 ```jsx:title=src/components/layout.js
 import "typeface-your-chosen-font"
 ```
 
-3. Once it's imported, you can reference the font name in a CSS stylesheet, CSS Module, or CSS-in-JS.
+3. एक बार जब यह आयात हो जाता है, तो आप CSS स्टाइलशीट, CSS Module या CSS-in-JS. में फ़ॉन्ट नाम का संदर्भ दे सकते हैं।
 
 ```css:title=src/components/layout.css
 body {
@@ -653,128 +653,129 @@ body {
 }
 ```
 
-_NOTE: So for the above example, the relevant CSS declaration would be `font-family: 'Source Sans Pro';`_
+_NOTE: तो उपरोक्त उदाहरण के लिए, प्रासंगिक सीएसएस घोषणा होगी `font-family: 'Source Sans Pro';`_
 
-#### Additional resources
+#### अतिरिक्त संसाधन
 
-- [Typography.js](/docs/typography-js/) - Another option for using Google fonts on a Gatsby site
+- [Typography.js](/docs/typography-js/) - एक Gatsby साइट पर Google फोंट का उपयोग करने का दूसरा विकल्प
 - [The Typefaces Project Docs](https://github.com/KyleAMathews/typefaces/blob/master/README.md)
 - [Live example on Kyle Mathews' blog](https://www.bricolage.io/typefaces-easiest-way-to-self-host-fonts/)
 
-## 3. Working with starters
+## 3.शुरुआत के साथ काम करना
 
 [Starters](/docs/starters/) are boilerplate Gatsby sites maintained officially, or by the community.
 
-### Using a starter
+### स्टार्टर का उपयोग करना
 
-#### Prerequisites
+#### पूर्वापेक्षाएँ
 
-- The [Gatsby CLI](/docs/gatsby-cli) installed
+- The [Gatsby CLI](/docs/gatsby-cli) स्थापित किया गया
 
-#### Directions
+#### दिशा-निर्देश
 
-1. Find the starter you'd like to use. (_The [Starter Library](/starters/?v=2) is a good place to look!_)
+1. वह स्टार्टर ढूंढें जिसका आप उपयोग करना चाहते हैं। (_The [Starter Library](/starters/?v=2) देखने के लिए एक अच्छी जगह है! _) 
 
-2. Generate a new site based on the starter. In the terminal, run:
+2. स्टार्टर के आधार पर एक नई साइट बनाएं। टर्मिनल में, चलाएं: 
 
 ```shell
-gatsby new {your-project-name} {link-to-starter}
+gatsby new {अपने-परियोजना के नाम} {लिंक करने के लिए स्टार्टर}
 ```
 
 > _Don't run the above command as-is -- remember to replace {your-project-name} and {link-to-starter}!_
 
-3. Run your new site:
+3. अपनी नई साइट चलाएं:
 
 ```shell
-cd {your-project-name}
+cd {अपने-परियोजना के नाम}
 gatsby develop
 ```
 
-#### Additional resources
+#### अतिरिक्त संसाधन
 
-- Follow a [more detailed guide](/docs/starters/) on using Gatsby starters.
-- Learn how to use the [Gatsby CLI](/docs/gatsby-cli) tool to use starters in [tutorial part one](/tutorial/part-one/#using-gatsby-starters)
-- Browse the [Starter Library](/starters/?v=2)
-- Check out Gatsby's [official default starter](https://github.com/gatsbyjs/gatsby-starter-default)
+- Gatsby शुरुआत का उपयोग करने पर एक [more detailed guide](/docs/starters/)का पालन करें।
 
-## 4. Working with themes
+-जानें कि कैसे उपयोग करें [Gatsby CLI](/docs/gatsby-cli) में शुरुआत का उपयोग करने के लिए उपकरण [tutorial part one](/tutorial/part-one/#using-gatsby-starters)
+- ब्राउज़ करें [Starter Library](/starters/?v=2)
+- Gatsby की जाँच करें [official default starter](https://github.com/gatsbyjs/gatsby-starter-default)
 
-A Gatsby theme abstracts Gatsby configuration (shared functionality, data sourcing, design) into an installable package. This means that the configuration and functionality isn’t directly written into your project, but rather versioned, centrally managed, and installed as a dependency. You can seamlessly update a theme, compose themes together, and even swap out one compatible theme for another.
+## 4. थीम के साथ काम करना
 
-- Read more on [What is a Gatsby Theme?](/docs/themes/what-are-gatsby-themes)
+एक Gatsby विषय अमूर्त Gatsby विन्यास (साझा कार्यक्षमता, डेटा सोर्सिंग, डिज़ाइन) को एक संस्थापित पैकेज में देता है। इसका मतलब यह है कि कॉन्फ़िगरेशन और कार्यक्षमता सीधे आपकी परियोजना में नहीं लिखी गई है, बल्कि संस्करण, केंद्रीय रूप से प्रबंधित, और एक निर्भरता के रूप में स्थापित है। आप मूल रूप से एक विषय को अपडेट कर सकते हैं, एक साथ विषयों की रचना कर सकते हैं, और यहां तक कि दूसरे के लिए एक संगत विषय को स्वैप कर सकते हैं।
 
-### Creating a new site using a theme starter
+- आगे पढ़ें [What is a Gatsby Theme?](/docs/themes/what-are-gatsby-themes)
 
-Creating a site based on a starter that configures a theme follows the same process as creating a site based on a starter that **doesn't** configure a theme. In this example you can use the [starter for creating a new site that uses the official Gatsby blog theme](https://github.com/gatsbyjs/gatsby-starter-blog-theme).
+### थीम स्टार्टर का उपयोग करके एक नई साइट बनाना
 
-#### Prerequisites
+किसी विषय को कॉन्फ़िगर करने वाले स्टार्टर के आधार पर साइट बनाना उसी प्रक्रिया का अनुसरण करता है जैसे स्टार्टर के आधार पर साइट बनाना जो ** थीम को कॉन्फ़िगर नहीं करता है। इस उदाहरण में आप उपयोग कर सकते हैं 
+[starter for creating a new site that uses the official Gatsby blog theme](https://github.com/gatsbyjs/gatsby-starter-blog-theme).
 
-- The [Gatsby CLI](/docs/gatsby-cli) installed
+#### आवश्यक शर्तें
 
-#### Directions
+- [Gatsby CLI](/docs/gatsby-cli) स्थापित
 
-1. Generate a new site based on the blog theme starter:
+#### दिशा-निर्देश
+
+1. ब्लॉग थीम स्टार्टर के आधार पर एक नई साइट बनाएं:
 
 ```shell
 gatsby new {your-project-name} https://github.com/gatsbyjs/gatsby-starter-blog-theme
 ```
 
-2. Run your new site:
+2. अपनी नई साइट चलाएं:
 
 ```shell
 cd {your-project-name}
 gatsby develop
 ```
 
-#### Additional resources
+#### अतिरिक्त संसाधन
 
-- Learn how to use an existing Gatsby theme in the [shorter conceptual guide](/docs/themes/using-a-gatsby-theme) or the more detailed [step-by-step tutorial](/tutorial/using-a-theme).
+- में मौजूदा गैट्सबी थीम का उपयोग करना सीखें [shorter conceptual guide](/docs/themes/using-a-gatsby-theme) या अधिक विस्तृत [step-by-step tutorial](/tutorial/using-a-theme).
 
-### Building a new theme
+### एक नए विषय का निर्माण
 
 <EggheadEmbed
   lessonLink="https://egghead.io/lessons/gatsby-use-the-gatsby-theme-workspace-starter-to-begin-building-a-new-theme"
-  lessonTitle="Use the Gatsby Theme Workspace Starter to Begin Building a New Theme"
+  lessonTitle="एक नए थीम का निर्माण शुरू करने के लिए गैट्सबी थीम वर्कस्पेस स्टार्टर का उपयोग करें"
 />
 
-#### Prerequisites
+####आवश्यक शर्तें
 
-- The [Gatsby CLI](/docs/gatsby-cli) installed
+- The [Gatsby CLI](/docs/gatsby-cli)स्थापित
 
-* [Yarn](https://yarnpkg.com/lang/en/docs/install/#mac-stable) installed
+* [Yarn](https://yarnpkg.com/lang/en/docs/install/#mac-stable) स्थापित
 
-#### Directions
+#### दिशा-निर्देश
 
-1. Generate a new theme workspace using the [Gatsby theme workspace starter](https://github.com/gatsbyjs/gatsby-starter-theme-workspace):
+1.का उपयोग कर एक नया विषय कार्यक्षेत्र उत्पन्न करें [Gatsby theme workspace starter](https://github.com/gatsbyjs/gatsby-starter-theme-workspace):
 
 ```shell
 gatsby new {your-project-name} https://github.com/gatsbyjs/gatsby-starter-theme-workspace
 ```
 
-2. Run the example site in the workspace:
+2. कार्यस्थान में उदाहरण साइट चलाएँ:
 
 ```shell
 yarn workspace example develop
 ```
 
-#### Additional resources
+#### अतिरिक्त संसाधन
 
-- Follow a [more detailed guide](/docs/themes/building-themes/) on using the Gatsby theme workspace starter.
-- Learn how to build your own theme in the [Gatsby Theme Authoring video course on Egghead](https://egghead.io/courses/gatsby-theme-authoring), or in the [video course's complementary written tutorial companion](/tutorial/building-a-theme).
+-एक का पालन करें [more detailed guide](/docs/themes/building-themes/) Gatsby विषय कार्यक्षेत्र स्टार्टर का उपयोग करने पर।
+- में अपनी खुद की थीम बनाने का तरीका जानें [Gatsby Theme Authoring video course on Egghead](https://egghead.io/courses/gatsby-theme-authoring), or in the [video course's complementary written tutorial companion](/tutorial/building-a-theme).
 
-## 5. Sourcing data
+## 5. सोर्सिंग डेटा
 
-Data sourcing in Gatsby is plugin-driven; Source plugins fetch data from their source (e.g. the `gatsby-source-filesystem` plugin fetches data from the file system, the `gatsby-source-wordpress` plugin fetches data from the WordPress API, etc). You can also source the data yourself.
+Gatsby में डेटा सोर्सिंग प्लगइन-चालित है; स्रोत प्लगइन्स अपने स्रोत से डेटा प्राप्त करते हैं (उदा। `Gatsby-source-filesystem` प्लगइन फ़ाइल सिस्टम से डेटा प्राप्त करता है,` gatsby-source-wordpress` प्लगइन WordPress API, आदि से डेटा प्राप्त करता है)। आप डेटा को खुद भी सोर्स कर सकते हैं।
 
-### Adding data to GraphQL
+### GraphQL में डेटा जोड़ना
 
-Gatsby's [GraphQL data layer](/docs/querying-with-graphql/) uses nodes to model chunks of data. Gatsby source plugins add source nodes that you can query for, but you can also create source nodes yourself. To add custom data to the GraphQL data layer yourself, Gatsby provides methods you can leverage.
+Gatsby की [GraphQL data layer](/docs/querying-with-graphql/) नोड्स का उपयोग डेटा के मॉडल विखंडन के लिए करती है। गैट्सबी स्रोत प्लगइन्स स्रोत नोड जोड़ते हैं जिन्हें आप क्वेरी कर सकते हैं, लेकिन आप स्वयं स्रोत नोड भी बना सकते हैं। अपने आप को GraphQl डेटा लेयर में कस्टम डेटा जोड़ने के लिए, गैट्सबी उन तरीकों को प्रदान करता है जिनका आप लाभ उठा सकते हैं।
+यह नुस्खा आपको दिखाता है कि कस्टम डेटा का उपयोग कैसे किया जाए `createNode()`.
 
-This recipe shows you how to add custom data using `createNode()`.
+#### दिशा-निर्देश
 
-#### Directions
-
-1. In `gatsby-node.js` use `sourceNodes()` and `actions.createNode()` to create and export nodes to be able to query the data.
+1.`Gatsby-node.js` में डेटा को क्वेरी करने में सक्षम होने के लिए नोड्स बनाने और निर्यात करने के लिए` sourceNodes () `और` क्रियाएँ.createNode () `का उपयोग करें।
 
 ```javascript:title=gatsby-node.js
 exports.sourceNodes = ({ actions, createNodeId, createContentDigest }) => {
@@ -798,9 +799,9 @@ exports.sourceNodes = ({ actions, createNodeId, createContentDigest }) => {
 }
 ```
 
-2. Run `gatsby develop`.
+2. इसे चलाओ `gatsby develop`.
 
-   > _Note: After making changes in `gatsby-node.js` you need to re-run `gatsby develop` for the changes to take effect._
+   > _Note: `Gatsby-node.js` में परिवर्तन करने के बाद, आपको प्रभावी होने के लिए बदलावों के लिए` gatsby develop` को फिर से चलाना होगा ।_
 
 3. Query the data (in GraphiQL or in your components).
 
@@ -816,7 +817,7 @@ query MyPokemonQuery {
 }
 ```
 
-#### Additional resources
+#### अतिरिक्त संसाधन
 
 - Walk through an example using the `gatsby-source-filesystem` plugin in [tutorial part five](/tutorial/part-five/#source-plugins)
 - Search available source plugins in the [Gatsby library](/plugins/?=source)
@@ -961,7 +962,7 @@ export const pageQuery = graphql`
 
 6. Run `gatsby develop` to restart the development server. View your post in the browser: <http://localhost:8000/my-first-post>
 
-#### Additional resources
+#### अतिरिक्त संसाधन
 
 - [Tutorial: Programmatically create pages from data](/tutorial/part-seven/)
 - [Creating and modifying pages](/docs/creating-and-modifying-pages/)
@@ -1091,7 +1092,7 @@ exports.createPages = async ({ graphql, actions }) => {
 
 The dynamic pages created above in `gatsby-node.js` have unique paths for navigating to particular posts, using a template component for the posts and a sample GraphQL query to source WordPress post content.
 
-#### Additional resources
+#### अतिरिक्त संसाधन
 
 - [Getting Started with WordPress and Gatsby](/blog/2019-04-26-how-to-build-a-blog-with-wordpress-and-gatsby-part-1/)
 - More on [Sourcing from WordPress](/docs/sourcing-from-wordpress/)
@@ -1219,7 +1220,7 @@ export const query = graphql`
 
 To continue building out your Contentful site including post detail pages, check out the rest of the [Gatsby docs](/docs/sourcing-from-contentful/) and additional resources below.
 
-#### Additional resources
+#### अतिरिक्त संसाधन
 
 - [Building a Site with React and Contentful](/blog/2018-1-25-building-a-site-with-react-and-contentful/)
 - [More on Sourcing from Contentful](/docs/sourcing-from-contentful/)
@@ -1290,7 +1291,7 @@ export default ({ pageContext: { allPokemon } }) => (
 3. Run `gatsby develop` to fetch the data, build pages, and start the development server.
 4. View your homepage in a browser: <http://localhost:8000>
 
-#### Additional resources
+#### अतिरिक्त संसाधन
 
 - [Full Pokemon data repo](https://github.com/jlengstorf/gatsby-with-unstructured-data/)
 - More on using unstructured data in [Using Gatsby without GraphQL](/docs/using-gatsby-without-graphql/)
@@ -1388,7 +1389,7 @@ export const query = graphql`
 
 5. With the development server running, you can view the new page by visiting <http://localhost:8000/drupal>.
 
-#### Additional Resources
+#### अतिरिक्त संसाधन
 
 - [Using Decoupled Drupal with Gatsby](/blog/2018-08-13-using-decoupled-drupal-with-gatsby/)
 - [More on sourcing from Drupal](/docs/sourcing-from-drupal)
@@ -1440,7 +1441,7 @@ const IndexPage = ({ data }) => (
 export default IndexPage
 ```
 
-#### Additional resources
+#### अतिरिक्त संसाधन
 
 - [GraphQL and Gatsby](/docs/graphql/): understanding the expected shape of your data
 - [More on querying data in pages with GraphQL](/docs/page-query/)
@@ -1531,7 +1532,7 @@ const NonPageComponent = () => {
 export default NonPageComponent
 ```
 
-#### Additional resources
+#### अतिरिक्त संसाधन
 
 - [More on Static Query for querying data in components](/docs/static-query/)
 - [The difference between a static query and a page query](/docs/static-query/#how-staticquery-differs-from-page-query)
@@ -1584,7 +1585,7 @@ To limit data, you'll need a Gatsby site with some nodes in the GraphQL data lay
 
 5. Click the play button in the GraphiQL page and the data in the `edges` field will be limited to the number specified.
 
-#### Additional resources
+#### अतिरिक्त संसाधन
 
 - Learn about [nodes in Gatsby's GraphQL data API](/docs/node-interface/)
 - [Gatsby GraphQL reference for limiting](/docs/graphql-reference/#limit)
@@ -1645,7 +1646,7 @@ For this recipe, you'll need a Gatsby site with a collection of nodes to sort in
 
 5. Click the play button in the GraphiQL page and the data returned will be sorted ascending by the `path` field.
 
-#### Additional resources
+#### अतिरिक्त संसाधन
 
 - [Gatsby GraphQL reference for sorting](/docs/graphql-reference/#sort)
 - Learn about [nodes in Gatsby's GraphQL data API](/docs/node-interface/)
@@ -1709,7 +1710,7 @@ For this recipe, you'll need a Gatsby site with a collection of nodes to filter 
 
 5. Click the play button in the GraphiQL page. The data that matches the filter parameters should be returned, in this case only sourced Markdown files tagged with a category of 'magical creatures'.
 
-#### Additional resources
+#### अतिरिक्त संसाधन
 
 - [Gatsby GraphQL reference for filtering](/docs/graphql-reference/#filter)
 - [Complete list of possible operators](/docs/graphql-reference/#complete-list-of-possible-operators)
@@ -1765,7 +1766,7 @@ If you would like to run two queries on the same datasource, you can use an alia
 
 5. Click the play button in the GraphiQL page and 2 objects with alias names you provided should be output.
 
-#### Additional resources
+#### अतिरिक्त संसाधन
 
 - [Gatsby GraphQL reference for aliasing](/docs/graphql-reference/#aliasing)
 - Live example:
@@ -1816,7 +1817,7 @@ export const pageQuery = graphql`
 
 Fragments can be nested inside other fragments, and multiple fragments can be used in the same query.
 
-#### Additional resources
+#### अतिरिक्त संसाधन
 
 - [Simple example repo using fragments](https://github.com/gatsbyjs/gatsby/tree/master/examples/using-fragments)
 - [Gatsby GraphQL reference for fragments](/docs/graphql-reference/#fragments)
@@ -1864,7 +1865,7 @@ export default () => (
 3. Run `gatsby develop` to start the development server.
 4. View your image in the browser: <http://localhost:8000/>
 
-#### Additional resources
+#### अतिरिक्त संसाधन
 
 - [Example repo importing an image with webpack](https://github.com/gatsbyjs/gatsby/tree/master/examples/recipe-webpack-image)
 - [More on all image techniques in Gatsby](/docs/images-and-files/)
@@ -1911,7 +1912,7 @@ export default () => (
 3. Run `gatsby develop` to start the development server.
 4. View your image in the browser: <http://localhost:8000/>
 
-#### Additional resources
+#### अतिरिक्त संसाधन
 
 - [Example repo referencing an image from the static folder](https://github.com/gatsbyjs/gatsby/tree/master/examples/recipe-static-image)
 - [Using the Static Folder](/docs/static-folder/)
@@ -2110,7 +2111,7 @@ return (
 
 5. Run `gatsby develop`, to generate images from files in the filesystem (if not done already) and cache them
 
-#### Additional resources
+#### अतिरिक्त संसाधन
 
 - [Example repository illustrating these examples](https://github.com/gatsbyjs/gatsby/tree/master/examples/recipes-gatsby-image)
 - [Gatsby Image API](/docs/gatsby-image/)
@@ -2207,7 +2208,7 @@ export const pageQuery = graphql`
 
 4. Run `gatsby develop`, which will generate images for files sourced in the filesystem
 
-#### Additional resources
+#### अतिरिक्त संसाधन
 
 - [Example repository using this recipe](https://github.com/gatsbyjs/gatsby/tree/master/examples/recipes-gatsby-image)
 - [Featured images with frontmatter](/docs/working-with-images-in-markdown/#featured-images-with-frontmatter-metadata)
@@ -2265,7 +2266,7 @@ export const query = graphql`
 
 3. Restart the development server and open GraphiQL at <http://localhost:8000/___graphql>. Explore the fields available on the `MarkdownRemark` node.
 
-#### Additional resources
+#### अतिरिक्त संसाधन
 
 - [Tutorial on transforming Markdown to HTML](/tutorial/part-six/#transformer-plugins) using `gatsby-transformer-remark`
 - Browse available transformer plugins in the [Gatsby plugin library](/plugins/?=transformer)
@@ -2307,69 +2308,67 @@ There are a few reasons to do this -- for instance, hosting a blog built with Ga
 gatsby build --prefix-paths
 ```
 
-5. Make sure that your site looks the same when running `gatsby build` as with `gatsby develop`. By running `gatsby serve` when you build your site, you can test out (and debug if necessary) the finished product before deploying it live.
+5.सुनिश्चित करें कि जब आपकी साइट `gatsby build` के साथ` gatsby develop` के रूप में चल रही हो तो वही दिखता है। जब आप अपनी साइट का निर्माण कर रहे हैं, तो `gatsby serve` चलाकर, आप तैयार उत्पाद का परीक्षण कर सकते हैं (और यदि आवश्यक हो तो) इसे लाइव करने से पहले तैयार उत्पाद पर रख सकते हैं।
 
 ```shell
 gatsby build && gatsby serve
 ```
 
-#### Additional resources
+#### अतिरिक्त संसाधन
 
-- Walk through building and deploying an example site in [tutorial part one](/tutorial/part-one/#deploying-a-gatsby-site)
-- Learn about [performance optimization](/docs/performance/)
-- Read about [other deployment related topics](/docs/preparing-for-deployment/)
-- Check out the [deployment docs](/docs/deploying-and-hosting/) for specific hosting platforms and how to deploy to them
+- में एक उदाहरण साइट के निर्माण और तैनाती के माध्यम से चलो [tutorial part one](/tutorial/part-one/#deploying-a-gatsby-site)
+- के बारे में जानना [performance optimization](/docs/performance/)
+- के बारे में [other deployment related topics](/docs/preparing-for-deployment/)
+- इसकी जाँच पड़ताल करो [deployment docs](/docs/deploying-and-hosting/) विशिष्ट होस्टिंग प्लेटफार्मों के लिए और उन्हें कैसे तैनात किया जाए
+### Netlify को नियुक्त करना
 
-### Deploying to Netlify
+कमांड लाइन इंटरफ़ेस को छोड़ने के बिना अपने Gatsby एप्लिकेशन को तैनात करने के लिए [`netlify-cli`] (https://www.netlify.com/docs/cli/) का उपयोग करें।
 
-Use [`netlify-cli`](https://www.netlify.com/docs/cli/) to deploy your Gatsby application without leaving the command-line interface.
+#### आवश्यक शर्तें
 
-#### Prerequisites
+-  [Gatsby site](/docs/quick-start) एक एकल घटक के साथ `index.js`
+- [netlify-cli](https://www.npmjs.com/package/netlify-cli) स्थापित
+-  [Gatsby CLI](/docs/gatsby-cli) स्थापित
 
-- A [Gatsby site](/docs/quick-start) with a single component `index.js`
-- The [netlify-cli](https://www.npmjs.com/package/netlify-cli) package installed
-- The [Gatsby CLI](/docs/gatsby-cli) installed
+#### दिशा-निर्देश
 
-#### Directions
+1. `gatsby build` का उपयोग करके अपने गैट्सबी एप्लिकेशन का निर्माण करें
 
-1. Build your gatsby application using `gatsby build`
+2. netlify में `netlify login` का उपयोग करके लॉगिन करें
 
-2. Login into Netlify using `netlify login`
+3. कमांड चलाएँ `netlify init`। "एक नई साइट बनाएं और कॉन्फ़िगर करें" विकल्प चुनें।
 
-3. Run the command `netlify init`. Select the "Create & configure a new site" option.
+4. यदि आप चाहें तो एक कस्टम वेबसाइट का नाम चुनें या एक यादृच्छिक प्राप्त करने के लिए एंटर दबाएं।
 
-4. Choose a custom website name if you want or press enter to receive a random one.
+5. अपनी [Team](https://www.netlify.com/docs/teams/) चुनें।
 
-5. Choose your [Team](https://www.netlify.com/docs/teams/).
+6. तैनाती पथ को `public/` में बदलें
 
-6. Change the deploy path to `public/`
+7. सुनिश्चित करें कि `netlify deploy --prod` का उपयोग करके उत्पादन के लिए तैनात करने से पहले सब कुछ ठीक लगता है
 
-7. Make sure that everything looks fine before deploying to production using `netlify deploy --prod`
-
-#### Additional resources
+#### अतिरिक्त संसाधन
 
 - [Hosting on Netlify](/docs/hosting-on-netlify)
 - [gatsby-plugin-netlify](/packages/gatsby-plugin-netlify)
 
-### Deploying to ZEIT Now
+### अब ZEIT में तैनाती
 
-Use [Now CLI](https://zeit.co/download) to deploy your Gatsby application without leaving the command-line interface.
+कमांड-लाइन इंटरफ़ेस को छोड़े बिना अपने गैट्सबी एप्लिकेशन को तैनात करने के लिए [अब CLI] (https://zeit.co/download) का उपयोग करें।
+#### आवश्यक शर्तें
 
-#### Prerequisites
+- [[ZEIT Now] (https://zeit.co/signup) खाता
+- एक एकल घटक `index.js` के साथ एक [Gatsby site] (/docs/quick-start)
+- [अब CLI] (https://zeit.co/download) पैकेज इंस्टॉल किया गया
+- [Gatsby CLI](/docs/gatsby-cli) स्थापित
 
-- A [ZEIT Now](https://zeit.co/signup) account
-- A [Gatsby site](/docs/quick-start) with a single component `index.js`
-- [Now CLI](https://zeit.co/download) package installed
-- [Gatsby CLI](/docs/gatsby-cli) installed
+#### दिशा-निर्देश
 
-#### Directions
+1. अब 'अब लॉगिन' का उपयोग करके अब CLI में लॉगिन करें
 
-1. Login into Now CLI using `now login`
+2. यदि आप पहले से ही वहां नहीं हैं तो टर्मिनल में अपने Gatsby.js एप्लिकेशन की निर्देशिका में बदलें
 
-2. Change to the directory of your Gatsby.js application in the Terminal if you aren't already there
+3. इसे तैनात करने के लिए `now` चलाएं
 
-3. Run `now` to deploy it
-
-#### Additional resources
+#### अतिरिक्त संसाधन
 
 - [Deploying to ZEIT Now](/docs/deploying-to-zeit-now/)
