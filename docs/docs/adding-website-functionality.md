@@ -1,8 +1,8 @@
 ---
-title: Adding Website Functionality
-overview: true
+शीर्षक: वेबसाइट की कार्यक्षमता को जोड़ना
+अवलोकन: सच
 ---
 
-Gatsby empowers developers and creators to make a diverse amount of websites. One may wish to add additional functionality to their site such as search, authentication, forms, comments, and plenty of others. In this section, you will find a showcase of guides and concepts on how to level up your site.
+गैट्सबी विभिन्न प्रकार की वेबसाइटों को बनाने के लिए डेवलपर्स और रचनाकारों को सशक्त बनाता है। कोई अपनी साइट पर अतिरिक्त कार्यक्षमता जोड़ना चाह सकता है जैसे कि खोज, प्रमाणीकरण, प्रपत्र, टिप्पणियां और अन्य बहुत सारे। इस अनुभाग में, आपको अपनी साइट को कैसे समतल करना है, इस पर गाइड और अवधारणाओं का एक शोकेस मिलेगा।
 
 <GuideList slug={props.slug} />
