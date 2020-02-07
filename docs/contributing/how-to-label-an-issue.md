@@ -1,22 +1,23 @@
 ---
-title: How to label an issue
+
+title: किसी समस्या को label कैसे करें
 ---
 
-## What are issue labels?
+## label समस्या क्या हैं?
 
-Issue labels are a tool in GitHub that are used to group issues into one or more categories.
+इश्यू लेबल GitHub में एक उपकरण है जो एक या अधिक श्रेणियों में समूह के मुद्दों के लिए उपयोग किया जाता है।
 
-[Check out Gatsby's labels (and their descriptions)](https://github.com/gatsbyjs/gatsby/issues/labels)
+[Gatsby के label देखें (और उनके विवरण)](https://github.com/gatsbyjs/gatsby/issues/labels)
 
-## Why label issues?
+## label मुद्दे क्यों?
 
-Gatsby is a very active project with many new issues opened each day. Labelling issues helps by identifying:
+Gatsby एक बहुत ही सक्रिय परियोजना है जिसमें प्रत्येक दिन कई नए मुद्दे खोले जाते हैं। लेबलिंग मुद्दों की पहचान करने में मदद करता है:
 
-- good issues for new contributors to work on
-- reported and confirmed bugs
-- feature requests
-- duplicate issues
-- issues that are stalled or blocked
+- नए योगदानकर्ताओं के लिए अच्छे मुद्दों पर काम करना
+- bug की सूचना दी और पुष्टि की
+- सुविधा का अनुरोध
+- डुप्लिकेट मुद्दों
+- ऐसे मुद्दे जो रुके हुए या अवरुद्ध हैं
 
 ## Who can label issues?
 
