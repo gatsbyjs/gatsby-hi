@@ -19,27 +19,30 @@ Gatsby एक बहुत ही सक्रिय परियोजना �
 - डुप्लिकेट मुद्दों
 - ऐसे मुद्दे जो रुके हुए या अवरुद्ध हैं
 
-## Who can label issues?
+## मुद्दों को कौन label कर सकता है?
 
-Anyone who's a member of the [Gatsby Maintainers team](https://github.com/orgs/gatsbyjs/teams/maintainers) can label issues.
+[`Gatsby मेंटेनर्स टीम`](https://github.com/orgs/gatsbyjs/teams/maintainers) का कोई भी सदस्य हो वह
+ मुद्दों को लेबल कर सकते हैं।
 
-You can get an invite to the team by having a Pull Request merged into the Gatsby project. Check out the list of [`help wanted`](https://github.com/gatsbyjs/gatsby/labels/%F0%9F%93%8D%20status%3A%20help%20wanted) issues and the [How To Contribute Guide](/contributing/how-to-contribute/) to get started.
+पुल रिक्वेस्ट को Gatsby प्रोजेक्ट में मर्ज कर आप टीम को आमंत्रित कर सकते हैं। लिस्ट चेक करे
+ [`हेल्प चाहिए`](https://github.com/gatsbyjs/gatsby/labels/%F0%9F%93%8D%20status%3A%20help%20wanted) इशू और [कैसे कंट्रीब्यूट करे
+गाइड](/contributing/how-to-contribute/) स्टार्ट करने के लिए।
 
-**NOTE:** If you’ve already had a pull request merged and you have _not_ been invited to the maintainers team, please go to [the dashboard](https://store.gatsbyjs.org/) and request a discount code. You should get an invite to the team — _and you get free Gatsby swag!_ If that doesn’t work, please email team@gatsbyjs.com and we'll get you invited.
+**नोट:** यदि आपके पास पहले से ही एक पुल रिक्वेस्ट मिला है और आपको _नहीं_ मैंटेनेर्स टीम को आमंत्रित किया गया है,तो कृपया जायें [डैशबोर्ड](https://store.gatsbyjs.org/) और डिस्काउंट कोड का रिक्वेस्ट करें। आपको टीम को निमंत्रण मिलना चाहिए — _और आपको मुफ्त Gatsby स्वैग मिलेगा!_ अगर वह काम नहीं करता है, तो कृपया team@gatsbyjs.com पर ईमेल करें और हम आपको आमंत्रित करेंगे।
 
-## How to label an issue
+## किसी समस्या को कैसे लेबल करें
 
-Ideally, every issue should have a single `type:` label applied to it. Optionally a `status:` label or other labels may also be applied.
+आदर्श रूप से, हर मुद्दे सिंगल होना चाहिए `type:` उस पर लेबल लगाया होगा। वैकल्पिक रूप से ए `status:` लेबल या अन्य लेबल भी लगाए जा सकते हैं।
 
-Before continuing, get familiar with [Gatsby's issue labels and their descriptions](https://github.com/gatsbyjs/gatsby/issues/labels).
+जारी रखने से पहले, परिचित हो जाएं [Gatsby के इशू लेबल्स और उनके डिस्क्रीप्शन्स ](https://github.com/gatsbyjs/gatsby/issues/labels).
 
-The broad steps to labelling an issue are:
+किसी समस्या को लेबल करने के लिए व्यापक चरण हैं:
 
-- Read an issue
-- Choose the labels that apply to that issue
-- That's it - sit back and relax, maybe take a few moments to enjoy the satisfaction of a job well done
+- एक मुद्दा पढ़ें
+- उस समस्या पर लागू होने वाले लेबल चुनें
+- वह यह है - वापस बैठो और आराम करो, शायद अच्छी तरह से किए गए काम की संतुष्टि का आनंद लेने के लिए कुछ क्षण लें
 
-The rest of this document will describe how to choose the right labels for an issue.
+Th rest of this document will describe how to choose the right labels for an issue.
 
 ### Find an issue that you're interested in
 
