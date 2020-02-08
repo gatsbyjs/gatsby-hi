@@ -1,15 +1,15 @@
 ---
-title: How to Contribute
+शीर्षक: योगदान कैसे करें
 ---
 
-We want contributing to Gatsby to be fun, enjoyable, and educational for anyone and everyone. All contributions are welcome, including issues, new docs as well as updates and tweaks, blog posts, workshops, and more.
+हम किसी और सभी के लिए मजेदार, आनंददायक और शैक्षिक होने के लिए Gatsby का योगदान चाहते हैं। सभी योगदानों का स्वागत है, जिसमें इश्यूज, नए डॉक्स के साथ-साथ अपडेट और ट्वीक्स, ब्लॉग पोस्ट, कार्यशालाएं, और बहुत कुछ शामिल हैं।
 
-## Not sure how to start contributing?
+## सुनिश्चित नहीं है कि योगदान कैसे शुरू करें?
 
-If you are worried or don't know where to start, check out our [where to participate](/contributing/where-to-participate/) page. You can reach out with questions to [Marcy Sutton (@marcysutton)](https://twitter.com/marcysutton) or [@GatsbyJS](https://twitter.com/gatsbyjs) on Twitter, and anyone from the Gatsby team on [Discord](https://gatsby.dev/discord). You can also [submit an issue](/contributing/how-to-file-an-issue/) and a maintainer can give you guidance!
+यदि आप चिंतित हैं या नहीं जानते हैं कि कहां से शुरू करना है, तो हमारे [where to participate](/contributing/where-to-participate/) पृष्ठ देखें। आप ट्विटर पर [Marcy Sutton (@marcysutton)](https://twitter.com/marcysutton) या [@GatsbyJS](https://twitter.com/gatsbyjs) के सवालों के साथ और Gatsby के किसी भी व्यक्ति तक पहुँच सकते हैं टीम [Discord](https://gatsby.dev/discord) पर। आप [submit an issue](/contributing/how-to-file-an-issue/) और एक अनुचर आपको मार्गदर्शन दे सकता है!
 
-## Pair programming
+## पैर प्रोग्रामिंग 
 
-Gatsby.js offers free [pair programming sessions](/contributing/pair-programming/) to the community, if there's something you'd like to work on together. Get in touch with us if you have a question about contributing or an idea for something to pair on!
+Gatsby.js समुदाय को मुफ्त [pair programming sessions](/contributing/pair-programming/) प्रदान करता है, अगर कोई ऐसी चीज है जिस पर आप एक साथ काम करना चाहते हैं। अगर आपके पास योगदान करने या किसी चीज़ को जोड़ने के लिए एक विचार के बारे में कोई प्रश्न है, तो हमारे साथ संपर्क में रहें!
 
 <GuideList slug={props.slug} />
