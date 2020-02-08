@@ -1,9 +1,9 @@
 ---
-title: Plugins
+title: प्लगइन्स
 ---
 
-Gatsby plugins are Node.js packages that implement Gatsby APIs. For larger, more complex sites, plugins let you modularize your site customizations into site-specific plugins.
+Gatsby प्लगइन्स Node.js पैकेज हैं जो Gatsby API को इम्प्लीमेंट करते हैं। बड़े, अधिक जटिल साइटों के लिए, प्लगइन्स आपको साइट-विशिष्ट प्लगइन  में अपनी साइट के अनुकूलन को संशोधित करने देते हैं।
 
-Here are the guides in this section of the docs:
+डॉक्स के इस भाग में गाइड्स हैं:
 
 <GuideList slug={props.slug} />
