@@ -4,45 +4,45 @@ title: Accessibility Statement
 
 _Last updated: April 8, 2019_
 
-We want everyone who uses Gatsby to feel welcome and find the experience rewarding: this includes developers with disabilities and users with disabilities for Gatsby sites, docs, and resources.
+हम चाहते हैं कि सभी लोग जो Gatsby का स्वागत करने और अनुभव को पुरस्कृत करने का अनुभव करते हैं: इसमें Gatsby साइटों, डॉक्स और संसाधनों के लिए अक्षमताओं वाले उपयोगकर्ता और इस के साथ डेवलपर्स शामिल है।
 
-This page was created to collect accessibility information about the Gatsby ecosystem in one place and provide communication channels for people with disabilities to get help with Gatsby.
+यह पेज एक स्थान पर गैट्सबी पारिस्थितिक तंत्र के बारे में जानकारी प्राप्त करने और विकलांग लोगों के लिए संचार चैनल प्रदान करने के लिए गैट्सबी की सहायता प्राप्त करने के लिए बनाया गया था।
 
-## Gatsby products and services
+## Gatsby उत्पादों और सेवाओं
 
-Gatsbyjs.org is the online home of the open source Gatsby website framework; it includes documentation, tutorials, and guides on how and why to build with Gatsby, as well as a blog, site showcase, and information on how to contribute to the project.
+Gatsbyjs.org ओपन सोर्स Gatsby वेबसाइट फ्रेमवर्क का ऑनलाइन घर है; इसमें प्रलेखन, ट्यूटोरियल और गाइड शामिल हैं कि कैसे और क्यों गट्सबी के साथ निर्माण करना है, साथ ही एक ब्लॉग, साइट शोकेस, और परियोजना में योगदान करने के तरीके के बारे में जानकारी शामिल है।
 
-Gatsbyjs.com is the business website for Gatsby, Inc. the startup building Gatsby, including our first product, Gatsby Preview: a cloud service allowing team members to collaborate on a Gatsby site in development.
+Gatsbyjs.com, Gatsby, Inc. की स्टार्टअप वेबसाइट Gatsby के लिए व्यावसायिक वेबसाइट है, जिसमें हमारा पहला उत्पाद, Gatsby पूर्वावलोकन शामिल है: एक क्लाउड सेवा जो टीम के सदस्यों को विकास में एक Gatsby साइट पर सहयोग करने की अनुमति देती है।
 
-## Providing feedback and getting accessibility help
+## प्रतिक्रिया प्रदान करना और पहुँच सहायता प्राप्त करना
 
-We strive to make these websites and the Gatsby framework itself as accessible as possible. Our goal is to meet [WCAG 2.0 AA](https://www.w3.org/TR/WCAG20/), with which we are partially compliant. We’ll be the first to admit the Gatsby ecosystem is a work in progress, and we are open to all feedback to make things better.
+हम इन वेबसाइटों और गैट्सबी ढांचे को यथासंभव सुलभ बनाने का प्रयास करते हैं। हमारा लक्ष्य [WCAG 2.0 AA] (https://www.w3.org/TR/WCAG20/) को पूरा करना है, जिसके साथ हम आंशिक रूप से अनुपालन कर रहे हैं। हम सबसे पहले Gatsby पारिस्थितिक तंत्र को स्वीकार करने के लिए एक कार्य प्रगति पर है, और हम चीजों को बेहतर बनाने के लिए सभी प्रतिक्रिया के लिए खुले हैं।
 
-To contact the core team with your accessibility feedback or challenges, please [file an issue on GitHub](https://github.com/gatsbyjs/gatsby/issues/new/choose).
+अपनी पहुंच प्रतिक्रिया या चुनौतियों के साथ कोर टीम से संपर्क करने के लिए, कृपया [GitHub पर एक समस्या दर्ज करें] (https://github.com/gatsbyjs/gatsby/issues/new/choose)।
 
-Alternatively, we welcome you to reach out directly to Marcy Sutton, Head of Learning at Gatsby: [marcy@gatsbyjs.com](mailto:marcy@gatsbyjs.com)
+वैकल्पिक रूप से, हम गैट्सबी में लर्निंग के प्रमुख मारसी सटन से सीधे संपर्क करने के लिए आपका स्वागत करते हैं:[marcy@gatsbyjs.com] (mailto: marcy@gatsbyjs.com)
 
-## Building with Gatsby
+## गैट्सबी के साथ बिल्डिंग
 
-To learn how to build an accessible website with Gatsby, visit our guide [Making Your Site Accessible](/docs/making-your-site-accessible/). Contributions are very welcome as this page evolves.
+गैट्सबी के साथ एक सुलभ वेबसाइट बनाने का तरीका जानने के लिए, हमारे गाइड पर जाएं [Making Your Site Accessible](/docs/making-your-site-accessible/). Contributions are very welcome as this page evolves.
 
-## Third-party platforms, products and services
+## तृतीय-पक्ष प्लेटफ़ॉर्म, उत्पाद और सेवाएँ
 
-Common Gatsby workflows involve third-party products and services, such as sourcing from Content Management Systems, and managing and deploying sites with hosting platforms. Some of these platforms appear to have been designed and/or built without accessibility in mind; we encourage those vendors to improve their accessibility along with us.
+सामान्य Gatsby वर्कफ़्लोज़ में तृतीय-पक्ष उत्पाद और सेवाएँ शामिल हैं, जैसे सामग्री प्रबंधन प्रणालियों से सोर्सिंग, और होस्टिंग प्लेटफ़ॉर्म के साथ साइटों का प्रबंधन और तैनाती। इन प्लेटफार्मों में से कुछ को डिज़ाइन किया गया है और / या बिना पहुंच के दिमाग में बनाया गया है; हम उन विक्रेताओं को प्रोत्साहित करते हैं कि वे हमारे साथ अपनी पहुंच में सुधार करें।
 
-Our current recommendations for accessible CMS platforms are:
+सुलभ सीएमएस प्लेटफार्मों के लिए हमारी वर्तमान सिफारिशें हैं:
 
-- WordPress with the Classic Editor Plugin
-- Drupal
+- क्लासिक संपादक प्लगइन के साथ वर्डप्रेस
+- द्रुपाल
 
-For managing and deploying Gatsby sites with accessible tools, we recommend:
+सुलभ उपकरणों के साथ गैट्सबी साइटों के प्रबंधन और तैनाती के लिए, हम अनुशंसा करते हैं:
 
 - Netlify
 
-To provide feedback for third-party services, you can contact those vendors directly or [write to us](mailto:marcy@gatsbyjs.com), and we will do our best to pass the information along. We're also interested in hearing about your successes with third-party platforms!
+तृतीय-पक्ष सेवाओं के लिए फ़ीडबैक प्रदान करने के लिए, आप उन विक्रेताओं से सीधे संपर्क कर सकते हैं या [write to us](mailto:marcy@gatsbyjs.com), और हम सूचनाओं को पास करने की पूरी कोशिश करेंगे। हम तृतीय-पक्ष प्लेटफ़ॉर्म के साथ आपकी सफलताओं के बारे में सुनने में भी रुचि रखते हैं!
 
-## Surveys and research projects
+## सर्वेक्षण और अनुसंधान परियोजनाएं
 
-The Gatsby team conducts surveys and research projects from time to time. We highly value feedback from all Gatsby users, and particularly those with experience applicable to the research being conducted.
+गैट्सबी टीम समय-समय पर सर्वेक्षण और अनुसंधान परियोजनाओं का संचालन करती है। हम सभी गैट्सबी उपयोगकर्ताओं और विशेष रूप से अनुसंधान के लिए लागू अनुभव के साथ उन लोगों से अत्यधिक मूल्य प्रतिक्रिया करते हैं।
 
-To be considered for these initiatives, please contact [marcy@gatsbyjs.com](mailto:marcy@gatsbyjs.com).
+इन पहलों के लिए विचार करने के लिए, कृपया संपर्क करें [marcy@gatsbyjs.com](mailto:marcy@gatsbyjs.com)।
