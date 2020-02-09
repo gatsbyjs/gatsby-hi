@@ -6,7 +6,7 @@ title: योगदान कैसे करें
 
 ## सुनिश्चित नहीं है कि योगदान कैसे शुरू करें?
 
-यदि आप चिंतित हैं या नहीं जानते हैं कि कहां से शुरू करना है, तो हमारे [कहाँ भाग लेना है](/contributing/where-to-participate/) पेज देखें। आप अपने सवालों के साथ Twitter पर   [Marcy Sutton (@marcysutton)](https://twitter.com/marcysutton) या [@GatsbyJS](https://twitter.com/gatsbyjs) के पास जा सकते हैं, और  Gatsby टीम के किसी भी  मेंबर से [Discord](https://gatsby.dev/discord) पर। आप [submit an issue](/contributing/how-to-file-an-issue/) और एक अनुचर आपको मार्गदर्शन दे सकता है!
+यदि आप चिंतित हैं या नहीं जानते हैं कि कहां से शुरू करना है, तो हमारे [कहाँ भाग लेना है](/contributing/where-to-participate/) पेज देखें। आप अपने सवालों के साथ Twitter पर [Marcy Sutton (@marcysutton)](https://twitter.com/marcysutton) या [@GatsbyJS](https://twitter.com/gatsbyjs) के पास जा सकते हैं, और  Gatsby टीम के किसी भी  मेंबर से [Discord](https://gatsby.dev/discord) पर। आप [submit an issue](/contributing/how-to-file-an-issue/) और एक अनुचर आपको मार्गदर्शन दे सकता है!
 
 ## पेअर प्रोग्रामिंग 
 
