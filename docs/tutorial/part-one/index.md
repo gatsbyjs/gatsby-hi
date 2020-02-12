@@ -167,7 +167,11 @@ export default () => (
 )
 ```
 
+<<<<<<< HEAD
 2. अब http://localhost:8000/about/ पर जाए।
+=======
+2.  Navigate to `http://localhost:8000/about/`
+>>>>>>> fd3df38d5351bfbf1bf86cb9e0c8cc80dc9ba2a7
 
 ![New about page](05-about-page.png)
 
@@ -232,7 +236,11 @@ export default () => (
 
 ### “props” क्या है?
 
+<<<<<<< HEAD
 इससे पहले आपने React कौम्पोनॅन्ट को कोड के रियूज़बल पीसस के रूप में परिभाषित करते हुए UI के रूप मे वर्णन किया था। इन रियूज़बल पीसस को गतिशील बनाने के लिए आपको अलग-अलग डेटा के साथ सप्लाई करना होगा। आप ऐसा करते हैं "props" इनपुट के साथ। Props (उचित रूप से पर्याप्त) प्रॉपर्टीस है जिसे React कौम्पोनॅन्ट को सप्लाई की जाती है।
+=======
+Earlier, you defined React components as reusable pieces of code describing a UI. To make these reusable pieces dynamic you need to be able to supply them with different data. You do that with input called "props". Props are (appropriately enough) properties supplied to React components.
+>>>>>>> fd3df38d5351bfbf1bf86cb9e0c8cc80dc9ba2a7
 
 इम्पोर्टेड `Header` सब-कॉम्पोनेन्ट `about.js` में `headerText` prop `"About Gatsby"` वैल्यू के साथ पास किया था:
 
@@ -330,16 +338,22 @@ export default () => (
 
 <video controls="controls" loop="true">
   <source type="video/mp4" src="./10-linking-between-pages.mp4"></source>
-  <p>Sorry! You browser doesn't support this video.</p>
+  <p>Sorry! Your browser doesn't support this video.</p>
 </video>
 
 Gatsby `<Link />` कौम्पोनॅन्ट आपकी साइट के पेजेज के बीच लिंक बनाने के लिए है। आपकी Gatsby साइट द्वारा नियंत्रित नहीं किए गए पेजेज के बाहरी लिंक के लिए, नियमित HTML `<a>` टैग का उपयोग करें।
 
 ## Gatsby साइट को डिप्लाय करना
 
+<<<<<<< HEAD
 Gatsby.js एक _मॉडर्न साइट जनरेटर_ है, जिसका अर्थ है कि कोई सर्वर सेटअप या जटिल डेटाबेस को डिप्लाय करने की आवश्यकता नहीं है। इसके बजाय, Gatsby `build` कमांड स्टॅटिक HTML और Javascript फ़ाइलों की एक फोल्डर का उत्पादन करता है जिसे आप एक स्थिर स्टॅटिक होस्टिंग सेवा में डिप्लाय कर सकते हैं।
 
 अपनी पहली Gatsby वेबसाइट को डिप्लाय करने के लिए [Surge](http://surge.sh/) का उपयोग करने का प्रयास करें। Surge कई "स्टैटिक साइट होस्ट" में से एक है जो Gatsby साइटों को डिप्लाय करना संभव बनाता है।
+=======
+Gatsby.js is a _modern site generator_, which means there are no servers to set up or complicated databases to deploy. Instead, the Gatsby `build` command produces a directory of static HTML and JavaScript files which you can deploy to a static site hosting service.
+
+Try using [Surge](http://surge.sh/) for deploying your first Gatsby website. Surge is one of many "static site hosts" which makes it possible to deploy Gatsby sites.
+>>>>>>> fd3df38d5351bfbf1bf86cb9e0c8cc80dc9ba2a7
 
 यदि आपने इससे पहले Surge इंस्टॉल और सेटअप नहीं किया है, एक नई टर्मिनल विंडो खोलें और उनका कमांड-लाइन टूल इंस्टॉल करें:
 
@@ -370,7 +384,13 @@ ls public
 surge public/
 ```
 
+<<<<<<< HEAD
 एक बार जब यह समाप्त हो जाता है, तो आपको अपने टर्मिनल में कुछ इस तरह से दिखना चाहिए:
+=======
+> Note that you will have to press the `enter` key after you see the `domain: some-name.surge.sh` information on your command-line interface.
+
+Once this finishes running, you should see in your terminal something like:
+>>>>>>> fd3df38d5351bfbf1bf86cb9e0c8cc80dc9ba2a7
 
 ![Screenshot of publishing Gatsby site with Surge](surge-deployment.png)
 

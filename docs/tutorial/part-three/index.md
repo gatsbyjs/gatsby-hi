@@ -270,11 +270,15 @@ export default ({ children }) => (
 )
 ```
 
-![with-navigation2](with-navigation2.png)
+![with-navigation2](with-navigation.png)
 
 आखिर आपने इसे हासिल कर ही लिया है! बुनियादी ग्लोबल नेविगेशन के साथ एक तीन पेज की साइट।
 
+<<<<<<< HEAD
 _चुनौती:_ अपनी नई "लेआउट कौम्पोनॅन्टस" शक्तियों के साथ, अपने Gatsby साइटों पर हेडर, फुटर, ग्लोबल नेविगेशन, साइडबार आदि ऐड करने की कोशिश करें!
+=======
+_Challenge:_ With your new "layout component" powers, try adding headers, footers, global navigation, sidebars, etc. to your Gatsby sites!
+>>>>>>> fd3df38d5351bfbf1bf86cb9e0c8cc80dc9ba2a7
 
 ## आगे क्या आ रहा है?
 

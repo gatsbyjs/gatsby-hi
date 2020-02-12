@@ -1,4 +1,5 @@
 ---
+<<<<<<< HEAD
 शीर्षक: Gatsby.js ट्यूटोरियल
 disableTableOfContents: true
 ---
@@ -6,6 +7,14 @@ disableTableOfContents: true
 import EmailCaptureForm from "../../www/src/components/email-capture-form"
 
 Gatsby, React के लिए एक प्रज्वलन तेज़ आधुनिक साइट जनरेटर है।
+=======
+title: Gatsby.js Documentation
+description: The one stop location for tutorials, guides, and information about building with Gatsby
+disableTableOfContents: true
+---
+
+Gatsby is a blazing fast modern site generator for React.
+>>>>>>> fd3df38d5351bfbf1bf86cb9e0c8cc80dc9ba2a7
 
 ## शुरू करना
 

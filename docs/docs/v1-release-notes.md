@@ -4,6 +4,12 @@ title: v1 रिलीज नोट्स
 
 Gatsby वर्शन 1 के लिए निम्नलिखित उपयोगी लिंक देखें:
 
+<<<<<<< HEAD
 - [v1 डॉक्यूमेंटेशन](https://v1.gatsbyjs.org/)
 - [v1 चेंजलोग](https://github.com/gatsbyjs/gatsby/blob/master/CHANGELOG.md#100---2017-07-06)
 - [v1 रिलीज अनाउंसमेंट](/blog/gatsby-v1/)
+=======
+- [v1 documentation](https://v1.gatsbyjs.org/)
+- [v1 changelog](https://github.com/gatsbyjs/gatsby/blob/master/packages/gatsby/CHANGELOG.md#100---2017-07-06)
+- [v1 release announcement](/blog/gatsby-v1/)
+>>>>>>> fd3df38d5351bfbf1bf86cb9e0c8cc80dc9ba2a7

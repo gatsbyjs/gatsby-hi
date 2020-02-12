@@ -44,7 +44,11 @@ gatsby build
 gatsby serve
 ```
 
+<<<<<<< HEAD
 इसके शुरू होने के बाद, आप अपनी साइट [`localhost:9000`](http://localhost:9000) पर देख सकते है।
+=======
+Once this starts, you can view your site at `http://localhost:9000`.
+>>>>>>> fd3df38d5351bfbf1bf86cb9e0c8cc80dc9ba2a7
 
 ### एक Ligthouse ऑडिट रन करना:
 
@@ -354,10 +358,16 @@ export const query = graphql`
 
 ### आधिकारिक स्टार्टर्स
 
+<<<<<<< HEAD
 1.  [Gatsby का डिफ़ॉल्ट स्टार्टर](https://github.com/gatsbyjs/gatsby-starter-default): इस बॉयलरप्लेट के साथ अपने प्रोजेक्ट की शुरुआत कीजिये।
 यह बैरबोनस स्टार्टर, Gatsby के मुख्य कॉन्फ़िगरेशन फाइल्स के साथ शिप किया जाता है जिसकी आपको ज़रूरत पड़ सकती है। _[काम करता हुआ उदाहरण](http://gatsbyjs.github.io/gatsby-starter-default/)_
 2.  [Gatsby का ब्लॉग स्टार्टर](https://github.com/gatsbyjs/gatsby-starter-blog): मस्त और अधिक तेज़ ब्लॉग बनाने के लिए Gatsby का स्टार्टर। _[चलता हुआ उदाहरण](http://gatsbyjs.github.io/gatsby-starter-blog/)_
 3.  [Gatsby का हेलो वर्ल्ड स्टार्टर](https://github.com/gatsbyjs/gatsby-starter-hello-world): Gatsby साइट बनाने के लिए अधिकतम काम ज़रूरतों वाला Gatsby का स्टार्टर।_[चलता हुआ उदाहरण](https://gatsby-starter-hello-world-demo.netlify.com/)_
+=======
+1.  [Gatsby's Default Starter](https://github.com/gatsbyjs/gatsby-starter-default): Kick off your project with this default boilerplate. This barebones starter ships with the main Gatsby configuration files you might need. _[working example](https://gatsbyjs.github.io/gatsby-starter-default/)_
+2.  [Gatsby's Blog Starter](https://github.com/gatsbyjs/gatsby-starter-blog): Gatsby starter for creating an awesome and blazing-fast blog. _[working example](https://gatsbyjs.github.io/gatsby-starter-blog/)_
+3.  [Gatsby's Hello-World Starter](https://github.com/gatsbyjs/gatsby-starter-hello-world): Gatsby Starter with the bare essentials needed for a Gatsby site. _[working example](https://gatsby-starter-hello-world-demo.netlify.com/)_
+>>>>>>> fd3df38d5351bfbf1bf86cb9e0c8cc80dc9ba2a7
 
 ## बस इतना ही, दोस्तों 
 
