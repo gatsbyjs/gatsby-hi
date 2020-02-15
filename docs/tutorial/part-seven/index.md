@@ -1,5 +1,5 @@
 ---
-शीर्षक: प्रोग्रामेटिक रूप से डेटा से पेज बनाना
+title: प्रोग्रामेटिक रूप से डेटा से पेज बनाना
 typora-copy-images-to: ./
 disableTableOfContents: true
 ---
@@ -254,14 +254,7 @@ exports.createPages = async ({ graphql, actions }) => {
 }
 ```
 
-<<<<<<< HEAD
-डेवेलपमेंट सर्वर को रिसटार्ट करें और आपके पेजेज़ बन जाएंगे! डेवेलोप करते समय नई पेजेज़ को ढूंढ़ने का एक आसान तरीका यह है की किसी भी रैंडम पाथ पर जाएं Gatsby आपको साइट पर पेजेज़ की सूची दिखाने में मदद करेगा। अगर आप <http://localhost: 8000/sdf> पर जाएँगे, आपके द्वारा बनाए गए नए पेजेज़ दिखेंगे।
-=======
-Restart the development server and your pages will be created! An easy way to
-find new pages you create while developing is to go to a random path where
-Gatsby will helpfully show you a list of pages on the site. If you go to
-`http://localhost:8000/sdf`, you'll see the new pages you created.
->>>>>>> fd3df38d5351bfbf1bf86cb9e0c8cc80dc9ba2a7
+डेवेलपमेंट सर्वर को रिसटार्ट करें और आपके पेजेज़ बन जाएंगे! डेवेलोप करते समय नई पेजेज़ को ढूंढ़ने का एक आसान तरीका यह है की किसी भी रैंडम पाथ पर जाएं Gatsby आपको साइट पर पेजेज़ की सूची दिखाने में मदद करेगा। अगर आप `http://localhost: 8000/sdf` पर जाएँगे, आपके द्वारा बनाए गए नए पेजेज़ दिखेंगे।
 
 ![new-pages](new-pages.png)
 
@@ -398,13 +391,7 @@ export const query = graphql`
 
 ## चुनौती
 
-<<<<<<< HEAD
 साइट के साथ खेलने का प्रयास करें। कुछ और मार्कडाउन फ़ाइलों को ऐड करने का प्रयास करें। `MarkdownRemark` नोड्स से अन्य डेटा को क्वेरी करें और फ्रंटपेज या ब्लॉग पोस्ट पेज ऐड करें।
-=======
-Try playing more with the site. Try adding some more markdown files. Explore
-querying other data from the `MarkdownRemark` nodes and adding them to the
-front page or blog posts pages.
->>>>>>> fd3df38d5351bfbf1bf86cb9e0c8cc80dc9ba2a7
 
 ट्यूटोरियल के इस भाग में, आपने Gatsby की डेटा लेयर के साथ निर्माण की नींव के बारे में सीखा है। आपने सीखा कि कैसे _source_ और _transform_ डेटा का उपयोग किया जाता है प्लगइन्स के साथ, पेजेज़ पर डेटा _map_ करने के लिए GraphQL का उपयोग कैसे करें और फिर _page_ टेम्प्लेट कौम्पोनॅन्टस कैसे बनाएं जहां आप प्रत्येक पेज के डेटा के लिए क्वेरी करते हैं।
 
