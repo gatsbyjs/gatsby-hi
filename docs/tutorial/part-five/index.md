@@ -1,5 +1,5 @@
 ---
-शीर्षक: सोर्स प्लगइन्स
+title: सोर्स प्लगइन्स
 typora-copy-images-to: ./
 disableTableOfContents: true
 ---
@@ -14,13 +14,7 @@ disableTableOfContents: true
 
 GraphiQL, GraphQL एकीकृत डेवलपमेंट एनवीरोनमेंट (आईडीई) है। यह एक शक्तिशाली (और हर तरह से बहुत बढ़िया) टूल है जिसका उपयोग आप अक्सर Gatsby वेबसाइटों के निर्माण के दौरान करेंगे।
 
-<<<<<<< HEAD
-जब आपकी साइट का डेवलपमेंट सर्वर सामान्य रूप से चल रहा हो तो आप इसे एक्सेस कर सकते हैं
-<http://localhost:8000/___graphql>.
-=======
-You can access it when your site's development server is running—normally at
-`http://localhost:8000/___graphql`.
->>>>>>> fd3df38d5351bfbf1bf86cb9e0c8cc80dc9ba2a7
+जब आपकी साइट का डेवलपमेंट सर्वर सामान्य रूप से चल रहा हो तो आप इसे यहाँ पर `http://localhost:8000/___graphql` एक्सेस कर सकते हैं।
 
 <video controls="controls" autoplay="true" loop="true">
   <source type="video/mp4" src="/graphiql-explore.mp4"></source>
@@ -98,13 +92,8 @@ module.exports = {
 
 ![filesystem-autocomplete](filesystem-autocomplete.png)
 
-<<<<<<< HEAD
 अपनी क्वेरी में कई फ़ील्ड जोड़ने का प्रयास करें, <kbd>Ctrl + Enter</kbd> दबाएं
 हर बार क्वेरी को फिर से चलाने के लिए। आपको अपडेट किए गए क्वेरी परिणाम दिखाई देंगे:
-=======
-Try adding a number of fields to your query, press <kbd>Ctrl + Enter</kbd>
-each time to re-run the query. You'll see the updated query results:
->>>>>>> fd3df38d5351bfbf1bf86cb9e0c8cc80dc9ba2a7
 
 ![allfile-query](allfile-query.png)
 
@@ -220,11 +209,7 @@ export const query = graphql`
 `
 ```
 
-<<<<<<< HEAD
-और अब [http://localhost:8000/my-files](http://localhost:8000/my-files)… पर जाएँ। 😲
-=======
-And now visit `http://localhost:8000/my-files`… 😲
->>>>>>> fd3df38d5351bfbf1bf86cb9e0c8cc80dc9ba2a7
+और अब `http://localhost:8000/my-files`… पर जाएँ। 😲
 
 ![my-files-page](my-files-page.png)
 
