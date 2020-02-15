@@ -1,5 +1,5 @@
 ---
-title: Introduction to Styling in Gatsby
+title: Gatsby में स्टाइलिंग का परिचय
 typora-copy-images-to: ./
 disableTableOfContents: true
 ---
@@ -245,11 +245,7 @@ import Container from "../components/container"
 console.log(styles)
 ```
 
-<<<<<<< HEAD
 `console.log(styles)` कोड परिणामी इम्पोर्ट को लॉग करेगा ताकि आप अपने प्रोसेस्ड `about-css-modules.module.css` का परिणाम देख सके। यदि आप अपने ब्राउज़र में डेवलपर कंसोल (उदाहरण के लिए Firefox या Chrome के डेवलपर टूल का उपयोग करके) खोलते हैं, तो आप देखेंगे:
-=======
-The `console.log(styles)` code will log the resulting import so you can see the result of your processed `./about-css-modules.module.css` file. If you open the developer console (using e.g. Firefox or Chrome's developer tools, often by the F12 key) in your browser, you'll see:
->>>>>>> fd3df38d5351bfbf1bf86cb9e0c8cc80dc9ba2a7
 
 ![कंसोल में CSS मॉड्यूल का इम्पोर्ट रिज़ल्ट](css-modules-console.png)
 
