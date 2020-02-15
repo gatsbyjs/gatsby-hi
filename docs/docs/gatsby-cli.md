@@ -78,18 +78,10 @@ gatsby new
 
 |     ओप्शंस      | विवरण                                     |
 | :-------------: | ----------------------------------------------- |
-<<<<<<< HEAD
 | `-H`, `--host`  | होस्ट सेट करें। इसकी डिफ़ॉल्ट वैल्यू localhost है                |
 | `-p`, `--port`  | पोर्ट सेट करें। इसकी डिफ़ॉल्ट वैल्यू 8000 है                      |
 | `-o`, `--open`  | आपके लिए अपने (डिफ़ॉल्ट) ब्राउज़र में साइट खोलता है            |
 | `-S`, `--https` | HTTPS का उपयोग करें                                      |
-=======
-| `-H`, `--host`  | Set host. Defaults to localhost                 |
-| `-p`, `--port`  | Set port. Defaults to env.PORT or 8000          |
-| `-o`, `--open`  | Open the site in your (default) browser for you |
-| `-S`, `--https` | Use HTTPS                                       |
->>>>>>> fd3df38d5351bfbf1bf86cb9e0c8cc80dc9ba2a7
-
 
 Gatsby का उपयोग करके आप HTTPS डेवलपमेंट सर्वर कैसे सेट कर सकते हैं, यह जानने के लिए [लोकल HTTPS गाइड](/docs/local-https/) का उपयोग करें।
 
@@ -103,23 +95,15 @@ Gatsby develop -H 0.0.0.0
 
 तब टर्मिनल सामान्य रूप से जानकारी लॉग करेगा, लेकिन इसके अतिरिक्त एक URL भी शामिल होगी जिसे आप एक ही नेटवर्क पर किसी और क्लाइंट से नेविगेट करके देख सकते है की साइट कैसे रेंडर हो रही है।
 
-<<<<<<< HEAD
-```
-अब आप ब्राउज़र में gatsbyjs.org देख सकते हैं।
-=======
 ```shell
-You can now view gatsbyjs.org in the browser.
->>>>>>> fd3df38d5351bfbf1bf86cb9e0c8cc80dc9ba2a7
+  अब आप ब्राउज़र में gatsbyjs.org देख सकते हैं।
 ⠀
   लोकल:          http://0.0.0.0:8000/
   अपने नेटवर्क पर:  http://192.168.0.212:8000/ // हाइलाइट-लाइन
 ```
 
-<<<<<<< HEAD
-**ध्यान दें**: आप Windows पर 0.0.0.0:8000 पर नहीं जा सकते हैं (लेकिन Windows पर localhost:8000 या "आपके नेटवर्क की" URL से सब कुछ चलेगा)
-=======
-**Note**: To access Gatsby on your local machine, use either `http://localhost:8000` or the "On Your Network" URL.
->>>>>>> fd3df38d5351bfbf1bf86cb9e0c8cc80dc9ba2a7
+Gatsby को अपने लोकल मशीन पर चलने के लिए
+**ध्यान दें**: Gatsby को अपने लोकल मशीन पर चलने के लिए या तो `http://localhost:8000` या फिर "आपके नेटवर्क की" URL का इस्तेमाल करें
 
 ### `build`
 
