@@ -13,59 +13,35 @@
 
 **नोट**: इस वीडियो में `npx` का उपयोग किया गया है, जो पहले इनस्टॉल किए बिना npm पैकेज को एग्ज़ीक्यूट करने के लिए एक टूल है। अपने कंप्यूटर पर Gatsby-सीएलआई को इनस्टॉल करने के बाद कमांड `npx gatsby new` को चलाना `gatsby new` चलाने के समान है।
 
-<<<<<<< HEAD
-### Gatsby सीएलआई इनस्टॉल करें।
-=======
-### Install the Gatsby CLI
->>>>>>> fd3df38d5351bfbf1bf86cb9e0c8cc80dc9ba2a7
+### Gatsby सीएलआई इनस्टॉल करें
 
 ```shell
 npm install -g gatsby-cli
 ```
 
-<<<<<<< HEAD
-### एक नई साइट बनाएँ।
-=======
-### Create a new site
->>>>>>> fd3df38d5351bfbf1bf86cb9e0c8cc80dc9ba2a7
+### एक नई साइट बनाएँ
 
 ```shell
 gatsby new gatsby-site
 ```
 
-<<<<<<< HEAD
-### डायरेक्ट्रीज को साइट फ़ोल्डर में बदलें।
-=======
-### Change directories into site folder
->>>>>>> fd3df38d5351bfbf1bf86cb9e0c8cc80dc9ba2a7
+### डायरेक्ट्रीज को साइट फ़ोल्डर में बदलें
 
 ```shell
 cd gatsby-site
 ```
 
-<<<<<<< HEAD
-### डेवलपमेंट सर्वर शुरू करें।
-=======
-### Start development server
->>>>>>> fd3df38d5351bfbf1bf86cb9e0c8cc80dc9ba2a7
+### डेवलपमेंट सर्वर शुरू करें
 
 ```shell
 gatsby develop
 ```
 
-<<<<<<< HEAD
-Gatsby एक हॉट-रीलोडिंग डेवलपमेंट एनवायरनमेंट सुरु करेगा जो की डिफ़ॉल्ट रूप से `localhost:8000` पर एक्सेसिबल रहेगा।
-=======
-Gatsby will start a hot-reloading development environment accessible by default at `http://localhost:8000`.
->>>>>>> fd3df38d5351bfbf1bf86cb9e0c8cc80dc9ba2a7
+Gatsby एक हॉट-रीलोडिंग डेवलपमेंट एनवायरनमेंट सुरु करेगा जो की डिफ़ॉल्ट रूप से `http://localhost:8000` पर एक्सेसिबल रहेगा।
 
 `src/pages` में जावास्क्रिप्ट पेज को एडिट करने का प्रयास करें। सेव किये गए बदलाव ब्राउज़र में लाइव पुनः लोड होंगे।
 
-<<<<<<< HEAD
-### एक प्रोडक्शन बिल्ड बनाएँ।
-=======
-### Create a production build
->>>>>>> fd3df38d5351bfbf1bf86cb9e0c8cc80dc9ba2a7
+### एक प्रोडक्शन बिल्ड बनाएँ
 
 ```shell
 gatsby build
@@ -73,11 +49,7 @@ gatsby build
 
 Gatsby इसटैटिक HTML और प्रति मार्ग जावास्क्रिप्ट कोड बंडलों का निर्माण करते हुए, आपकी साइट के लिए एक ऑप्टीमाइज़्ड प्रोडक्शन बिल्ड का निर्माण करेगा।
 
-<<<<<<< HEAD
-### प्रोडक्शन बिल्ड को लोकल पर सर्व करें।
-=======
-### Serve the production build locally
->>>>>>> fd3df38d5351bfbf1bf86cb9e0c8cc80dc9ba2a7
+### प्रोडक्शन बिल्ड को लोकल पर सर्व करें
 
 ```shell
 gatsby serve
