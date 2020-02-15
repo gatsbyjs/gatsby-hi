@@ -1,30 +1,30 @@
 ---
-title: Adding a Service Worker
+title: सर्विस वर्कर ऐड करना
 ---
 
-## What is a service worker
+## सर्विस वर्कर क्या है
 
-A service worker is a script that your browser runs in the background, separate from a web page, opening the door to features that don't need a web page or user interaction. They increase your site availability in spotty connections, and are essential to making a nice user experience.
+सर्विस वर्कर एक स्क्रिप्ट है जो आपका ब्राउज़र बैकग्राउंड में एक वेब पेज से अलग चलता है, उन सुविधाओं के लिए द्वार खोलता है जिन्हें वेब पेज या उपयोगकर्ता इंटरैक्शन की आवश्यकता नहीं है। वे थोड़े ख़राब कनेक्शन में आपकी साइट की उपलब्धता बढ़ाते हैं, और एक अच्छा उपयोगकर्ता अनुभव बनाने के लिए आवश्यक हैं।
 
-It supports features like push notifications and background sync.
+यह पुश नोटिफिकेशन और बैकग्राउंड सिंक जैसी सुविधाओं का समर्थन करता है।
 
-## Using service workers in Gatsby with `gatsby-plugin-offline`
+## `gatsby-plugin-offline` के साथ Gatsby में service workers का उपयोग करना
 
-Gatsby provides awesome plugin interface to create and load a service worker into your site [gatsby-plugin-offline](https://www.npmjs.com/package/gatsby-plugin-offline).
+Gatsby आपकी साइट [gatsby-plugin-offline](https://www.npmjs.com/package/gatsby-plugin-offline) में एक सर्विस वर्कर बनाने और लोड करने के लिए अच्छा प्लगइन इंटरफ़ेस प्रदान करता है।
 
-You can use this plugin together with the [manifest plugin](https://www.npmjs.com/package/gatsby-plugin-manifest). (Don’t forget to list the offline plugin after the manifest plugin so that the manifest file can be included in the service worker).
+आप इस प्लगइन का उपयोग [मैनिफ़ेस्ट प्लगइन](https://www.npmjs.com/package/gatsby-plugin-manifest) साथ कर सकते हैं। (मैनिफ़ेस्ट प्लगइन के बाद ऑफ़लाइन प्लगइन को सूचीबद्ध करना न भूलें ताकि मेनिफ़ेस्ट फ़ाइल को service worker में शामिल किया जा सके)
 
-## Installing `gatsby-plugin-offline`
+##  `gatsby-plugin-offline` इनस्टॉल करना
 
 `npm install --save gatsby-plugin-offline`
 
-Add this plugin to your `gatsby-config.js`
+इस प्लगइन को अपने `gatsby-config.js` में ऐड करें
 
 ```javascript:title=gatsby-config.js
 plugins: [`gatsby-plugin-offline`]
 ```
 
-## References
+## संदर्भ
 
-- [Service Workers: an Introduction](https://developers.google.com/web/fundamentals/primers/service-workers/)
-- [Service Worker API](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API)
+- [सर्विस वर्कर: एक परिचय](https://developers.google.com/web/fundamentals/primers/service-workers/)
+- [सर्विस वर्कर API](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API)
