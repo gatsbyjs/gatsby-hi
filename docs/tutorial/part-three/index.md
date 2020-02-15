@@ -270,7 +270,7 @@ export default ({ children }) => (
 )
 ```
 
-![with-navigation2](with-navigation2.png)
+![with-navigation2](with-navigation.png)
 
 आखिर आपने इसे हासिल कर ही लिया है! बुनियादी ग्लोबल नेविगेशन के साथ एक तीन पेज की साइट।
 

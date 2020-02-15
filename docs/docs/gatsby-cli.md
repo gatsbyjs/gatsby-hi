@@ -27,7 +27,7 @@ Gatsby सीएलआई (`gatsby-cli`) को एक्ज़ीक्यूट�
 
 ### `new`
 
-```
+```shell
 gatsby new [<site-name> [<starter-url>]]
 ```
 

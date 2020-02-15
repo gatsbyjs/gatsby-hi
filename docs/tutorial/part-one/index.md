@@ -330,7 +330,7 @@ export default () => (
 
 <video controls="controls" loop="true">
   <source type="video/mp4" src="./10-linking-between-pages.mp4"></source>
-  <p>Sorry! You browser doesn't support this video.</p>
+  <p>Sorry! Your browser doesn't support this video.</p>
 </video>
 
 Gatsby `<Link />` कौम्पोनॅन्ट आपकी साइट के पेजेज के बीच लिंक बनाने के लिए है। आपकी Gatsby साइट द्वारा नियंत्रित नहीं किए गए पेजेज के बाहरी लिंक के लिए, नियमित HTML `<a>` टैग का उपयोग करें।
