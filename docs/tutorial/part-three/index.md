@@ -1,5 +1,5 @@
 ---
-शीर्षक: नेस्टेड लेआउट कौम्पोनॅन्टस बनाना
+title: नेस्टेड लेआउट कौम्पोनॅन्टस बनाना
 typora-copy-images-to: ./
 disableTableOfContents: true
 ---

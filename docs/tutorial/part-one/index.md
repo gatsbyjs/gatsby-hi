@@ -167,7 +167,7 @@ export default () => (
 )
 ```
 
-2. अब http://localhost:8000/about/ पर जाए।
+2. अब `http://localhost:8000/about/` पर जाए।
 
 ![New about page](05-about-page.png)
 
@@ -369,6 +369,8 @@ ls public
 ```shell
 surge public/
 ```
+
+> ध्यान दें कि आपके कमांड-लाइन इंटरफ़ेस पर `domain: some-name.surge.sh` जानकारी देखने के बाद आपको `enter` key दबानी होगी।
 
 एक बार जब यह समाप्त हो जाता है, तो आपको अपने टर्मिनल में कुछ इस तरह से दिखना चाहिए:
 

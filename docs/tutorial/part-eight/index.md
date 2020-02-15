@@ -44,7 +44,7 @@ gatsby build
 gatsby serve
 ```
 
-इसके शुरू होने के बाद, आप अपनी साइट [`localhost:9000`](http://localhost:9000) पर देख सकते है।
+इसके शुरू होने के बाद, आप अपनी साइट `http://localhost:9000` पर देख सकते है।
 
 ### एक Ligthouse ऑडिट रन करना:
 

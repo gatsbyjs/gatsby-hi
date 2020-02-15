@@ -1,5 +1,5 @@
 ---
-title: Introduction to Styling in Gatsby
+title: Gatsby में स्टाइलिंग का परिचय
 typora-copy-images-to: ./
 disableTableOfContents: true
 ---
