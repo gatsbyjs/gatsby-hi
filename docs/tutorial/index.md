@@ -1,5 +1,5 @@
 ---
-शीर्षक: Gatsby.js ट्यूटोरियल
+title Gatsby.js ट्यूटोरियल
 disableTableOfContents: true
 ---
 
@@ -28,11 +28,7 @@ Gatsby में आपका स्वागत है! हम खुश है
 
 Gatsby थीम आपकी डिफ़ॉल्ट कॉन्फ़िगरेशन (शेयर्ड फंक्शनलिटी, डेटा सोर्सिंग, डिज़ाइन) को आपकी साइट से बाहर और एक इंस्टॉल किए जाने योग्य पैकेज में एबसट्रैक्ट करती है।
 
-<<<<<<< HEAD
 इसका मतलब यह है कि कॉन्फ़िगरेशन और फ़ंक्शनैलिटी सीधे आपकी प्रोजेक्ट में नहीं लिखी गई है बल्कि वर्शन, सेंट्रली मैनेज और डिपेंडेंसी की तरह इनस्टॉल की गयी है। आप मूल रूप से एक थीम को अपडेट, कई थीम्स को आपस में कंपोज़, और एक कम्पेटिबल थीम के बदले दूसरे को इस्तेमाल कर सकते हैं।
-=======
-This means that the configuration and functionality aren’t directly written into your project, but rather versioned, centrally managed, and installed as a dependency. You can seamlessly update a theme, compose themes together, and even swap out one compatible theme for another.
->>>>>>> fd3df38d5351bfbf1bf86cb9e0c8cc80dc9ba2a7
 
 [Gatsby थीम ट्यूटोरियल](/tutorial/theme-tutorials/) से थीम के उपयोग और निर्माण के बारे में अधिक जानें।.
 
