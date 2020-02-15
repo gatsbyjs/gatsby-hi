@@ -8,11 +8,11 @@ title: सर्विस वर्कर ऐड करना
 
 यह पुश नोटिफिकेशन और बैकग्राउंड सिंक जैसी सुविधाओं का समर्थन करता है।
 
-## `gatsby-plugin-offline`के साथ Gatsby में service workers का उपयोग करना
+## `gatsby-plugin-offline` के साथ Gatsby में service workers का उपयोग करना
 
 Gatsby आपकी साइट [gatsby-plugin-offline](https://www.npmjs.com/package/gatsby-plugin-offline) में एक सर्विस वर्कर बनाने और लोड करने के लिए अच्छा प्लगइन इंटरफ़ेस प्रदान करता है।
 
-आप इस प्लगइन का उपयोग [मैनिफ़ेस्ट प्लगइन](https://www.npmjs.com/package/gatsby-plugin-manifest) साथ कर सकते हैं।(मैनिफ़ेस्ट प्लगइन के बाद ऑफ़लाइन प्लगइन को सूचीबद्ध करना न भूलें ताकि मेनिफ़ेस्ट फ़ाइल को service worker में शामिल किया जा सके)
+आप इस प्लगइन का उपयोग [मैनिफ़ेस्ट प्लगइन](https://www.npmjs.com/package/gatsby-plugin-manifest) साथ कर सकते हैं। (मैनिफ़ेस्ट प्लगइन के बाद ऑफ़लाइन प्लगइन को सूचीबद्ध करना न भूलें ताकि मेनिफ़ेस्ट फ़ाइल को service worker में शामिल किया जा सके)
 
 ##  `gatsby-plugin-offline` इनस्टॉल करना
 
