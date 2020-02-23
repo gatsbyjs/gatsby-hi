@@ -1,5 +1,5 @@
 ---
-title: Introduction to Styling in Gatsby
+title: Gatsby में स्टाइलिंग का परिचय
 typora-copy-images-to: ./
 disableTableOfContents: true
 ---
@@ -150,7 +150,7 @@ Gatsby सीएसएस मॉड्यूल के साथ बिना �
 
 1. एक नया फोल्डर `src/components` बनाएँ और फिर, इस नये फोल्डर में, 'container.js` नाम की फ़ाइल बनाएँ और निम्नलिखित को पेस्ट करें:
 
-```javascript:title=src/components/container.js
+```jsx:title=src/components/container.js
 import React from "react"
 import containerStyles from "./container.module.css"
 
@@ -174,7 +174,7 @@ export default ({ children }) => (
 
 3. `src/pages/about-css-modules.js` पर एक फ़ाइल बनाकर एक नया पेज कौम्पोनॅन्ट बनाएँ
 
-```javascript:title=src/pages/about-css-modules.js
+```jsx:title=src/pages/about-css-modules.js
 import React from "react"
 
 import Container from "../components/container"

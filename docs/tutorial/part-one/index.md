@@ -167,7 +167,7 @@ export default () => (
 )
 ```
 
-2. अब http://localhost:8000/about/ पर जाए।
+2. अब `http://localhost:8000/about/` पर जाए।
 
 ![New about page](05-about-page.png)
 
@@ -330,7 +330,7 @@ export default () => (
 
 <video controls="controls" loop="true">
   <source type="video/mp4" src="./10-linking-between-pages.mp4"></source>
-  <p>Sorry! You browser doesn't support this video.</p>
+  <p>Sorry! Your browser doesn't support this video.</p>
 </video>
 
 Gatsby `<Link />` कौम्पोनॅन्ट आपकी साइट के पेजेज के बीच लिंक बनाने के लिए है। आपकी Gatsby साइट द्वारा नियंत्रित नहीं किए गए पेजेज के बाहरी लिंक के लिए, नियमित HTML `<a>` टैग का उपयोग करें।
@@ -369,6 +369,8 @@ ls public
 ```shell
 surge public/
 ```
+
+> ध्यान दें कि आपके कमांड-लाइन इंटरफ़ेस पर `domain: some-name.surge.sh` जानकारी देखने के बाद आपको `enter` key दबानी होगी।
 
 एक बार जब यह समाप्त हो जाता है, तो आपको अपने टर्मिनल में कुछ इस तरह से दिखना चाहिए:
 

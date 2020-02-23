@@ -1,9 +1,8 @@
 ---
 title: Gatsby.js में योगदान देना
+description: वेब के भविष्य को विकसित करने में मदद करने वाले सबसे स्वागत करने वाले समुदायों में से एक में योगदान के बारे में जानें
 disableTableOfContents: true
 ---
-
-import EmailCaptureForm from "../../www/src/components/email-capture-form"
 
 सहयोग देने मे रूचि रखने के लिए आपका धन्यवाद! हमे बेहद खुशी है की आप सहयोग देना चाहते है!
 
