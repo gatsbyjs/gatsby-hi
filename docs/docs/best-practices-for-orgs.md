@@ -11,4 +11,4 @@ issue: https://github.com/gatsbyjs/gatsby/issues/14042
 
 यह एक स्टब है। हमारे समुदाय को इसका विस्तार करने में मदद करें।
 
-कृपया [Gatsby स्टाइल गाइड ](/contributing/gatsby-style-guide/) का उपयोग करें ताकि आपका पुल अनुरोध स्वीकार हो जाये ।
+कृपया [Gatsby स्टाइल गाइड ](/contributing/gatsby-style-guide/) का उपयोग करें ताकि आपका पुल अनुरोध स्वीकार हो जाये।
