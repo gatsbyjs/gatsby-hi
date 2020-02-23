@@ -1,9 +1,8 @@
 ---
-title: Building a Site with Asynchronous Data
+title: असिन्क्रोनस डेटा के साथ एक साइट का निर्माण करना
 issue: https://github.com/gatsbyjs/gatsby/issues/18484
 ---
 
-This is a stub. Help our community expand it.
+यह एक स्टब है। हमारे समुदाय को इसका विस्तार करने में मदद करें।
 
-Please use the [Gatsby Style Guide](/contributing/gatsby-style-guide/) to ensure your
-pull request gets accepted.
+कृपया [Gatsby स्टाइल गाइड ](/contributing/gatsby-style-guide/) का उपयोग करें ताकि आपका पुल अनुरोध स्वीकार हो जाये।
