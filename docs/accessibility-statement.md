@@ -24,7 +24,7 @@ Gatsbyjs.com, Gatsby, Inc. की स्टार्टअप वेबसाइ
 
 ## गैट्सबी के साथ बिल्डिंग
 
-गैट्सबी के साथ एक सुलभ वेबसाइट बनाने का तरीका जानने के लिए, हमारे गाइड पर जाएं [Making Your Site Accessible](/docs/making-your-site-accessible/).Contributions are very welcome as this page evolves.
+गैट्सबी के साथ एक सुलभ वेबसाइट बनाने का तरीका जानने के लिए, हमारे गाइड पर जाएं [Making Your Site Accessible](/docs/making-your-site-accessible/)  इस पेज पर योगदान करने के लिए आपका स्वागत है।
 
 ## तृतीय-पक्ष प्लेटफ़ॉर्म, प्रोडक्ट और सेवाएँ
 
