@@ -1,15 +1,15 @@
 ---
-title: Actions
-description: Documentation on actions and how they help you manipulate state within Gatsby
+title: एक्शन्स
+description: एक्शन्स पर डॉक्यूमेंटेशन और वे आपको Gatsby के भीतर स्टेट में हेरफेर करने में कैसे मदद करते हैं
 jsdoc:
   - "gatsby/src/redux/actions/public.js"
   - "gatsby/src/redux/actions/restricted.js"
 contentsHeading: Functions
 ---
 
-Gatsby uses [Redux](http://redux.js.org) internally to manage state. When you implement a Gatsby API, you are passed a collection of actions (equivalent to actions bound with [bindActionCreators](https://redux.js.org/api/bindactioncreators/) in Redux) which you can use to manipulate state on your site.
+Gatsby स्टेट का प्रबंधन करने के लिए आंतरिक रूप से [Redux](http://redux.js.org) का उपयोग करता है। जब आप एक Gatsby API बनाते हैं, तो आप एक्शन्स का एक कलेक्शन (Redux में [bindActionCreators](https://redux.js.org/api/bindactioncreators/) से बंधे हुए एक्शन्स के बराबर) जिसका उपयोग आप आपकी साइट पर स्टेट में हेरफेर करने के लिए कर सकते हैं।
 
-The object `actions` contains the functions and these can be individually extracted by using ES6 object destructuring.
+ऑब्जेक्ट `actions` में फ़ंक्शंस होते हैं और इन्हें ES6 ऑब्जेक्ट destructing का उपयोग करके अलग-अलग करके निकाला जा सकता है।
 
 ```javascript
 // For function createNodeField
