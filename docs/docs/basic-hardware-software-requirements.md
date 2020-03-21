@@ -1,8 +1,7 @@
 ---
-title: Basic Hardware and Software Requirements
+title: बुनियादी हार्डवेयर और सॉफ्टवेयर आवश्यकताएँ
 ---
 
-This is a stub. Help our community expand it.
+यह एक स्टब है। हमारे समुदाय को इसका विस्तार करने में मदद करें।
 
-Please use the [Gatsby Style Guide](/contributing/gatsby-style-guide/) to ensure your
-pull request gets accepted.
+कृपया [Gatsby स्टाइल गाइड](/contributing/gatsby-style-guide/) का उपयोग करें ताकि आपकी पुल रिक्वेस्ट स्वीकार हो जाए।

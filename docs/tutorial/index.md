@@ -1,5 +1,5 @@
 ---
-शीर्षक: Gatsby.js ट्यूटोरियल
+title Gatsby.js ट्यूटोरियल
 disableTableOfContents: true
 ---
 

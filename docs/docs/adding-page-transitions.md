@@ -1,8 +1,8 @@
 ---
-title: Adding Page Transitions
+title: पेज ट्रांज़िशन ऐड करना 
 overview: true
 ---
 
-Page transitions give users a better experience when navigating between pages. There are a number of ways to add them to your Gatsby site.
+पेज ट्रांज़िशन उपयोगकर्ताओं को पेजेस के बीच नेविगेट करते समय बेहतर अनुभव देते है। उन्हें अपने Gatsby साइट पर ऐड करने के कई तरीके हैं।
 
 <GuideList slug={props.slug} />
