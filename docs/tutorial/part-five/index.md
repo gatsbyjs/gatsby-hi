@@ -17,7 +17,7 @@ GraphiQL, GraphQL एकीकृत डेवलपमेंट एनवीर
 जब आपकी साइट का डेवलपमेंट सर्वर सामान्य रूप से चल रहा हो तो आप इसे यहाँ पर `http://localhost:8000/___graphql` एक्सेस कर सकते हैं।
 
 <video controls="controls" autoplay="true" loop="true">
-  <source type="video/mp4" src="/graphiql-explore.mp4"></source>
+  <source type="video/mp4" src="/graphiql-explore.mp4" />
   <p>Your browser does not support the video element.</p>
 </video>
 
