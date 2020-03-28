@@ -56,7 +56,13 @@ integers (`42`), objects (`{ pizza: true }`) आदि चीजें हैं
 
 ### कैसे Gatsby डेटा लेयर कौम्पोनॅन्टस में डेटा पुल करने के लिए GraphQL का उपयोग करता है
 
+<<<<<<< HEAD
 React कौम्पोनॅन्टस में डेटा लोड करने के लिए कई विकल्प हैं। इनमें से सबसे ज्यादा लोकप्रिय और शक्तिशाली एक तकनीक है जिसे [GraphQL](http://graphql.org/) कहा जाता है।
+=======
+There are many options for loading data into React components. One of the most
+popular and powerful of these is a technology called
+[GraphQL](https://graphql.org/).
+>>>>>>> 8ff6bb09c23261662f47e79a041a92855d517097
 
 GraphQL का आविष्कार फेसबुक द्वारा प्रोडक्ट इंजीनियरों को कौम्पोनॅन्टस के अंदर डाटा _पुल_ करने मे मदद करने के लिए किया गया था। 
 

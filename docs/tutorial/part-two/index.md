@@ -48,7 +48,11 @@ cd tutorial-part-two
 │       └── index.js
 ```
 
+<<<<<<< HEAD
 #### ✋ सीएसएस फाइल मे स्टाइल्स डालना
+=======
+#### ✋ Add styles to a CSS file
+>>>>>>> 8ff6bb09c23261662f47e79a041a92855d517097
 
 1. अपने नए प्रोजेक्ट में एक .css फ़ाइल बनाएँ:
 
@@ -80,7 +84,11 @@ html {
 }
 ```
 
+<<<<<<< HEAD
 > नोट: उदाहरण लिए सीएसएस फ़ाइल का प्लेसमेंट `/src/styles/` फ़ोल्डर में मनमाना है।
+=======
+> Note: The placement of the example CSS file in a `/src/styles/` folder is arbitrary.
+>>>>>>> 8ff6bb09c23261662f47e79a041a92855d517097
 
 #### ✋ `gatsby-browser.js` में स्टाइलशीट को शामिल करें
 
@@ -130,7 +138,11 @@ gatsby develop
 
 ## कौम्पोनॅन्ट-स्कोप वाला सीएसएस का उपयोग करना
 
+<<<<<<< HEAD
 अब तक, हमने स्टॅंडर्ड सीएसएस स्टाइलशीट का उपयोग करने के अधिक पारंपरिक दृष्टिकोण के बारे में बात की है। अब, हम कौम्पोनॅन्ट-ओरियेनटेड तरीके से सीएसएस को संशोधित करने के विभिन्न तरीकों के बारे में बात करेंगे।
+=======
+So far, we've talked about the more traditional approach of using standard CSS stylesheets. Now, we'll talk about various methods of modularizing CSS to tackle styling in a component-oriented way.
+>>>>>>> 8ff6bb09c23261662f47e79a041a92855d517097
 
 ### सीएसएस मॉड्यूलस
 
@@ -159,7 +171,11 @@ export default ({ children }) => (
 )
 ```
 
+<<<<<<< HEAD
 आप नोटिस करेंगे कि आपने एक कंटेनर मॉड्यूल फ़ाइल को इम्पोर्ट किया है, जिसका नाम `container.module.css` है। अब उस फाइल को बनाते हैं।
+=======
+You'll notice you imported a CSS module file named `container.module.css`. Let's create that file now.
+>>>>>>> 8ff6bb09c23261662f47e79a041a92855d517097
 
 2. उसी फोल्डर (`src/components`) में, एक `container.module.css` फ़ाइल बनाएं और निम्नलिखित को कॉपी/पेस्ट करें:
 
