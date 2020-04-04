@@ -17,16 +17,12 @@ disableTableOfContents: true
 
 ## पेजेज़ के लिए slugs का निर्माण करना
 
-<<<<<<< HEAD
 नए पेजेज़ बनाने के दो चरण हैं:
-=======
-A ‘slug’ is the unique identifying part of a web address,
-such as the `/tutorial/part-seven` part of the page `https://www.gatsbyjs.org/tutorial/part-seven/`.
 
-It is also referred to as the ‘path’ but this tutorial will use the term ‘slug’ for consistency.
+एक `slug` एक वेब एड्रेस का विशिष्ट पहचान वाला हिस्सा है;
+जैसे की `https://www.gatsbyjs.org/tutorial/part-seven/` पेज का `/tutorial/part-seven` वाला हिस्सा।
 
-Creating new pages has two steps:
->>>>>>> 8ff6bb09c23261662f47e79a041a92855d517097
+इसे `path` के रूप में भी जाना जाता है, लेकिन यह ट्यूटोरियल स्थिरता के लिए `slug` शब्द का उपयोग करेगा।
 
 1.  पेज के लिए "path" या "slug" जेनरेट करें।
 2.  पेज बनाएं।
