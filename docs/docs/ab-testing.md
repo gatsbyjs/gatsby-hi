@@ -1,14 +1,14 @@
 ---
-title: A/B Testing
-overview: true
+शीर्षक: A/B Testing
+अवलोकन: true
 ---
 
-A/B or split testing is when you make test changes to a website. Suppose you have two buttons: a green “Buy Now!” button and a red “Buy Now!” button. You want to figure out which button will receive the most clicks. An A/B test would be an ideal way to measure engagement.
+A / B या विभाजन परीक्षण तब होता है जब आप किसी वेबसाइट में परीक्षण परिवर्तन करते हैं। मान लीजिए कि आपके पास दो बटन हैं: एक हरा "अभी खरीदें!" बटन और एक लाल "अब खरीदें!" बटन। आप यह पता लगाना चाहते हैं कि किस बटन पर सबसे अधिक क्लिक प्राप्त होंगे। A / B परीक्षण सगाई को मापने का एक आदर्श तरीका होगा।
 
-![side-by-side images comparing the Gatsby default starter with a red button on one side and a green button on the other](./images/gatsby-default-starter-image.png)
+![अगल-बगल की छवियां एक तरफ लाल बटन और दूसरी तरफ हरे बटन के साथ Gatsby default starter की तुलना करती हैं](./images/gatsby-default-starter-image.png)
 
-A/B testing is a data-driven way to figure out what works on your website, and it is a great way to determine how to make impactful improvements. A/B testing has been around for decades and it is an essential tool for web developers, designers and product managers.
+A / B परीक्षण आपकी वेबसाइट पर क्या काम करता है, यह पता लगाने के लिए एक डेटा-चालित तरीका है, और यह प्रभावी तरीके से सुधार करने का तरीका निर्धारित करने का एक शानदार तरीका है। A / B परीक्षण दशकों से आसपास है और यह वेब डेवलपर्स, डिजाइनरों और उत्पाद प्रबंधकों के लिए एक आवश्यक उपकरण है।
 
-That being said, A/B testing software can be prohibitively expensive. Some platforms can run into the thousands per month. The main advantages of conducting A/B tests with Gatsby are performance and price. If you are leveraging Netlify and Google Analytics, you’re able to set up an A/B test with Gatsby for free! When you’re testing different variations of your website, you are not forced to load heavy and inefficient third party scripts.
+यह कहा जा रहा है, A / B परीक्षण सॉफ्टवेयर निषेधात्मक रूप से महंगा हो सकता है। कुछ प्लेटफॉर्म हजारों प्रति माह में चल सकते हैं। Gatsby के साथ A / B परीक्षण आयोजित करने के मुख्य लाभ प्रदर्शन और मूल्य हैं। यदि आप Netlify और Google Analytics का लाभ उठा रहे हैं, तो आप मुफ्त में Gatsby के साथ A / B टेस्ट सेट कर पाएंगे! जब आप अपनी वेबसाइट के विभिन्न रूपों का परीक्षण कर रहे हैं, तो आपको भारी और अक्षम तृतीय पक्ष स्क्रिप्ट को लोड करने के लिए मजबूर नहीं किया जाता है।
 
 <GuideList slug={props.slug} />
