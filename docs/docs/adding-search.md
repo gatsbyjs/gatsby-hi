@@ -1,68 +1,70 @@
 ---
-title: Adding Search
-overview: true
+शीर्षक: खोज जोड़ना
+ओवरव्यू: true
 ---
 
-See below for a list of guides in this section, or keep reading for an overview on adding search functionality to your site.
+इस अनुभाग में मार्गदर्शकों की सूची के लिए नीचे देखें, या अपनी साइट पर खोज की कार्यक्षमता जोड़ने के लिए अवलोकन के लिए पढ़ते रहें।
 
 <GuideList slug={props.slug} />
 
-## Site search overview
+## साइट खोज अवलोकन
 
-Before going through the steps for adding search to your Gatsby website, examine the components needed for adding search to a website.
+अपनी Gatsby वेबसाइट में खोज जोड़ने के चरणों से गुजरने से पहले, किसी वेबसाइट पर खोज जोड़ने के लिए आवश्यक घटकों की जाँच करें।
 
-There are three required components for adding search to your Gatsby website:
+आपकी Gatsby वेबसाइट पर खोज जोड़ने के लिए तीन आवश्यक घटक हैं:
 
 1.  index
 2.  engine
 3.  UI
 
-## Site search components
+## साइट खोज घटक
 
-### Search index
+### खोज सूचकांक
 
-The search index is a copy of your data stored in a search-friendly format. An index is for optimizing speed and performance when executing a search query. Without an index, every search would need to scan every page in your site—which quickly becomes inefficient.
+खोज सूचकांक आपके डेटा की एक प्रति खोज-अनुकूल प्रारूप में संग्रहीत होती है। खोज क्वेरी निष्पादित करते समय गति और प्रदर्शन को अनुकूलित करने के लिए एक सूचकांक है। सूचकांक के बिना, प्रत्येक खोज को आपकी साइट के प्रत्येक पृष्ठ को स्कैन करने की आवश्यकता होगी - जो जल्दी से अक्षम हो जाता है।
 
-### Search engine
+### खोज इंजन
 
-The search engine takes a search query, runs it through the search index, and returns any matching documents.
+खोज इंजन एक खोज क्वेरी लेता है, इसे खोज इंडेक्स के माध्यम से चलाता है, और किसी भी मिलान दस्तावेज़ को वापस करता है।
 
 ### Search UI
 
-The UI component provides an interface to the user, which allows them to write search queries and view the results of each query.
+UI घटक उपयोगकर्ता को एक इंटरफ़ेस प्रदान करता है, जो उन्हें खोज क्वेरी लिखने और प्रत्येक क्वेरी के परिणाम देखने की अनुमति देता है।
 
-## Adding search to your site
+## अपनी साइट पर खोज जोड़ना
 
-Now that you know the three required components, there are a few ways to approach adding search to your Gatsby-powered site.
+अब जब आप तीन आवश्यक घटक जानते हैं, तो आपके Gatsby-संचालित साइट पर खोज को जोड़ने के लिए कुछ तरीके हैं।
 
-### Use an open source search engine
+### एक ओपन सोर्स सर्च इंजन का उपयोग करें
 
-Using an open source search engine is always free and allows you to enable offline search for your site. Note that you need to be careful with offline search because the entire search index has to be brought into the client, which can affect the bundle size significantly.
+एक खुला स्रोत खोज इंजन का उपयोग करना हमेशा मुफ़्त होता है और आपको अपनी साइट के लिए ऑफ़लाइन खोज सक्षम करने की अनुमति देता है। ध्यान दें कि आपको ऑफ़लाइन खोज से सावधान रहने की आवश्यकता है क्योंकि पूरे खोज सूचकांक को क्लाइंट में लाना होगा, जो बंडल आकार को महत्वपूर्ण रूप से प्रभावित कर सकता है।
 
-Open source libraries like [`elasticlunr`](https://www.npmjs.com/package/elasticlunr), [`flexsearch`](https://github.com/nextapps-de/flexsearch) or [`js-search`](https://github.com/bvaughn/js-search) can be used to enable search for your site.
+ओपन सोर्स लाइब्रेरी जैसे [`elasticlunr`](https://www.npmjs.com/package/elasticlunr), [`flexsearch`](https://github.com/nextapps-de/flexsearch) या [`js-search`](https://github.com/bvaughn/js-search) अपनी साइट के लिए खोज को सक्षम करने के लिए इस्तेमाल किया जा सकता है।
 
-Doing so will require you to create a search index when your site is built. For [`elasticlunr`](https://www.npmjs.com/package/elasticlunr), there is a plugin called [`gatsby-plugin-elasticlunr-search`](https://github.com/gatsby-contrib/gatsby-plugin-elasticlunr-search) that creates a search index automatically. For [`flexsearch`](https://github.com/nextapps-de/flexsearch) there is a plugin called [`gatsby-plugin-flexsearch`](https://github.com/tmsss/gatsby-plugin-flexsearch).
 
-For other libraries, you can use a combination of [`onCreateNode`](/docs/node-apis/#onCreateNode), [`setFieldsOnGraphQLNodeType`](/docs/node-apis/#setFieldsOnGraphQLNodeType) and [`sourceNodes`](/docs/node-apis/#sourceNodes) from the Gatsby node API to create the search index and make it available in GraphQL. For more info on how to do this check out [`gatsby-plugin-elasticlunr-search`'s source code](https://github.com/gatsby-contrib/gatsby-plugin-elasticlunr-search/blob/master/src/gatsby-node.js#L96-L131).
+ऐसा करने पर आपको अपनी साइट बनाते समय एक खोज अनुक्रमणिका बनाने की आवश्यकता होगी। [`elasticlunr`](https://www.npmjs.com/package/elasticlunr) के लिये एक प्लगइन है [`gatsby-plugin-elasticlunr-search`](https://github.com/gatsby-contrib/gatsby-plugin-elasticlunr-search) जो स्वचालित रूप से एक खोज सूचकांक बनाता है। [`flexsearch`](https://github.com/nextapps-de/flexsearch) के लिये एक प्लगइन है [`gatsby-plugin-flexsearch`](https://github.com/tmsss/gatsby-plugin-flexsearch)।
 
-Another option is to generate the search index at the end of the build using the [`onPostBuild`](/docs/node-apis/#onPostBuild) node API. This approach is used by [`gatsby-plugin-lunr`](https://github.com/humanseelabs/gatsby-plugin-lunr) to build a multilanguage index.
+अन्य पुस्तकालयों के लिए, आप संयोजन का उपयोग कर सकते हैं : [`onCreateNode`](/docs/node-apis/#onCreateNode), [`setFieldsOnGraphQLNodeType`](/docs/node-apis/#setFieldsOnGraphQLNodeType) तथा [`sourceNodes`](/docs/node-apis/#sourceNodes) Gatsby नोड एपीआई से खोज सूचकांक बनाने के लिए और ग्राफकॉल में उपलब्ध कराने के लिए। यह कैसे करना है, इसकी अधिक जानकारी के लिए देखें[`gatsby-plugin-elasticlunr-search`'s source code](https://github.com/gatsby-contrib/gatsby-plugin-elasticlunr-search/blob/master/src/gatsby-node.js#L96-L131)।
 
-After building the search index and including it in Gatsby's data layer, you will need to allow the user to search your website. This is typically done by using a text input to capture the search query, then using one of the libraries mentioned above to retrieve the desired document(s).
+एक अन्य विकल्प निर्माण के अंत में खोज सूचकांक का उपयोग करके उत्पन्न करना है [`onPostBuild`](/docs/node-apis/#onPostBuild) node API की मदद से। इस दृष्टिकोण का उपयोग किया जाता है [`gatsby-plugin-lunr`](https://github.com/humanseelabs/gatsby-plugin-lunr) में बहुभाषी सूचकांक बनाने के लिए।
 
-### Use an API-based search engine
+खोज सूचकांक के निर्माण और इसे Gatsby की डेटा परत में शामिल करने के बाद, आपको उपयोगकर्ता को अपनी वेबसाइट खोजने की अनुमति देने की आवश्यकता होगी। यह आमतौर पर खोज क्वेरी पर कब्जा करने के लिए एक पाठ इनपुट का उपयोग करके किया जाता है, फिर वांछित दस्तावेज़ों को प्राप्त करने के लिए ऊपर उल्लिखित पुस्तकालयों में से एक का उपयोग कर।
 
-Another option is to use an external search engine. This solution is much more scalable as visitors to your site don't have to download your entire search index (which becomes very large as your site grows) in order to search your site. The trade-off is you'll need to pay for hosting the search engine or pay for a commercial search service.
+### API-आधारित खोज इंजन का उपयोग करें
 
-There are many available both open source that you can host yourself and commercial hosted options.
+एक अन्य विकल्प बाहरी खोज इंजन का उपयोग करना है। यह समाधान बहुत अधिक स्केलेबल है क्योंकि आपकी साइट पर आगंतुकों को आपकी साइट पर खोज करने के लिए आपके संपूर्ण खोज इंडेक्स (जो आपकी साइट बढ़ने पर बहुत बड़े हो जाते हैं) को डाउनलोड करने की आवश्यकता नहीं है। व्यापार-बंद आपको खोज इंजन की मेजबानी के लिए भुगतान करना होगा या व्यावसायिक खोज सेवा के लिए भुगतान करना होगा।
 
-- [ElasticSearch](https://www.elastic.co/products/elasticsearch) — OSS and has commercial hosting available
-- [Solr](http://lucene.apache.org/solr/) — OSS and has commercial hosting available
-- [Algolia](https://www.algolia.com/) — Commercial
+दोनों खुले स्रोत उपलब्ध हैं जो आप स्वयं और वाणिज्यिक होस्ट किए गए विकल्पों की मेजबानी कर सकते हैं।
 
-If you're building a documentation website you can use [Algolia's DocSearch feature](https://community.algolia.com/docsearch/). It will automatically create a search index from the content of your pages.
+- [ElasticSearch](https://www.elastic.co/products/elasticsearch) — OSS और व्यावसायिक होस्टिंग उपलब्ध है
+- [Solr](http://lucene.apache.org/solr/) — OSS और व्यावसायिक होस्टिंग उपलब्ध है
+- [Algolia](https://www.algolia.com/) — व्यावसायिक
 
-If your website does not qualify as documentation, you need to collect the search index at build time and upload it using [`gatsby-plugin-algolia`](https://github.com/algolia/gatsby-plugin-algolia).
+यदि आप एक प्रलेखन वेबसाइट का निर्माण कर रहे हैं, तो आप [Algolia's DocSearch feature](https://community.algolia.com/docsearch/) का उपयोग कर सकते हैं। यह स्वचालित रूप से आपके पृष्ठों की सामग्री से एक खोज सूचकांक बनाएगा।
 
-When using Algolia, they host the search index and search engine for you. Your search queries will be sent to their servers which will respond with any results. You'll need to implement your own UI; Algolia provides a [React library](https://github.com/algolia/react-instantsearch) which may have components you'd like to use.
 
-Elasticsearch has several React component libraries for search e.g. https://github.com/appbaseio/reactivesearch
+यदि आपकी वेबसाइट प्रलेखन के रूप में योग्य नहीं है, तो आपको निर्माण समय पर खोज सूचकांक एकत्र करने और [`gatsby-plugin-algolia`](https://github.com/algolia/gatsby-plugin-algolia) का उपयोग करके इसे अपलोड करने की आवश्यकता है।
+
+अल्गोलिया का उपयोग करते समय, वे आपके लिए खोज सूचकांक और खोज इंजन की मेजबानी करते हैं। आपकी खोज क्वेरी उनके सर्वर को भेजी जाएगी जो किसी भी परिणाम के साथ प्रतिक्रिया देगी। आपको अपना UI लागू करना होगा; अल्गोलिया एक [React library](https://github.com/algolia/react-instantsearch) प्रदान करता है जिसमें आपके द्वारा उपयोग किए जाने वाले घटक हो सकते हैं।
+
+एलिटिक्स खोज में खोज के लिए कई React घटक लाइब्रेरी हैं। https://github.com/appbaseio/reactivesearch
