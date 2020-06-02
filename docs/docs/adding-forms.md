@@ -2,7 +2,7 @@
 title: फॉर्म को जोड़ना
 ---
 
-Gatsby के ऊपर बनाया गया है React| तो सब कुछ जो React में संभव है वह सब फॉर्म में भी संभव है। अतिरिक्त जानकारि की कैसे बनाएं React फॉर्म, यहाँ पाया जा सकता है [React forms documentation](https://reactjs.org/docs/forms.html) (जो Gatsby! से बनाया गया है)
+Gatsby के ऊपर बनाया गया है React। तो सब कुछ जो React में संभव है वह सब फॉर्म में भी संभव है। अतिरिक्त जानकारि की कैसे बनाएं React फॉर्म, यहाँ पाया जा सकता है [React forms documentation](https://reactjs.org/docs/forms.html) (जो Gatsby! से बनाया गया है)
 निम्नलिखित पेज से सुरु करें।
 
 ```jsx:title=src/pages/index.js
