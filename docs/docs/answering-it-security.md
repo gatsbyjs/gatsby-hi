@@ -1,19 +1,20 @@
 ---
-title: Answering IT & Security Questions
+title: आईटी और सुरक्षा सवालों के जवाब देना
 ---
 
-At larger companies, such as the Fortune 500, there are Security teams that audit new technologies being used inside the company.
+फॉर्च्यून 500 जैसी बड़ी कंपनियों में, सुरक्षा दल हैं जो कंपनी के अंदर उपयोग की जा रही नई तकनीकों का ऑडिट करते हैं।
 
-If security engineers are interested in your project, some talking points that can help answer their questions include:
+यदि सुरक्षा इंजीनियर आपकी परियोजना में रुचि रखते हैं, तो कुछ टॉकिंग पॉइंट जो उनके सवालों के जवाब देने में मदद कर सकते हैं:
 
-- Because Gatsby compiles your site to flat files, rather than having running app servers and databases users are targeting, it reduces the attack surface of the site to outsiders.
-- Gatsby adds a layer of indirection which obscures your CMS -- so even if your CMS _is_ vulnerable, bad actors have no idea where to find it. This is in contrast to systems where bad actors can easily locate the admin dashboard at, e.g., `/wp-admin` and attempt to hack in.
-- Gatsby lets you serve your site from a global CDN, likely whatever CDN your company is using (e.g. Akamai, Cloudflare, Fastly...), which effectively eliminates the risk of DDOS attacks.
+- क्योंकि Gatsby आपकी साइट को समतल फ़ाइलों के लिए संकलित करता है, बजाय इसके कि ऐप सर्वर और डेटाबेस उपयोगकर्ताओं को लक्षित कर रहे हैं, यह साइट के हमले की सतह को बाहरी लोगों तक कम कर देता है।
+- Gatsby अप्रत्यक्ष की एक परत जोड़ता है जो आपके सीएमएस को अस्पष्ट करता है - इसलिए भले ही आपका सीएमएस _is_ कमजोर, बुरे अभिनेताओं को पता नहीं है कि इसे कहां खोजना है। यह उन प्रणालियों के विपरीत है जहां खराब अभिनेता आसानी से व्यवस्थापक डैशबोर्ड का पता लगा सकते हैं, उदा। `/wp-admin` और हैक करने का प्रयास करती है
+।
+- Gatsby आपको एक वैश्विक सीडीएन से अपनी साइट की सेवा करने की अनुमति देता है, संभावना है कि आपकी कंपनी जो भी सीडीएन का उपयोग कर रही है (जैसे Akamai, Cloudflare,Fastly ...), जो प्रभावी रूप से डीडीओएस हमलों के जोखिम को समाप्त करती है।
 
-It's helpful to emphasize to security personnel that these benefits were a factor in why Gatsby was selected for the project. You chose Gatsby, in part, because it is _more_ secure.
+यह सुरक्षा कर्मियों पर जोर देने में मददगार है कि ये लाभ इस बात का कारक थे कि Gatsby को परियोजना के लिए क्यों चुना गया। आप चुनें Gatsby, भाग में, क्योंकि यह _more_ सुरक्षित है।
 
-Read about security in Gatsby: [https://www.gatsbyjs.org/blog/2019-04-06-security-for-modern-web-frameworks/](/blog/2019-04-06-security-for-modern-web-frameworks/)
+सुरक्षा के बारे में पढ़ें Gatsby में: [https://www.gatsbyjs.org/blog/2019-04-06-security-for-modern-web-frameworks/](/blog/2019-04-06-security-for-modern-web-frameworks/)
 
 --
 
-**Note:** do you have additional ideas on how to answer IT and security questions for Gatsby projects? We welcome contributions to the Gatsby docs. Find out [how to contribute](/contributing/docs-contributions/).
+**ध्यान दें:** क्या आपके पास Gatsby परियोजनाओं के लिए आईटी और सुरक्षा सवालों के जवाब देने के बारे में अतिरिक्त विचार हैं? हम Gatsby डॉक्स में योगदान का स्वागत करते हैं। पता लगाएं [how to contribute](/contributing/docs-contributions/).
