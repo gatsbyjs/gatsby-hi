@@ -1,97 +1,96 @@
 ---
-title: How to label an issue
+title: किसी इशू को लेबल कैसे करें
 ---
 
-## What are issue labels?
+## इशू लेबल क्या हैं?
 
-Issue labels are a tool in GitHub that are used to group issues into one or more categories.
+इशू लेबल GitHub में एक टूल है जो एक या अधिक कैटगोरी में ग्रुप के इश्यूज को एक साथ ग्रुप करने के लिए उपयोग किया जाता है।
 
-[Check out Gatsby's labels (and their descriptions)](https://github.com/gatsbyjs/gatsby/issues/labels)
+[Gatsby के लेबल देखें (और उनके विवरण)](https://github.com/gatsbyjs/gatsby/issues/labels)
 
-## Why label issues?
+## इश्यूज को लेबल क्यों करें?
 
-Gatsby is a very active project with many new issues opened each day. Labelling issues helps by identifying:
+Gatsby एक बहुत ही सक्रिय प्रोजेक्ट है जिसमें प्रत्येक दिन कई नए इशू खोले जाते हैं। लेबलिंग इशू की पहचान करने में हेल्प करता है:
 
-- good issues for new contributors to work on
-- reported and confirmed bugs
-- feature requests
-- duplicate issues
-- issues that are stalled or blocked
+- नए कन्ट्रिब्यटर के लिए अच्छे इशू पर काम करना
+- रिपोर्टेड और कनफर्म्ड bug
+- सुविधा का अनुरोध
+- डुप्लिकेट इश्यूज
+- ऐसे इशू जो रुके हुए या ब्लॉक्ड हैं
 
-## Who can label issues?
+## इशू को कौन लेबल कर सकता है?
 
-Anyone who's a member of the [Gatsby Maintainers team](https://github.com/orgs/gatsbyjs/teams/maintainers) can label issues.
+[`Gatsby मेंटेनर्स टीम`](https://github.com/orgs/gatsbyjs/teams/maintainers) का कोई भी सदस्य इशू को लेबल कर सकता हैं।
 
-You can get an invite to the team by having a Pull Request merged into the Gatsby project. Check out the list of [`help wanted`](https://github.com/gatsbyjs/gatsby/labels/%F0%9F%93%8D%20status%3A%20help%20wanted) issues and the [How To Contribute Guide](/contributing/how-to-contribute/) to get started.
+पुल रिक्वेस्ट को Gatsby प्रोजेक्ट में मर्ज कर आप टीम को इन्वाइट कर सकते हैं। स्टार्ट करने के लिए [`help wanted`](https://github.com/gatsbyjs/gatsby/labels/%F0%9F%93%8D%20status%3A%20help%20wanted) इश्यूज की लिस्ट और [कैसे कंट्रीब्यूट करे गाइड](/contributing/how-to-contribute/) चेक करे।
 
-**NOTE:** If you’ve already had a pull request merged and you have _not_ been invited to the maintainers team, please go to [the dashboard](https://store.gatsbyjs.org/) and request a discount code. You should get an invite to the team — _and you get free Gatsby swag!_ If that doesn’t work, please email team@gatsbyjs.com and we'll get you invited.
+**नोट:** यदि आपके पास पहले से ही एक पुल रिक्वेस्ट मिला है और आपको _नहीं_ मैंटेनेर्स टीम को इन्वाइट किया गया है,तो कृपया जायें [डैशबोर्ड](https://store.gatsbyjs.org/) और डिस्काउंट कोड का रिक्वेस्ट करें। आपको टीम को निमंत्रण मिलना चाहिए — _और आपको फ्री Gatsby स्वैग मिलेगा!_ अगर वह काम नहीं करता है, तो कृपया team@gatsbyjs.com पर ईमेल करें और हम आपको इन्वाइट करेंगे।
 
-## How to label an issue
+## किसी समस्या को कैसे लेबल करें
 
-Ideally, every issue should have a single `type:` label applied to it. Optionally a `status:` label or other labels may also be applied.
+आदर्श रूप से, हर इशू सिंगल होना चाहिए `type:` उस पर लेबल लगाया होगा। वैकल्पिक रूप से ए `status:` लेबल या अन्य लेबल भी लगाए जा सकते हैं।
 
-Before continuing, get familiar with [Gatsby's issue labels and their descriptions](https://github.com/gatsbyjs/gatsby/issues/labels).
+जारी रखने से पहले, परिचित हो जाएं [Gatsby के इशू लेबल्स और उनके डिस्क्रीप्शन्स ](https://github.com/gatsbyjs/gatsby/issues/labels).
 
-The broad steps to labelling an issue are:
+किसी इशू को लेबल करने के लिए व्यापक चरण हैं:
 
-- Read an issue
-- Choose the labels that apply to that issue
-- That's it - sit back and relax, maybe take a few moments to enjoy the satisfaction of a job well done
+- एक इशू पढ़ें
+- उस इशू पर लागू होने वाले लेबल चुनें
+- वह यह है - वापस बैठो और आराम करो, शायद अच्छी तरह से किए गए काम की संतुष्टि का आनंद लेने के लिए कुछ क्षण लें
 
-The rest of this document will describe how to choose the right labels for an issue.
+इस दस्तावेज़ के बाकी का वर्णन करेगा कि किसी इशू के लिए सही लेबल कैसे चुनें।
 
-### Find an issue that you're interested in
+### कोई ऐसा इशू खोजें जिसमें आपकी रुचि हो
+[Gatsby के issues सूची](https://github.com/gatsbyjs/gatsby/issues) के साथ शुरू करे और तब तक स्क्रॉल करें जब तक कि आप हाल के एक को न देखें जो आपकी रुचि को प्रभावित करता है। वैकल्पिक रूप से, आप देख सकते हैं [गैर-सूचीबद्ध इशू की सूची](https://github.com/gatsbyjs/gatsby/issues?q=is%3Aopen+is%3Aissue+no%3Alabel).
 
-Start with [Gatsby's issues list](https://github.com/gatsbyjs/gatsby/issues) and scroll through until you see a recent one that strikes your interest. Alternatively, you can view the [list of unlabelled issues](https://github.com/gatsbyjs/gatsby/issues?q=is%3Aopen+is%3Aissue+no%3Alabel).
+### इशू पढ़ें
 
-### Read the issue
+इशू और किसी भी टिप्पणी को समझने के लिए पढ़ें कि इशू क्या है।
 
-Read the issue and any comments to understand what the issue is about.
+### एक चुनो `type:` लेबल
 
-### Choose one `type:` label
+एक प्रकार का लेबल चुनें _labels_ इशू के दाईं ओर के लिए ड्रॉपडाउन।
 
-Choose a type label from the _labels_ dropdown to the right-hand side of the issue.
+![GitHub लेबल ड्रॉपडाउन](./images/github-label-list.png)
 
-![GitHub label dropdown](./images/github-label-list.png)
+चेक करे [लेबल विवरण](https://github.com/gatsbyjs/gatsby/issues/labels) प्रत्येक पर अधिक जानकारी के लिए।
 
-You can check through the [label descriptions](https://github.com/gatsbyjs/gatsby/issues/labels) for more information on each one.
+सबसे आम प्रकार का इशू है `type: question or discussion`, आम तौर पर आप इसे उन इशू पर लागू कर सकते हैं जो खुले-समाप्त हैं या जिनके पास अगला चरण नहीं है।
 
-The most common type of issue is `type: question or discussion`, typically you can apply this to issues that are open-ended or have no clear next step.
+अधिक जानकारी उपलब्ध होने पर किसी इशू के प्रकार को बदलना ठीक है। जो शुरू होता है `type: question or discussion` से, बाद में इसे बदलने की आवश्यकता हो सकती है `type: bug` में.
 
-It's OK to change the type of an issue as more information becomes available. What starts as `type: question or discussion`, might later need to be changed to `type: bug`.
+लेबल बदलना त्वरित और आसानी से प्रतिवर्ती है, इसलिए "wrong" लेबल लगाने के बारे में बहुत चिंता न करें।
 
-Changing labels is quick and easily reversible, so don't worry too much about applying a "wrong" label.
+एक उपयुक्त चुनें `type:` लेबल करें और आप अगले चरण पर जाने के लिए तैयार हैं।
 
-Choose an appropriate `type:` label and you're ready to move on to the next step.
+### चुनें `status:` लेबल (ऑप्शनल)
 
-### Choose a `status:` label (optional)
+चैक करे [`status:` लेबल (और उनके विवरण)](https://github.com/gatsbyjs/gatsby/issues/labels), यदि कोई इस इशू पर लागू होता है, तो उन्हें आवश्यकतानुसार जोड़ दें।
 
-Check through the [`status:` labels (and their descriptions)](https://github.com/gatsbyjs/gatsby/issues/labels), if any apply to this issue add them as necessary.
+आवेदन करने के उदाहरण `status:` लेबल हो सकते हैं:
 
-Examples of applying `status:` labels might be:
+- ऐसा इशू जो बाहरी निर्भरता पर निर्भर करता है, को परिवर्तित किया जा सकता है `status: blocked`
 
-- An issue that depends on an external dependency being changed could be labelled with `status: blocked`
+- इसे हल कैसे किया जा सकता है इसका स्पष्ट विवरण के साथ एक इशू `status: help wanted`.
 
-- An issue with a clear description of how it can be resolved could be labelled `status: help wanted`.
+- एक इशू जो लेखक को मदद करने के लिए आवश्यक जानकारी गुम है, जिसके साथ लेबल किया जा सकता है `status: needs more info`
 
-- An issue that's missing information required to help the author could be labelled with `status: needs more info`
+- पुन: पेश करने के लिए स्पष्ट चरणों के बिना बग का वर्णन करने वाला इशू लेबल किया जा सकता है `status: needs reproduction`
 
-- An issue describing a bug without clear steps to reproduce could be labelled with `status: needs reproduction`
+- एक बग का वर्णन करने वाला एक इशू जहां बग को पुन: उत्पन्न करने के लिए कदम हैं _और_ आपने स्थानीय रूप से कोड चलाया है और त्रुटि को स्वयं लेबल किया जा सकता है। `status: confirmed`
 
-- An issue describing a bug where there are steps to reproduce the bug _and_ you've run the code locally and seen the error yourself can be labelled `status: confirmed`
+### कोई अन्य लेबल चुनें
 
-### Choose any other labels
+कुछ अन्य लेबल हैं जो कभी-कभी किसी इशू पर लागू हो सकते हैं। यहां कुछ और उदाहरण दिए गए हैं कि उनका उपयोग कब करना है:
 
-There are a few other labels that can sometimes be applied to an issue. Here are some more examples of when to use them:
+- `good first issue` का उपयोग तब किया जा सकता है जब कोई इशू एक छोटा, स्पष्ट रूप से परिभाषित कार्य है जो किसी व्यक्ति द्वारा Gatsby के गहन ज्ञान के बिना पूरा किया जा सकता है और यह कैसे काम करता है। ये इशू विशेष रूप से उन लोगों के लिए उपयुक्त हैं जो अपना पहला ओपना सोर्स कंट्रीब्यूशन कर रहे हैं।
 
-- `good first issue` can be used when an issue is a small, clearly defined piece of work that could be completed by someone without in-depth knowledge of Gatsby and how it works. These issues are particularly suitable for people making their first open source contributions.
+- `stale?` एक ऐसे इशू पर इस्तेमाल किया जा सकता है जहां लेखक ने कम से कम 20 दिनों में और जानकारी के अनुरोधों का जवाब नहीं दिया है।
 
-- `stale?` can be used on an issue where the author has not replied to requests for further information in at least 20 days.
+### फिनिश
 
-### Finish
+और आपने कल लिया! आप इसे एक दिन कह सकते हैं या किसी अन्य इशू को लेबल करने के लिए पहले चरण पर वापस जा सकते हैं।
 
-And you're done! You can call it a day or go back to the first step to label another issue.
+## परिणाम
 
-## Conclusion
-
-Labelling issues is a great way to help out on the Gatsby project regardless of your experience level.
+अपने अनुभव के स्तर की परवाह किए बिना Gatby परियोजना पर हेल्प करने के लिए लेबलिंग इशू एक शानदार तरीका है।
