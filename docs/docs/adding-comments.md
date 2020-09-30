@@ -1,10 +1,10 @@
 ---
-title: Adding Comments
+शीर्षक: टिप्पणियाँ जोड़ना
 ---
 
-If you're using Gatsby to run a blog and you've started adding some content to it, the next thing to think about is how to increase engagement among your visitors. A great way to do that is to allow them to ask questions and express their views on what you've written. This will make your blog seem much more lively to anyone visiting it.
+यदि आप एक ब्लॉग चलाने के लिए गैट्सबी का उपयोग कर रहे हैं और आपने इसमें कुछ सामग्री जोड़ना शुरू कर दिया है, तो अगली बात यह सोचने की है कि आपके आगंतुकों के लिए सगाई कैसे बढ़ाई जाए। ऐसा करने का एक शानदार तरीका है कि आप उन्हें सवाल पूछने और अपने विचारों को व्यक्त करने की अनुमति दें कि आपने क्या लिखा है। यह आपके ब्लॉग पर आने वाले किसी भी व्यक्ति को अधिक जीवंत प्रतीत होगा।
 
-There are many options out there for adding comment functionality, several of them specifically targeted at static sites. While this list is by no means exhaustive, it does serve as a good starting point to illustrate what's available:
+टिप्पणी कार्यक्षमता जोड़ने के लिए कई विकल्प हैं, उनमें से कई विशेष रूप से स्थिर साइटों पर लक्षित हैं। जबकि यह सूची किसी भी तरह से संपूर्ण नहीं है, यह जो उपलब्ध है उसे स्पष्ट करने के लिए एक अच्छे शुरुआती बिंदु के रूप में काम करता है:
 
 - [Disqus](https://disqus.com)
 - [Commento](https://commento.io)
@@ -13,38 +13,37 @@ There are many options out there for adding comment functionality, several of th
 - [TalkYard](https://www.talkyard.io)
 - [Gitalk](https://gitalk.github.io)
 
-You can also [roll your own comment system](/blog/2019-08-27-roll-your-own-comment-system/), as Tania Rascia wrote on the Gatsby blog.
+तानिया रास्किया ने गैट्सबी ब्लॉग पर लिखा है कि आप [अपना खुद का कमेंट रोल भी कर सकते हैं] (/blog/2019-08-27-roll-your-own-comment-system/)
 
 ## Using Disqus for comments
 
-In this guide, you'll learn how to implement Disqus on your blog as it has a number of nice features.
+इस गाइड में, आप सीखेंगे कि अपने ब्लॉग पर Disqus को कैसे लागू किया जाए क्योंकि इसमें कई अच्छी विशेषताएं हैं।
 
-- It is low maintenance, meaning [moderating your comments and maintaining your forum](https://help.disqus.com/moderation/moderating-101) less hassle.
-- It provides official [React support](https://github.com/disqus/disqus-react).
-- It offers a [generous free tier](https://disqus.com/pricing).
-- It [seems to be by far the most widely used service](https://www.datanyze.com/market-share/comment-systems/disqus-market-share).
-- It’s easier to comment: Disqus has a large existing user base and the onboarding experience for new users is fast. You can register with your Google, Facebook or Twitter account and users can more seamlessly share the comments they write through those channels.
-- The Disqus UI has a distinct but unobtrusive look that many users will recognize and trust.
-- All Disqus components are lazy-loaded, meaning they won't negatively impact the load time of your posts.
+- यह कम रखरखाव है, जिसका अर्थ है [अपनी टिप्पणियों को मॉडरेट करना और अपने मंच को बनाए रखना] (https://help.disqus.com/moderation/moderating-101) कम परेशानी।
+- यह आधिकारिक [प्रतिक्रिया समर्थन] (https://github.com/disqus/disqus-react) प्रदान करता है।
+- यह एक [उदार मुक्त स्तरीय] (https://disqus.com/pricing) प्रदान करता है।
+- अब तक यह सबसे अधिक इस्तेमाल की जाने वाली सेवा है।] (https://www.datanyze.com/market-share/comment-systems/disqus-market-share)।
+- यह टिप्पणी करना आसान है: डिस्कस के पास एक बड़ा मौजूदा उपयोगकर्ता आधार है और नए उपयोगकर्ताओं के लिए ऑनबोर्डिंग का अनुभव तेज है। आप अपने Google, फेसबुक या ट्विटर खाते के साथ पंजीकरण कर सकते हैं और उपयोगकर्ता उन चैनलों के माध्यम से लिखी जाने वाली टिप्पणियों को अधिक सहजता से साझा कर सकते हैं।
+- डिस्कस यूआई का एक अलग लेकिन विनीत रूप है कि कई उपयोगकर्ता पहचान और विश्वास करेंगे।
+- सभी Disqus घटक आलसी-लोडेड हैं, जिसका अर्थ है कि वे आपके पोस्ट के लोड समय को नकारात्मक रूप से प्रभावित नहीं करेंगे।
 
-Bear in mind, however, that choosing Disqus also incurs a tradeoff. Your site is no longer entirely static but depends on an external platform to deliver your comments through embedded `iframe`s on the fly. Moreover, you should consider the privacy implications of letting a third party store your visitors' comments and potentially track their browsing behavior. You may consult the [Disqus privacy policy](https://help.disqus.com/terms-and-policies/disqus-privacy-policy), the [privacy FAQs](https://help.disqus.com/terms-and-policies/privacy-faq) (specifically the last question on GDPR compliance) and inform your users [how to edit their data sharing settings](https://help.disqus.com/terms-and-policies/how-to-edit-your-data-sharing-settings).
+हालांकि, ध्यान में रखते हुए, कि डिस्कस को चुनना भी एक व्यापार को स्थापित करता है। आपकी साइट अब पूरी तरह से स्थिर नहीं है, लेकिन एक बाहरी प्लेटफ़ॉर्म पर निर्भर करता है ताकि मक्खी पर एम्बेडेड `iframe` के माध्यम से अपनी टिप्पणी दी जा सके। इसके अलावा, आपको तीसरे पक्ष को अपने आगंतुकों की टिप्पणियों को संग्रहीत करने और संभवतः उनके ब्राउज़िंग व्यवहार को ट्रैक करने की गोपनीयता के निहितार्थों पर विचार करना चाहिए। आप [Disqus गोपनीयता नीति] (https://help.disqus.com/terms-and-policies/disqus-privacy-policy) से परामर्श कर सकते हैं, [गोपनीयता प्रश्न] (https://help.disqus.com/terms) -और-नीतियां / गोपनीयता-faq) (विशेष रूप से GDPR अनुपालन पर अंतिम प्रश्न) और अपने उपयोगकर्ताओं को सूचित करें [उनकी डेटा साझाकरण सेटिंग संपादित करने के लिए] (https://help.disqus.com/terms-and-policies/how- को संपादित-your-डेटा-शेयरिंग-सेटिंग्स)।
 
-If these concerns outweigh the benefits of Disqus, you may want to look into some of the other options above. We welcome pull requests to expand this guide with setup instructions for other services.
+यदि ये चिंताएं डिसकस के लाभों से आगे निकल जाती हैं, तो आप ऊपर दिए गए कुछ अन्य विकल्पों पर गौर कर सकते हैं। हम अन्य सेवाओं के लिए सेटअप निर्देशों के साथ इस गाइड का विस्तार करने के लिए पुल अनुरोधों का स्वागत करते हैं।
 
-## Implementing Disqus
+## डिसकस को लागू करना
+[[डिसकस लोगो] (./images/disqus-logo.svg)
 
-![Disqus logo](./images/disqus-logo.svg)
+यहाँ अपने स्वयं के ब्लॉग में Disqus टिप्पणियों को जोड़ने के लिए कदम हैं:
 
-Here are the steps for adding Disqus comments to your own blog:
-
-1. [Sign-up to Disqus](https://disqus.com/profile/signup). During the process you'll have to choose a shortname for your site. This is how Disqus will identify comments coming from your site. Copy that for later.
-2. Install the Disqus React package
+1. डिसकस के लिए एक साइन-अप] (https://disqus.com/profile/signup)। प्रक्रिया के दौरान आपको अपनी साइट के लिए एक शॉर्टनाम चुनना होगा। इस तरह से डिस्कस आपकी साइट से आने वाली टिप्पणियों की पहचान करेगा। बाद के लिए कॉपी करें।
+2. डिस्कस रिएक्ट पैकेज स्थापित करें
 
 ```shell
 npm install disqus-react
 ```
 
-3. Add the shortname from step 1 as something like `GATSBY_DISQUS_NAME` to your `.env` and `.env.example` files so that people forking your repo will know that they need to supply this value to get comments to work. (You need to prefix the environment variable with `GATSBY_` in order to [make it available to client-side code](https://www.gatsbyjs.org/docs/environment-variables/#client-side-javascript).)
+3. चरण 1 से शॉर्टनेम जोड़ें, जैसे कि `GATSBY_DISQUS_NAME` को अपनी` .en`` और ``env.example` फ़ाइलों में से कुछ, ताकि आपके रेपो को भूल जाने वाले लोगों को पता चले कि उन्हें काम करने के लिए टिप्पणियां प्राप्त करने के लिए इस मूल्य की आपूर्ति करने की आवश्यकता है। (आपको क्लाइंट-साइड कोड को उपलब्ध कराने के लिए (GATSBY_` के साथ पर्यावरण चर को उपसर्ग करने की आवश्यकता है] (https://www.gatsbyjs.org/docs/environment-variables/#client-side.Aavascript)। )
 
 ```text:title=.env.example
 # enables Disqus comments for blog posts
@@ -55,7 +54,7 @@ GATSBY_DISQUS_NAME=insertValue
 GATSBY_DISQUS_NAME=yourSiteShortname
 ```
 
-4. In your blog post template (usually `src/templates/post.js`) import the `DiscussionEmbed` component.
+ 4. अपने ब्लॉग पोस्ट टेम्पलेट में (आमतौर पर `src/templates/post.js`)` DiscussionEmbed` घटक आयात करते हैं।
 
 ```js:title=src/templates/post.js
 import React from "react"
@@ -64,7 +63,7 @@ import { graphql } from "gatsby"
 import { DiscussionEmbed } from "disqus-react"
 ```
 
-Then define your Disqus configuration object
+फिर अपनी Disqus कॉन्फ़िगरेशन ऑब्जेक्ट को परिभाषित करें
 
 ```js
 const disqusConfig = {
@@ -73,7 +72,7 @@ const disqusConfig = {
 }
 ```
 
-Where `identifier` must be a string or number that uniquely identifies the post. It could be the post's slug, title or some ID. Finally, add `DiscussionEmbed` to the JSX of your post template.
+जहां `thatidentifier` एक स्ट्रिंग या संख्या होना चाहिए जो विशिष्ट रूप से पोस्ट की पहचान करता है। यह पोस्ट का स्लग, शीर्षक या कुछ आईडी हो सकता है। अंत में, `DiscussionEmbed` अपनी पोस्ट टेम्पलेट के JSX में जोड़ें।
 
 ```jsx:title=src/templates/post.js
 return (
@@ -86,6 +85,6 @@ return (
 )
 ```
 
-And you're done. You should now see the Disqus comment form appear beneath your blog post [looking like this](https://janosh.io/blog/disqus-comments#disqus_thread). Happy blogging!
+और आपने कल लिया। अब आपको अपने ब्लॉग पोस्ट [इस तरह दिख रहे] (https://janosh.io/blog/disqus-comments#disqus_thread) के नीचे Disqus टिप्पणी फ़ॉर्म दिखाई देना चाहिए। हैप्पी ब्लॉगिंग!
 
-[![Disqus comments](./images/disqus-comments.png)](https://janosh.io/blog/disqus-comments#disqus_thread)
+[![Disqus comments](./images/disqus-comments.png)] (https://janosh.io/blog/disqus-comments#disqus_thread)
