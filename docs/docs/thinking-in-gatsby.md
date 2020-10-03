@@ -1,5 +1,5 @@
 ---
-title: Thinking in Gatsby
+शीर्षक: गैट्सबी में सोचना
 ---
 
-Coming soon.
+जल्द आ रहा है !
