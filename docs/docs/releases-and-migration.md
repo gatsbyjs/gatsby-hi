@@ -1,8 +1,8 @@
 ---
-title: Releases & Migration
-overview: true
+शीर्षक: विज्ञप्ति और स्थानांतरगमन
+अवलोकन: सत्य
 ---
 
-Find release notes and guides on how to upgrade Gatsby along with third-party packages.
+थर्ड-पार्टी पैकेज के साथ गैट्सबी को अपग्रेड करने के तरीके के बारे में रिलीज़ नोट्स और गाइड खोजें !
 
 <GuideList slug={props.slug} />
