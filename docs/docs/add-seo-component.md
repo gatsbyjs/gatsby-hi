@@ -2,13 +2,13 @@
 title: "Adding an SEO Component"
 ---
 
-Every site on the web has basic _meta-tags_ like the title, favicon or description of the page in their `<head>` element. This information gets displayed in the browser and is used when someone shares your website, e.g. on Twitter. You can give your users and these websites additional data to embed your website with more data — and that's where this guide for a SEO component comes in. At the end you'll have a component you can place in your layout file and have rich previews for other clients, smartphone users, and search engines.
+वेब पर प्रत्येक साइट में उनके '<head>' तत्व में पृष्ठ का मूल शीर्षक, फेविकॉन या विवरण जैसे बुनियादी _meta-tags_ हैं। यह जानकारी ब्राउज़र में प्रदर्शित हो जाती है और इसका उपयोग तब किया जाता है जब कोई आपकी वेबसाइट को साझा करता है, उदा। ट्विटर पे। आप अपने उपयोगकर्ताओं और इन वेबसाइटों को अपनी वेबसाइट को अधिक डेटा के साथ एम्बेड करने के लिए अतिरिक्त डेटा दे सकते हैं - और यही वह स्थान है जहां एक एसईओ घटक के लिए यह गाइड आता है। अंत में आपके पास एक घटक होगा जो आप अपने लेआउट फ़ाइल में रख सकते हैं और समृद्ध पूर्वावलोकन कर सकते हैं। अन्य ग्राहकों, स्मार्टफोन उपयोगकर्ताओं और खोज इंजन के लिए।
 
-_Note: This component will use StaticQuery. If you're unfamiliar with that, have a look at the [StaticQuery documentation](/docs/static-query/). You also have to have `react-helmet` installed for which you can have a look at [this document](/docs/add-page-metadata)._
+_Note: यह घटक StaticQuery का उपयोग करेगा। यदि आप इससे अपरिचित हैं, तो [StaticQuery प्रलेखन] (/ डॉक्स / स्टैटिक-क्वेरी /) पर एक नज़र डालें। आपके पास `रिएक्शन-हेलमेट` भी होना चाहिए जिसके लिए आप [इस दस्तावेज़] (/ डॉक्स / ऐड-पेज-मेटाडेटा) पर एक नज़र डाल सकते हैं ।_
 
 ## gatsby-config.js
 
-Gatsby makes all data put into the `siteMetadata` section of your `gatsby-config` file automatically available in GraphQL and therefore it's a good idea to place your information for the component there.
+Gatsby सभी डेटा को आपके `gatsby-config` फ़ाइल के` siteMetadata` अनुभाग में ग्राफिंक में स्वचालित रूप से उपलब्ध कराता है और इसलिए यह आपकी जानकारी को वहाँ के घटक के लिए रखने का एक अच्छा विचार है।
 
 ```js:title=gatsby-config.js
 module.exports = {
@@ -24,9 +24,9 @@ module.exports = {
 }
 ```
 
-## SEO component
+## SEO अंग
 
-Create a new component with this initial boilerplate:
+इस प्रारंभिक बायलरप्लेट के साथ एक नया घटक बनाएँ:
 
 ```jsx:title=src/components/SEO.js
 import React from "react"
@@ -55,10 +55,9 @@ SEO.defaultProps = {
 }
 ```
 
-**Note:** `propTypes` are included in this example to help you ensure you’re getting all the data you need in the component, and to help serve as a guide while destructuring / using those props.
+** ध्यान दें: ** `प्रोपटीपेस` इस ​​उदाहरण में शामिल हैं, जिससे आपको यह सुनिश्चित करने में मदद मिलेगी कि आपको घटक में आवश्यक सभी डेटा मिल रहे हैं, और उन प्रॉप्स को नष्ट / उपयोग करते समय एक गाइड के रूप में सेवा करने में मदद मिलेगी।
 
-As the SEO component should also be usable in other files, e.g. a template file, the component also accepts properties for which you set sensible defaults in the `SEO.defaultProps` section. This way the information you put into `siteMetadata` gets used every time unless you define the property explicitly.
-
+जैसा कि SEO घटक अन्य फ़ाइलों में भी प्रयोग करने योग्य होना चाहिए, उदा। एक टेम्प्लेट फ़ाइल, घटक उन गुणों को भी स्वीकार करता है जिनके लिए आप `SEO.defaultProps` अनुभाग में समझदार चूक सेट करते हैं। इस तरह से आप `siteMetadata` में दी गई जानकारी को हर बार उपयोग करते हैं जब तक कि आप स्पष्ट रूप से संपत्ति को परिभाषित नहीं करते हैं।
 Now define the query and place it in the StaticQuery (you can also save the query in a constant). You can also alias query items, so `title` gets renamed to `defaultTitle`.
 
 ```jsx:title=src/components/SEO.js
@@ -84,7 +83,7 @@ const query = graphql`
 `
 ```
 
-The next step is to destructure the data from the query and to create an object that checks if the props were used — if not the default values are utilized. The name aliasing comes in handy here: It avoids name collisions.
+अगला कदम क्वेरी से डेटा को नष्ट करना है और एक ऑब्जेक्ट बनाना है जो यह जांचता है कि क्या प्रॉप्स का उपयोग किया गया था - यदि डिफ़ॉल्ट मानों का उपयोग नहीं किया गया है। अलियासिंग नाम यहाँ काम आता है: यह नाम टकराव से बचा जाता है।
 
 ```jsx:title=src/components/SEO.js
 const SEO = ({ title, description, image, pathname, article }) => (
@@ -117,7 +116,7 @@ const SEO = ({ title, description, image, pathname, article }) => (
 export default SEO
 ```
 
-The last step is to return this data with the help of `Helmet`. Your complete SEO component should look like:
+अंतिम चरण `हेलमेट` की मदद से इस डेटा को वापस करना है। आपका पूरा एसईओ घटक जैसा दिखना चाहिए:
 
 ```jsx:title=src/components/SEO.js
 import React from "react"
@@ -211,11 +210,11 @@ const query = graphql`
 `
 ```
 
-## Examples
+## उदाहरण
 
-You could also put the Facebook and Twitter meta-tags into their own components, add custom favicons you placed in your `static` folder, and add [schema.org](https://schema.org/) data (Google will use that for their [Structured Data](https://developers.google.com/search/docs/guides/intro-structured-data)). To see how that works you can have a look at these two examples:
+आप फेसबुक और ट्विटर मेटा-टैग को अपने घटकों में भी डाल सकते हैं, अपने पसंदीदा स्टैविक फोन्स को अपने `स्थिर` फ़ोल्डर में जोड़ सकते हैं, और [schema.org] (https://schema.org/) डेटा (Google का उपयोग करेंगे) उनके [संरचित डेटा] (https://developers.google.com/search/docs/guides/intro-structured-data)) के लिए। यह देखने के लिए कि कैसे काम करता है आप इन दो उदाहरणों पर एक नज़र डाल सकते हैं:
 
 - [marisamorby.com](https://github.com/marisamorby/marisamorby.com/blob/master/packages/gatsby-theme-blog-sanity/src/components/seo.js)
 - [gatsby-starter-prismic](https://github.com/LeKoArts/gatsby-starter-prismic/blob/master/src/components/SEO/SEO.jsx)
 
-As mentioned at the beginning you are also able to use the component in templates, like in [this example](https://github.com/jlengstorf/marisamorby.com/blob/6e86f845185f9650ff95316d3475bb8ac86b15bf/src/templates/post.js#L12-L18).
+जैसा कि शुरुआत में बताया गया है कि आप टेम्प्लेट में घटक का उपयोग करने में सक्षम हैं, जैसे कि [this example](https://github.com/jlengstorf/marisamorby.com/blob/6e86f845185f9650ff95316d3475bb8ac86b15bf/src/templates/post.js#L12-L18).
