@@ -1,12 +1,12 @@
 ---
-title: Adding a List of Markdown Blog Posts
+title: मार्कडाउन ब्लॉग पोस्ट की लिस्ट जोड़ना
 ---
 
-Once you have added Markdown pages to your site, you are just one step away from being able to list your posts on a dedicated index page.
+एक बार जब आप मार्कडाउन पेजिज़ को अपनी साइट पर जोड़ लेते हैं, तो आप एक समर्पित इंडेक्स पेज पर अपनी पोस्टों को सूचीबद्ध करने में सक्षम होने से बस एक कदम दूर होते हैं।
 
-## Creating posts
+## पोस्ट बनाना
 
-As described [here](/docs/adding-markdown-pages), you will have to create your posts in Markdown files which will look like this:
+जैसा कि [यहाँ](/docs/adding-markdown-pages) बताया गया है, आपको मार्कडाउन फाइलों में अपनी पोस्ट बनानी होगी जो इस तरह दिखाई देगी:
 
 ```markdown
 ---
@@ -18,9 +18,9 @@ title: "My first blog post"
 Has anyone heard about GatsbyJS yet?
 ```
 
-## Creating the page
+## पेज बनाना
 
-The first step will be to create the page which will display your posts, in `src/pages/`. You can for example use `index.js`.
+पहला कदम उस पेज को बनाना होगा जो आपकी पोस्ट को `src/pages/` में प्रदर्शित करेगा। आप उदाहरण के लिए `index.js` का उपयोग कर सकते हैं।
 
 ```jsx:title=src/pages/index.js
 import React from "react"
@@ -41,9 +41,9 @@ const IndexPage = ({
 export default IndexPage
 ```
 
-## Creating the GraphQL query
+## GraphQL क्वेरी बनाना
 
-Second, you need to provide the data to your component with a GraphQL query. Add it, so that `index.js` looks like this:
+दूसरा, आपको अपने कौम्पोनॅन्ट को GraphQL क्वेरी के साथ डेटा प्रदान करना होगा। इसे जोड़ें, ताकि `index.js` इस तरह दिखे:
 
 ```jsx:title=src/pages/index.js
 import React from "react"
@@ -83,9 +83,9 @@ export const pageQuery = graphql`
 `
 ```
 
-## Creating the `PostLink` component
+## `PostLink` कौम्पोनॅन्ट बनाना
 
-The only thing left to do is to add the `PostLink` component. Create a new file `post-link.js` in `src/components/` and add the following:
+केवल एक ही काम, `PostLink` कौम्पोनॅन्ट को जोड़ना रह गया है। `src/components/` में एक नई फ़ाइल `post-link.js` बनाएं और निम्नलिखित जोड़ें:
 
 ```jsx:title=src/components/post-link.js
 import React from "react"
@@ -102,4 +102,4 @@ const PostLink = ({ post }) => (
 export default PostLink
 ```
 
-This should get you a page with your posts sorted by descending date. You can further customize the `frontmatter` and the page and `PostLink` components to get your desired effects!
+यह आपको एक पेज देना चाहिए जिसमें आपके पोस्ट्स अवरोही तिथि के अनुसार छांटे गए होंगे। आप अपने इच्छित प्रभावों को प्राप्त करने के लिए `frontmatter` और पेज और `PostLink` कौम्पोनॅन्टस के अंदर और अधिक बदलाव कर सकते हैं!
