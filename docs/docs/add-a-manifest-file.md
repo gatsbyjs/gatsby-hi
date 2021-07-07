@@ -2,31 +2,31 @@
 title: Adding a Manifest File
 ---
 
-If you've run an [audit with Lighthouse](/docs/audit-with-lighthouse/), you may have noticed a lackluster score in the "Progressive Web App" category. Let's address how you can improve that score.
+अगर आपने [audit with Lighthouse](/docs/audit-with-lighthouse/) चलाया है, तो आपने "प्रोग्रेसिव वेब ऐप" श्रेणी में एक शानदार स्कोर देखा होगा। आइए पता करें कि आप उस स्कोर को कैसे सुधार सकते हैं।
 
-But first, what exactly _are_ PWAs?
+लेकिन पहले, वास्तव में PWA क्या है?
 
-They are regular websites that take advantage of modern browser functionality to augment the web experience with app-like features and benefits. Check out [Google's overview](https://developers.google.com/web/progressive-web-apps/) of what defines a PWA experience and the [Progressive web apps (PWAs) doc](/docs/progressive-web-app/) to learn how a Gatsby site is a progressive web app.
+वे नियमित वेबसाइटें हैं जो ऐप की तरह सुविधाओं और लाभों के साथ वेब अनुभव को बढ़ाने के लिए आधुनिक ब्राउज़र कार्यक्षमता का लाभ उठाती हैं। इसे देखें [Google's overview](https://developers.google.com/web/progressive-web-apps/) क्या एक PWA अनुभव और [Progressive web apps (PWAs) doc](/docs/progressive-web-app/) को परिभाषित करता है कि कैसे एक Gatsby साइट एक प्रगतिशील वेब ऐप है।
 
-The inclusion of a web app manifest is one of the three generally accepted [baseline requirements for a PWA](https://alistapart.com/article/yes-that-web-project-should-be-a-pwa#section1).
+एक वेब ऐप मैनिफेस्ट में शामिल होना आम तौर पर स्वीकृत तीन में से एक है [baseline requirements for a PWA](https://alistapart.com/article/yes-that-web-project-should-be-a-pwa#section1).
 
-Quoting [Google](https://developers.google.com/web/fundamentals/web-app-manifest/):
+का हवाला देते हुए [Google](https://developers.google.com/web/fundamentals/web-app-manifest/):
 
-> The web app manifest is a simple JSON file that tells the browser about your web application and how it should behave when 'installed' on the user's mobile device or desktop.
+> वेब ऐप मैनिफ़ेस्ट एक साधारण JSON फ़ाइल है जो ब्राउज़र को आपके वेब एप्लिकेशन के बारे में बताती है और उपयोगकर्ता के मोबाइल डिवाइस या डेस्कटॉप पर 'इंस्टॉल' होने पर इसे कैसे व्यवहार करना चाहिए।
 
-[Gatsby's manifest plugin](/packages/gatsby-plugin-manifest/) configures Gatsby to create a `manifest.webmanifest` file on every site build.
+[Gatsby's manifest plugin](/packages/gatsby-plugin-manifest/) हर साइट के निर्माण पर एक `manifest.webmanifest`फ़ाइल बनाने के लिए Gatsby को कॉन्फ़िगर करता है।
 
-## Using `gatsby-plugin-manifest`
+## `gatsby-plugin-manifest` का उपयोग करते हुए
 
-1.  Install the plugin:
+1.  प्लग-इन इंस्टॉल करें :
 
 ```shell
 npm install --save gatsby-plugin-manifest
 ```
 
-2. Add a favicon for your app under `src/images/icon.png`. The icon is necessary to build all images for the manifest. For more information look at the docs of [`gatsby-plugin-manifest`](https://github.com/gatsbyjs/gatsby/blob/master/packages/gatsby-plugin-manifest/README.md).
+2. `Src / images / icon.png` के तहत अपने ऐप के लिए एक फ़ेविकॉन जोड़ें। आइकन प्रकट करने के लिए सभी छवियों का निर्माण करने के लिए आवश्यक है। अधिक जानकारी के लिए डॉक्स को देखें [`gatsby-plugin-manifest`](https://github.com/gatsbyjs/gatsby/blob/master/packages/gatsby-plugin-manifest/README.md).
 
-3. Add the plugin to the `plugins` array in your `gatsby-config.js` file.
+3. अपने `gatsby-config.js` फ़ाइल में` प्लगइन्स `सरणी में प्लगइन जोड़ें।
 
 ```javascript:title=gatsby-config.js
 {
@@ -53,4 +53,4 @@ npm install --save gatsby-plugin-manifest
 }
 ```
 
-That's all you need to get started with adding a web manifest to a Gatsby site. The example given reflects a base configuration -- check out the [plugin reference](/packages/gatsby-plugin-manifest/?=gatsby-plugin-manifest#automatic-mode) for more options.
+एक गैट्सबी साइट पर एक वेब मेनिफ़ेस्ट जोड़ने के साथ आपको शुरुआत करने के लिएी यह सब काफी है। दिया गया उदाहरण आधार विन्यास को दर्शाता है - देखें [plugin reference](/packages/gatsby-plugin-manifest/?=gatsby-plugin-manifest#automatic-mode) अधिक विकल्पों के लिए।
