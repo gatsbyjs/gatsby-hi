@@ -1,87 +1,87 @@
-# Style Guide
+# शैली गाइड
 
-Use this file for language-specific style rules to follow for translation.
+अनुवाद के लिए भाषा-विशिष्ट शैली के नियमों के लिए इस फ़ाइल का उपयोग करें।
 
-## Rules
+## नियम
 
-### Text in Code Blocks
+### कोड ब्लॉक में टेक्स्ट
 
-Leave text in code blocks untranslated except for comments. You may optionally translate text in strings, but be careful not to translate strings that refer to code!
+टिप्पणियों को छोड़कर कोड ब्लॉक में टेक्स्ट का अनुवाद न करें। आप वैकल्पिक रूप से स्ट्रिंग में टेक्स्ट का अनुवाद कर सकते हैं, लेकिन कोड का संदर्भ देने वाले टेक्स्ट का अनुवाद न करने के लिए सावधान रहें!
 
-Example:
+उदाहरण:
 
 ```js
-// Example
+// उदाहरण
+import React from "react"
+export default () => (
+  <div style={{ color: `purple`, fontSize: `72px` }}>हैलो Gatsby!</div>
+)
+```
+
+✅ सही:
+
+```js
+// उदाहरण
 import React from "react"
 export default () => (
   <div style={{ color: `purple`, fontSize: `72px` }}>Hello Gatsby!</div>
 )
 ```
 
-✅ DO:
+✅ यह भी सही:
 
 ```js
-// Ejemplo
+// उदाहरण
 import React from "react"
 export default () => (
-  <div style={{ color: `purple`, fontSize: `72px` }}>Hello Gatsby!</div>
+  <div style={{ color: `purple`, fontSize: `72px` }}>हैलो Gatsby!</div>
 )
 ```
 
-✅ ALSO OKAY:
+❌ गलत:
 
 ```js
-// Ejemplo
+// उदाहरण
 import React from "react"
 export default () => (
-  <div style={{ color: `purple`, fontSize: `72px` }}>¡Hola Gatsby!</div>
+  // 'purple' एक CSS कीवर्ड है
+  <div style={{ color: `बैंगनी`, fontSize: `72px` }}>हैलो Gatsby!</div>
 )
 ```
 
-❌ DON'T:
+❌ निश्चित रूप से गलत:
 
 ```js
-// Ejemplo
-import React from "react"
-export default () => (
-  // 'purple' is a CSS keyword
-  <div style={{ color: `morado`, fontSize: `72px` }}>¡Hola Gatsby!</div>
+React मे से "React" इम्पोर्ट करो
+एक्स्पोर्ट डिफ़ॉल्ट () => (
+   <div अंदाज = {{color: `बैंगनी`, fontSize:` 72px`}}> हैलो Gatsby! </div>
 )
 ```
 
-❌ DEFINITELY DON'T:
+### बाहरी लिंक
 
-```js
-importar Reaccionar desde "reaccionar"
-exportar defecto () => (
-   <div estilo = {{color: `morado`, fontSize:` 72px`}}> ¡Hola Gatsby! </div>
-)
-```
-
-### External Links
-
-If an external link is to an article in a reference like [MDN] or [Wikipedia], and a version of that article exists in your language that is of decent quality, consider linking to that version instead.
+यदि किसी लेख में बाहरी लिंक [MDN] या [विकिपीडिया] की तरह है, और उस लेख का एक संस्करण आपकी भाषा में मौजूद है, जो सभ्य गुणवत्ता का है, तो फिर इसके बजाय उस संस्करण से लिंक करने पर विचार करें।
 
 [mdn]: https://developer.mozilla.org/en-US/
-[wikipedia]: https://en.wikipedia.org/wiki/Main_Page
+[विकिपीडिया]: https://en.wikipedia.org/wiki/Main_Page
 
-Example:
-
-```md
-React elements are [immutable](https://en.wikipedia.org/wiki/Immutable_object).
-```
-
-✅ OK:
+उदाहरण:
 
 ```md
-Los elementos de React son [inmutables](https://es.wikipedia.org/wiki/Objeto_inmutable).
+[React](https://en.wikipedia.org/wiki/React_(web_framework)) elements are immutable.
 ```
 
-For links that have no equivalent (Stack Overflow, YouTube videos, etc.), just use the English link.
+✅ सही:
 
-## Glossary
+```md
+[React](https://hi.wikipedia.org/wiki/रियेक्ट) एलिमेन्ट्स इम्मुटेबल होते हैं।
+```
 
-Use this section to list how common technical terminology should be translated.
+ऐसे लिंक जिनके लिए कोई समतुल्य नहीं है (स्टैक ओवरफ़्लो, YouTube वीडियो आदि), उनके लिए अंग्रेज़ी लिंक का उपयोग करें।
+
+## शब्दकोष
+
+सामान्य तकनीकी शब्दावली का अनुवाद कैसे किया जाना चाहिए, यह जानने के लिए इस अनुभाग का उपयोग करें।
 
 | Term   | Translation |
 | :---: | :---: |
@@ -122,9 +122,9 @@ Use this section to list how common technical terminology should be translated.
 | Value | वैल्यू  |
 | View | व्यू |
 
-Content that does not need to be translated:
+ऐसी शब्द जिसका अनुवाद करने की आवश्यकता नहीं है:
 
-| No translation required |
+| अनुवाद की आवश्यकता नहीं है |
 | :-----: |
 | API |
 | array |
