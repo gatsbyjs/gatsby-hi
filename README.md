@@ -1,16 +1,15 @@
 
-# Gatsby Hindi Translation
+# गैट्सबी (Gatsby) हिंदी अनुवाद
 
-This repo contains the Hindi translation for Gatsby.
+इस रेपो में गैट्सबी के लिए हिंदी अनुवाद समाविष्ट है। 
 
-Please refer to the [Translation Progress Issue](https://github.com/gatsbyjs/gatsby-hi/issues/1) to start translating!
+कृपया अनुवाद शुरू करने के लिए [अनुवाद प्रगति में इश्यु](https://github.com/gatsbyjs/gatsby-hi/issues/1) का संदर्भ लें  !
 
-Useful Links:
+उपयोगी लिंक्स :
 
-* [Contributing Guide](/contibuting.md)
-* [Style Guide](/style-guide.md)
-* [Gatsby Translation Guide](https://www.gatsbyjs.org/contributing/gatsby-docs-translation-guide/)
-* [Gatsby Discord](https://gatsby.dev/discord)
+* [योगदान गाइड](/contibuting.md)
+* [शैली गाइड](/style-guide.md)
+* [गैट्सबी अनुवाद गाइड](https://www.gatsbyjs.org/contributing/gatsby-docs-translation-guide/)
+* [गैट्सबी डिस्कॉर्ड ](https://gatsby.dev/discord)
 
-(Feel free to translate this document and add any content you feel would be useful to contributors).
-  
+(इस दस्तावेज का अनुवाद करने के लिए स्वतंत्र महसूस करे और कोई भी सामग्री जोड़े, जो आपके अनुसार कंट्रीब्युटर्स के लिए उपयोगी हो ).
