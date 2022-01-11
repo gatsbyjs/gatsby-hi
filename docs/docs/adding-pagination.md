@@ -1,17 +1,17 @@
 ---
-title: Adding Pagination
+शीर्षक: पेजिनेशन जोड़ना
 ---
 
-A page displaying a list of content gets longer as the amount of content grows.
-Pagination is the technique of spreading that content across multiple pages.
+कॅन्टेन्ट की लिस्ट प्रदर्शित करने वाला पेज कॅन्टेन्ट की मात्रा बढ़ने पर अधिक लंबा हो जाता है।
+पेजिनेशन उस सामग्री को कई पेजेज़ में फैलाने की तकनीक है।
 
-The goal of pagination is to create multiple pages (from a single [template](/docs/building-with-components/#page-template-components)) that show a limited number of items.
+पेजिनेशन का लक्ष्य कई पेजेज़ (एक सिंगल [टेम्पलेट](/docs/building-with-components/#page-template-components) से) बनाना है जो सीमित संख्या में आइटम्स दिखाते हैं।
 
-Each page will [query GraphQL](/docs/graphql-concepts/) for those specific items.
+प्रत्येक पेज में उन विशिष्ट आइटम्स के लिए [क्वेरी GraphQL](/docs/graphql-concepts/) होगा।
 
-The information needed to query for those specific items (i.e. values for [`limit`](/docs/graphql-reference/#limit) and [`skip`](/docs/graphql-reference/#skip)) will come from the [`context`](/docs/graphql-reference/#query-variables) that is added when [creating pages](/docs/creating-and-modifying-pages/#creating-pages-in-gatsby-nodejs) in `gatsby-node`.
+उन विशिष्ट आइटम्स (अर्थात [`limit`](/docs/graphql-reference/#limit) और [`skip`](/docs/graphql-reference/#skip) की वैल्यूस के लिए) की क्वेरी करने के लिए आवश्यक जानकारी [`context`](/docs/graphql-reference/#query-variables) से आ जाएगी जिसे तब जोड़ा जाता है जब `gatsby-node` में [पेज बना रहे हैं](/docs/creating-and-modifying-pages/#creating-pages-in-gatsby-nodejs) ।
 
-## Example
+## उदाहरण
 
 ```jsx:title=src/templates/blog-list-template.js
 import React from "react"
@@ -89,8 +89,8 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 
   // ...
 
-  // Create blog-list pages
-  // highlight-start
+  // ब्लॉग-लिस्ट पेजेज़ बनाएँ
+  // हाइलाइट-शुरू
   const posts = result.data.allMarkdownRemark.edges
   const postsPerPage = 6
   const numPages = Math.ceil(posts.length / postsPerPage)
@@ -107,7 +107,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
       },
     })
   })
-  // highlight-end
+  // हाइलाइट-समाप्त
 }
 
 exports.onCreateNode = ({ node, actions, getNode }) => {
@@ -123,11 +123,11 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
 }
 ```
 
-The code above will create an amount of pages that is based on the total number of posts. Each page will list `postsPerPage`(6) posts, until there are less than `postsPerPage`(6) posts left.
-The path for the first page is `/blog`, following pages will have a path of the form: `/blog/2`, `/blog/3`, etc.
+ऊपर दिया गया कोड उन पेजेज़ की मात्रा बनाएगा जो कुल पोस्ट्स की संख्या पर आधारित हैं। प्रत्येक पेज `postsPerPage` (6) पोस्ट्स को लिस्ट करेगा, जब तक कि `postsPerPage`(6) से कम पोस्ट्स न हों।
+पहले पेज के लिए पथ `/blog` है, निम्न पेजेज़ का पथ इस रूप: `/blog/2`, `/blog/3`, आदि में होगा।
 
-## Other resources
+## अन्य संसाधन
 
-- Follow this [step-by-step tutorial](https://nickymeuleman.netlify.com/blog/gatsby-pagination/) to add links to the previous/next page and the traditional page-navigation at the bottom of the page
+- पिछले/अगले पेज और पेज के निचले भाग में पारंपरिक पेज-नेविगेशन के लिंक्स जोड़ने के लिए इस [चरण-दर-चरण ट्यूटोरियल](https://nickymeuleman.netlify.com/blog/gatsby-pagination/) का पालन करें।
 
-- See [gatsby-paginated-blog](https://github.com/NickyMeuleman/gatsby-paginated-blog) [(demo)](https://nickymeuleman.github.io/gatsby-paginated-blog/) for an extension of the official [gatsby-starter-blog](https://github.com/gatsbyjs/gatsby-starter-blog) with pagination in place
+- देखें आधिकारिक [gatsby-स्टार्टर-ब्लॉग] (https://github.com/gatsbyjs/gatsby-starter-blog) के स्थान पर इसका विस्तार  [Gatsby-पेजीनेटेड-ब्लॉग] (https://github.com/NickyMeuleman/gatsby-paginated-blog) [(डेमो)] (https://nickymeuleman.github.io/gatsby-paginated-blog/)  पेजिनेशन के साथ।
